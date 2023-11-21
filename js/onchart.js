@@ -26,6 +26,8 @@ function onchart(selector,data) {
       .attr("transform",
           "translate(" + margin.left + "," + margin.top + ")");
 
+
+    //modeled after tutorial https://d3-graph-gallery.com/graph/barplot_basic.html
   // Parse the Data
 d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/7_OneCatOneNum_header.csv", function(data) {
 
