@@ -24,4 +24,4 @@ file_path = os.path.join(directory, file_name_csv)
 df.to_csv(file_path, index=False)
 #export as json
 file_path = os.path.join(directory, file_name_json)
-df.to_csv(file_path, index=False)
+df.to_json(file_path, orient='records')
