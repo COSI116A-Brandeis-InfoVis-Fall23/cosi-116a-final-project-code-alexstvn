@@ -15,6 +15,10 @@ df['time_period_id'] = df['time_period_id'].str.extract(r'(\d+)').astype(int)
 df.columns = [col.replace('_', ' ').title() for col in df.columns]
 
 directory = "data"
-file_name = "MBTA_Data.csv"
-file_path = os.path.join(directory, file_name)
+file_name1 = "MBTA_Data.csv"
+file_name2 = "MBTA_Data.json"
+
+file_path = os.path.join(directory, file_name1)
+df.to_csv(file_path, index=False)
+file_path = os.path.join(directory, file_name2)
 df.to_csv(file_path, index=False)
