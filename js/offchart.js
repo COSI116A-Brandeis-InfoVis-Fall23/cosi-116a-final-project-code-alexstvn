@@ -81,9 +81,3 @@ d3.csv("data/MBTA_Data.csv").then(function (data) {
     .attr("height", yScale.bandwidth())
     .attr("fill", "blue"); // Set the fill color to blue
 });
-
-
-
-  myChart();
-})();
-
