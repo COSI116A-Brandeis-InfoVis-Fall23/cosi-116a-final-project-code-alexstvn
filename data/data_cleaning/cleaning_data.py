@@ -1,6 +1,7 @@
 import pandas as pd # may have interpreter issues
 import os
 
+# IMPORTING DATA FROM EXISTING TABLE
 df = pd.read_csv(r"data\data_cleaning\MBTA Rail Ridership by Time Period, Season, Route_Line, and Stop.csv")
 
 #DROPPING UNNECESSARY COLUMNS

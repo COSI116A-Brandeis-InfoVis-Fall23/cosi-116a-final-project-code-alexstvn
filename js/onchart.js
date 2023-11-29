@@ -64,4 +64,5 @@ function onchart(selector, data) {
     return chart;
 
 
-  }
+  })
+}
