@@ -15,11 +15,13 @@
 
     // Create a sun chart
     let scatterplot_delays = scatterplot()
-    .x(d => d.Route_Name)
-    .xLabel("route")
+    .x(d => d.Year)
+    .xLabel("year")
     .y(d => d.Number_Service_Days)
     .yLabel("number service days")
     .yLabelOffset(150)
+    .z(d => d.Total_Flow)
+
     .selectionDispatcher(d3.dispatch(dispatchString))
       ("#scatterplot", data);
 
