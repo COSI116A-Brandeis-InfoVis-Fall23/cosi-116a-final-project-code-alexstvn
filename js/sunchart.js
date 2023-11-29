@@ -11,12 +11,12 @@ var width = 450
 var radius = Math.min(width, height) / 2 - margin
 
 // append the svg object to the div called 'sunchart'
-/*let svg = d3.select("#sunchart")
+let svg = d3.select("#sunchart")
   .append("svg")
     .attr("width", width)
     .attr("height", height)
   .append("g")
-    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");*/
+    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
 // Create dummy data
 var data = {a: 9, b: 20, c:30, d:8, e:12}
@@ -46,8 +46,3 @@ svg
   .style("stroke-width", "2px")
   .style("opacity", 0.7)
 
-
-  /* global D3 */
-
-// Initialize a line chart. Modeled after Mike Bostock's
-// Reusable Chart framework https://bost.ocks.org/mike/chart/
