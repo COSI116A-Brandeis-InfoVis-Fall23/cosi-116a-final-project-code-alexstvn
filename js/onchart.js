@@ -5,6 +5,7 @@
 // Chart configuration
 //STOP HERE
 function onchart() {
+  let colorScale;
   const margin = { top: 60, left: 50, right: 30, bottom: 20 };
   let width = 800 - margin.left - margin.right,
     height = 380 - margin.top - margin.bottom,
@@ -45,7 +46,7 @@ function onchart() {
       .style("text-anchor", "end")
       .style("font-size", "5px");
 
-    svg.selectAll(".bar")
+      svg.selectAll(".bar")
       .data(data)
       .enter().append("rect")
       .attr("class", "bar")
@@ -53,10 +54,48 @@ function onchart() {
       .attr("y", d => yScale(yValue(d)))
       .attr("width", d => xScale(xValue(d)))
       .attr("height", yScale.bandwidth())
-      .attr("fill", "steelblue")
+      .attr("fill", d => colorScale(d.route_id)) // Color by route_id
       .on("click", function (d) {
         dispatcher.call("selectionUpdated", this, [d]);
       });
+
+      function brush(g) {
+        const brush = d3.brush() // Create a 2D interactive brush
+          .on("start brush", highlight) // When the brush starts/continues do...
+          .on("end", brushEnd) // When the brush ends do...
+          .extent([
+            [-margin.left, -margin.bottom],
+            [width + margin.right, height + margin.top]
+          ]);
+  
+        ourBrush = brush;
+  
+        g.call(brush); // Adds the brush to this element
+  
+        // Highlight the selected rectangles (bars)
+        function highlight() {
+          if (d3.event.selection === null) return;
+          const [
+            [x0, y0],
+            [x1, y1]
+          ] = d3.event.selection;
+  
+          svg.selectAll(".bar")
+            .classed("selected", d =>
+              x0 <= X(d) && X(d) <= x1 && y0 <= Y(d) && Y(d) <= y1
+            );
+  
+          dispatcher.call("selectionUpdated", this, svg.selectAll(".bar.selected").data());
+        }
+  
+        function brushEnd() {
+          if (d3.event.sourceEvent.type !== "end") {
+            d3.select(this).call(brush.move, null);
+          }
+        }
+      }
+  
+      svg.call(brush);
 
     return chart;
   }
@@ -135,6 +174,11 @@ function onchart() {
     selectableElements.classed("selected", d => {
       return selectedData.includes(d)
     });
+  };
+
+  chart.colorScale = function(scale) {
+    colorScale = scale;
+    return chart;
   };
 
   return chart;

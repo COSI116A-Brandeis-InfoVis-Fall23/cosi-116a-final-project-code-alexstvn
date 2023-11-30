@@ -44,6 +44,18 @@ h1, h2, h3 {
 	opacity: 5;
   }
 
+  rect.selected {
+	fill: pink;
+	stroke: red;
+	opacity: 5;
+  }
+
+  bar.selected {
+	fill: pink;
+	stroke: red;
+	opacity: 5;
+  }
+
 /* Fork on GitHub ribbon via https://codepo8.github.io/css-fork-on-github-ribbon/# */  
 #forkongithub a{
 	background:#00F;
