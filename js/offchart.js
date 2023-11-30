@@ -68,7 +68,7 @@
     console.log(data);
   
     // Update scale domains with loaded data
-    xScale.domain([0, d3.max(data, d => +d.average_ons)]);
+    xScale.domain([0, d3.max(data, d => +d.average_offs)]);
     yScale.domain(data.map(d => d.stop_name));
   
     // Create bars with blue color
@@ -77,7 +77,7 @@
       .enter().append("rect")
       .attr("class", "bar")
       .attr("y", d => yScale(d.stop_name))
-      .attr("width", d => xScale(+d.average_ons))
+      .attr("width", d => xScale(+d.average_offs))
       .attr("height", yScale.bandwidth())
       .attr("fill", "blue"); // Set the fill color to blue
   });
