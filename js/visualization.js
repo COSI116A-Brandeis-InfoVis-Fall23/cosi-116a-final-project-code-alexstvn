@@ -37,7 +37,6 @@
       .yLabel("stop_name")
       .yLabelOffset(150)
       .selectionDispatcher(d3.dispatch(dispatchString))
-<<<<<<< HEAD
       .colorScale(d3.scaleOrdinal()
         .domain(data.map(d => d.route_id))
         .range(data.map(d => routeColors[d.route_id])))
@@ -70,43 +69,6 @@
     mbta_offs.selectionDispatcher().on(dispatchString, function(selectedData) {
       //scatterplot_delays.updateSelection(selectedData);
       //mbta_ons.updateSelection(selectedData);
-=======
-      ("#onchart", data);
-
-
-    let mbta_offs = offchart()
-      .x(d => d.average_offs)
-      .xLabel("average_offs")
-      .y(d => d.stop_name)
-      .yLabel("stop_name")
-      .yLabelOffset(150)
-      .selectionDispatcher(d3.dispatch(dispatchString))
-      ("#offchart", data);
-
-    // Create a ons bar graph chart
-    //let on_bargraph = onchart()
-    //  .selectionDispatcher(d3.dispatch(dispatchString))
-    //  ("#onchart", data);
-
-    // Create a off bar chart
-    //let off_bargraph = offchart()
-    //  .selectionDispatcher(d3.dispatch(dispatchString))
-    //  ("#sunchart", data);
-
-
-
-    // When the sun chart selection is updated via brushing, 
-    // tell the on and off graphs to update it's selection (linking)
-    scatterplot_delays.selectionDispatcher().on(dispatchString, function (selectedData) {
-      //on_bargraph.updateSelection(selectedData);
-      //off_bargraph.updateSelection(selectedData);
-
-    });
-
-    mbta_ons.selectionDispatcher().on(dispatchString, function (selectedData) {
-      //on_bargraph.updateSelection(selectedData);
-      //off_bargraph.updateSelection(selectedData);
->>>>>>> de8a1e5 (created the selector)
 
     });
   });
