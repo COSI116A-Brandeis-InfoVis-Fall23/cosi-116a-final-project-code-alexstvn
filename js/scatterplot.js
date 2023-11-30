@@ -113,7 +113,7 @@ function scatterplot() {
         
         // If within the bounds of the brush, select it
         points.classed("selected", d =>
-        x0 <= X(d) && X(d) <= x1 && y0 <= Y(d) && Y(d) <= y1
+          x0 <= X(d) && X(d) <= x1 && y0 <= Y(d) && Y(d) <= y1
         );
         
         // Get the name of our dispatcher's event

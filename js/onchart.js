@@ -3,7 +3,7 @@
 // Immediately Invoked Function Expression to limit access to our 
 // variables and prevent 
 // Chart configuration
-(function () {
+(function onchart() {
 
   const margin = { top: 60, right: 150, bottom: 40, left: 150 };
   let width = 800 - margin.left - margin.right;
