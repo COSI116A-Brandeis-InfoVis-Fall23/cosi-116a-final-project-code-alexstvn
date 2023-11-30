@@ -13,7 +13,7 @@
     // https://github.com/d3/d3-dispatch
     const dispatchString = "selectionUpdated";
 
-    // Create a sun chart
+    // Create a scatterplot chart
     let scatterplot_delays = scatterplot()
       .x(d => d.year)
       .xLabel("year")
@@ -40,7 +40,7 @@
     .yLabel("stop_name")
     .yLabelOffset(150)
     .selectionDispatcher(d3.dispatch(dispatchString))
-      ("#onchart", data);
+      ("#offchart", data);
 
     // Create a ons bar graph chart
     //let on_bargraph = onchart()
@@ -63,6 +63,12 @@
     });
 
     mbta_ons.selectionDispatcher().on(dispatchString, function(selectedData) {
+      //on_bargraph.updateSelection(selectedData);
+      //off_bargraph.updateSelection(selectedData);
+
+    });
+
+    mbta_offs.selectionDispatcher().on(dispatchString, function(selectedData) {
       //on_bargraph.updateSelection(selectedData);
       //off_bargraph.updateSelection(selectedData);
 
