@@ -64,7 +64,7 @@ function onchart() {
     .text("Stop Names");
   
   // Load data
-  d3.csv("../data/MBTA_Data.csv").then(function (data) {
+  d3.csv("../data/MBTA_Data.csv", function (data) {
     console.log(data);
   
     // Update scale domains with loaded data
