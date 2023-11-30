@@ -4,13 +4,14 @@
 // variables and prevent 
 
 
+
 // Chart configuration
 const margin = { top: 60, right: 150, bottom: 40, left: 150 };
 let width = 800 - margin.left - margin.right;
 let height = 380 - margin.top - margin.bottom;
 
 // SVG container
-const svg = d3.select("#chart-container")
+const svg = d3.select("#offchart")
   .append("svg")
   .attr("width", width + margin.left + margin.right)
   .attr("height", height + margin.top + margin.bottom)
@@ -81,3 +82,4 @@ d3.csv("../data/MBTA_Data.csv").then(function (data) {
     .attr("height", yScale.bandwidth())
     .attr("fill", "blue"); // Set the fill color to blue
 });
+
