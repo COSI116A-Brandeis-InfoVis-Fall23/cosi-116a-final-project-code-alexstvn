@@ -16,10 +16,10 @@
     // Create a sun chart
     let scatterplot_delays = scatterplot()
     .x(d => d.Year)
-    .xLabel("Year")
-    .y(d => d.Number_Service_Days)
-    .yLabel("Number Service Days")
-    .yLabelOffset(150)
+      .xLabel("Year")
+      .y(d => d.Number_Service_Days)
+      .yLabel("Number Service Days")
+      .yLabelOffset(150)
     // .z(d => d.Total_Flow) - REMOVED TO SHOW AXIS
 
     .selectionDispatcher(d3.dispatch(dispatchString))
