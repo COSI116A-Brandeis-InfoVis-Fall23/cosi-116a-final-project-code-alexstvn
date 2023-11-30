@@ -38,7 +38,7 @@ function onchart() {
   svg.append("g")
     .call(yAxis);
   
-  // Add chart title
+  // CHART TITLE
   svg.append("text")
     .attr("x", width / 2)
     .attr("y", -margin.top / 2)
@@ -47,6 +47,7 @@ function onchart() {
     .style("font-weight", "bold")
     .text("Stops Bar Chart - Average On");
   
+  //X-AXIS LABEL
   svg.append("text")
     .attr("x", width / 2)
     .attr("y", height + margin.bottom - 2)
@@ -54,6 +55,7 @@ function onchart() {
     .style("font-size", "14px")
     .text("Number Of Riders");
   
+  //Y-AXIS LABEL
   svg.append("text")
     .attr("transform", "rotate(-90)")
     .attr("y", -margin.left + 10)
@@ -66,7 +68,7 @@ function onchart() {
   // Load data
   d3.csv("../data/MBTA_Data.csv", function (data) {
     console.log(data);
-  
+
     // Update scale domains with loaded data
     xScale.domain([0, d3.max(data, d => +d.average_ons)]);
     yScale.domain(data.map(d => d.stop_name));
@@ -75,11 +77,11 @@ function onchart() {
     svg.selectAll(".bar")
       .data(data)
       .enter().append("rect")
-      .attr("class", "bar")
-      .attr("y", d => yScale(d.stop_name))
-      .attr("width", d => xScale(+d.average_ons))
-      .attr("height", yScale.bandwidth())
-      .attr("fill", "blue"); // Set the fill color to blue
+        .attr("class", "bar")
+        .attr("y", d => yScale(d.stop_name))
+        .attr("width", d => xScale(+d.average_ons))
+        .attr("height", yScale.bandwidth())
+        .attr("fill", "blue"); // Set the fill color to blue
   });
   
 }

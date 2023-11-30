@@ -27,7 +27,7 @@
       .x(d => d.Year)
       .xLabel("Year")
       .y(d => d.Total_Ons)
-      .yLabel("total ons")
+      .yLabel("Total Ons")
       .yLabelOffset(150)
       .selectionDispatcher(d3.dispatch(dispatchString))
         ("#onchart", data);
