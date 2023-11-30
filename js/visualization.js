@@ -29,7 +29,8 @@
       'Green': 'green',
       'Blue':'blue',
     };
-
+    let filteredData = data.filter(d => d.route_id === 'Red'); // TRY USING SELECTOR WITH THIS
+    // filteredData=data;
     let mbta_ons = onchart()
       .x(d => d.average_ons)
       .xLabel("average_ons")
@@ -38,10 +39,9 @@
       .yLabelOffset(150)
       .selectionDispatcher(d3.dispatch(dispatchString))
       .colorScale(d3.scaleOrdinal()
-        .domain(data.map(d => d.route_id))
-        .range(data.map(d => routeColors[d.route_id])))
-      ("#onchart", data);
-
+        .domain(filteredData.map(d => d.route_id))
+        .range(filteredData.map(d => routeColors[d.route_id])))
+      ("#onchart", filteredData);
         
     let mbta_offs = offchart()
     .x(d => d.average_offs)

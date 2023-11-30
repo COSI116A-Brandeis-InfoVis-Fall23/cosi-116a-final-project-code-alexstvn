@@ -31,8 +31,8 @@ const routeSelectorId = "#routeSelector";
 const stopSelectorId = "#stopSelector";
 
 // Load your data here
-const datA = "data/MBTA_Data.csv"
-d3.csv(datA).then(function (data) {
+const data = "data/MBTA_Data.csv"
+d3.csv(data).then(function (data) {
     // Call the createSelector function for route selection
     createSelector(routeSelectorId, data, handleRouteChange);
 

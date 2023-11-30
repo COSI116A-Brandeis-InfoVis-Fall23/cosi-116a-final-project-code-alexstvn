@@ -5,7 +5,7 @@
 // Chart configuration
 function onchart() {
   let colorScale;
-  const margin = { top: 60, left: 50, right: 30, bottom: 20 };
+  const margin = { top: 60, left: 65, right: 30, bottom: 20 };
   let width = 800 - margin.left - margin.right,
     height = 380 - margin.top - margin.bottom,
     xValue = d => d[0],
@@ -27,15 +27,26 @@ function onchart() {
       .append("g")
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
+    
+    //LABELS ON Y-AXIS FORMATTING
     yScale.domain(data.map(d => yValue(d))).range([0, height]).paddingInner(0.1).paddingOuter(0.1);
-
     svg.append("g")
       .attr("transform", "translate(0, 0)") // Shift y-axis to left
       .call(d3.axisLeft(yScale).ticks(data.length)) // Vertical axis
       .selectAll(".tick text") // Adjust font size for y-axis labels
-      .style("font-size", (d, i) => i % 2 === 0 ? "5px" : "0px"); // Font size 5 for even indices, hide odd indices
+      .style("font-size", "5px");
+      // .style("font-size", (d, i) => i % 2 === 0 ? "5px" : "0px"); // Font size 5 for even indices, hide odd indices
 
-    xScale.domain([0, d3.max(data, d => xValue(d))]).range([0, width]);
+    // LABELS ON X-AXIS 
+    // xScale.domain([0, d3.max(data, d => xValue(d))]).range([0, width]);
+    const nestedData = d3.nest()
+      .key(d => yValue(d)) // Group by y-axis labels
+      .rollup(group => d3.sum(group, d => xValue(d))) // Calculate sum of x-values for each group
+      .entries(data);
+
+    // Get the maximum sum of x-values across the groups
+    const maxSumXValues = d3.max(nestedData, d => d.value);
+    xScale.domain([0, maxSumXValues/6]).range([0, width]); // this adjusts the scale to view all the bars
 
     svg.append("g")
       .attr("transform", "translate(0," + height + ")") // Shift x-axis to bottom
@@ -45,7 +56,8 @@ function onchart() {
       .style("text-anchor", "end")
       .style("font-size", "5px");
 
-      svg.selectAll(".bar")
+    // BARS ON GRAPH FORMATTING
+    svg.selectAll(".bar")
       .data(data)
       .enter().append("rect")
       .attr("class", "bar")
