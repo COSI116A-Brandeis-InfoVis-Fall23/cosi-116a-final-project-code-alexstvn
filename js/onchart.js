@@ -34,11 +34,9 @@ function onchart() {
       .attr("transform", "translate(0, 0)") // Shift y-axis to left
       .call(d3.axisLeft(yScale).ticks(data.length)) // Vertical axis
       .selectAll(".tick text") // Adjust font size for y-axis labels
-      .style("font-size", "5px");
-      // .style("font-size", (d, i) => i % 2 === 0 ? "5px" : "0px"); // Font size 5 for even indices, hide odd indices
+      .style("font-size", "5px"); //DO NOT MAKE IT EVERY OTHER STOP (ruins the point of having this graph)
 
     // LABELS ON X-AXIS 
-    // xScale.domain([0, d3.max(data, d => xValue(d))]).range([0, width]);
     const nestedData = d3.nest()
       .key(d => yValue(d)) // Group by y-axis labels
       .rollup(group => d3.sum(group, d => xValue(d))) // Calculate sum of x-values for each group
@@ -46,7 +44,7 @@ function onchart() {
 
     // Get the maximum sum of x-values across the groups
     const maxSumXValues = d3.max(nestedData, d => d.value);
-    xScale.domain([0, maxSumXValues/6]).range([0, width]); // this adjusts the scale to view all the bars
+    xScale.domain([0, maxSumXValues/7]).range([0, width]); // this adjusts the scale to view all the bars
 
     svg.append("g")
       .attr("transform", "translate(0," + height + ")") // Shift x-axis to bottom

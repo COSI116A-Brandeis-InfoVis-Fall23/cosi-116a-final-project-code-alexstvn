@@ -29,8 +29,8 @@
       'Green': 'green',
       'Blue':'blue',
     };
-    let filteredData = data.filter(d => d.route_id === 'Red'); // TRY USING SELECTOR WITH THIS
-    // filteredData=data;
+    let filteredData = data.filter(d => d.route_id === 'Blue'); // TRY USING SELECTOR WITH THIS
+    // let filteredData=data;
     let mbta_ons = onchart()
       .x(d => d.average_ons)
       .xLabel("average_ons")
