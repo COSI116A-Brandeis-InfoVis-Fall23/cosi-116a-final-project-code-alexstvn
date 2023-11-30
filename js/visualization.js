@@ -50,6 +50,9 @@
     .yLabel("stop_name")
     .yLabelOffset(150)
     .selectionDispatcher(d3.dispatch(dispatchString))
+    .colorScale(d3.scaleOrdinal()
+      .domain(data.map(d => d.route_id))
+      .range(data.map(d => routeColors[d.route_id])))
       ("#offchart", data);
 
     // When the sun chart selection is updated via brushing, 

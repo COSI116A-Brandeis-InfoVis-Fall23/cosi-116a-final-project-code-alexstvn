@@ -4,6 +4,7 @@
 // variables and prevent 
 // Chart configuration
 function offchart() {
+  let colorScale;
   const margin = { top: 60, left: 50, right: 30, bottom: 20 };
   let width = 800 - margin.left - margin.right,
     height = 380 - margin.top - margin.bottom,
@@ -17,85 +18,86 @@ function offchart() {
     dispatcher,
     selectableElements = d3.select(null);
 
-    function chart(selector, data) {
-      let svg = d3.select(selector)
-        .append("svg")
-        .attr("preserveAspectRatio", "xMidYMid meet")
-        .attr("viewBox", [0, 0, width + margin.left + margin.right, height + margin.top + margin.bottom].join(' '))
-        .classed("svg-content", true)
-        .append("g")
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+  function chart(selector, data) {
+    let svg = d3.select(selector)
+      .append("svg")
+      .attr("preserveAspectRatio", "xMidYMid meet")
+      .attr("viewBox", [0, 0, width + margin.left + margin.right, height + margin.top + margin.bottom].join(' '))
+      .classed("svg-content", true)
+      .append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    yScale.domain(data.map(d => yValue(d))).range([0, height]).paddingInner(0.1).paddingOuter(0.1);
+
+    svg.append("g")
+      .attr("transform", "translate(0, 0)") // Shift y-axis to left
+      .call(d3.axisLeft(yScale).ticks(data.length)) // Vertical axis
+      .selectAll(".tick text") // Adjust font size for y-axis labels
+      .style("font-size", (d, i) => i % 2 === 0 ? "5px" : "0px"); // Font size 5 for even indices, hide odd indices
+
+    xScale.domain([0, d3.max(data, d => xValue(d))]).range([0, width]);
+
+    svg.append("g")
+      .attr("transform", "translate(0," + height + ")") // Shift x-axis to bottom
+      .call(d3.axisBottom(xScale)) // Horizontal axis
+      .selectAll(".tick text") // Rotate and adjust font size for x-axis labels
+      .attr("transform", "rotate(-45)")
+      .style("text-anchor", "end")
+      .style("font-size", "5px");
+
+      svg.selectAll(".bar")
+      .data(data)
+      .enter().append("rect")
+      .attr("class", "bar")
+      .attr("x", 0)
+      .attr("y", d => yScale(yValue(d)))
+      .attr("width", d => xScale(xValue(d)))
+      .attr("height", yScale.bandwidth())
+      .attr("fill", d => colorScale(d.route_id)) // Color by route_id
+      .on("click", function (d) {
+        dispatcher.call("selectionUpdated", this, [d]);
+      });
+
+      function brush(g) {
+        const brush = d3.brush() // Create a 2D interactive brush
+          .on("start brush", highlight) // When the brush starts/continues do...
+          .on("end", brushEnd) // When the brush ends do...
+          .extent([
+            [-margin.left, -margin.bottom],
+            [width + margin.right, height + margin.top]
+          ]);
   
-      yScale.domain(data.map(d => yValue(d))).range([0, height]).paddingInner(0.1).paddingOuter(0.1);
+        ourBrush = brush;
   
-      svg.append("g")
-        .attr("transform", "translate(0, 0)") // Shift y-axis to left
-        .call(d3.axisLeft(yScale).ticks(data.length)) // Vertical axis
-        .selectAll(".tick text") // Adjust font size for y-axis labels
-        .style("font-size", (d, i) => i % 2 === 0 ? "5px" : "0px"); // Font size 5 for even indices, hide odd indices
+        g.call(brush); // Adds the brush to this element
   
-      xScale.domain([0, d3.max(data, d => xValue(d))]).range([0, width]);
+        // Highlight the selected rectangles (bars)
+        function highlight() {
+          if (d3.event.selection === null) return;
+          const [
+            [x0, y0],
+            [x1, y1]
+          ] = d3.event.selection;
   
-      svg.append("g")
-        .attr("transform", "translate(0," + height + ")") // Shift x-axis to bottom
-        .call(d3.axisBottom(xScale)) // Horizontal axis
-        .selectAll(".tick text") // Rotate and adjust font size for x-axis labels
-        .attr("transform", "rotate(-45)")
-        .style("text-anchor", "end")
-        .style("font-size", "5px");
+          svg.selectAll(".bar")
+            .classed("selected", d =>
+              x0 <= X(d) && X(d) <= x1 && y0 <= Y(d) && Y(d) <= y1
+            );
   
-        svg.selectAll(".bar")
-        .data(data)
-        .enter().append("rect")
-        .attr("class", "bar")
-        .attr("x", 0)
-        .attr("y", d => yScale(yValue(d)))
-        .attr("width", d => xScale(xValue(d)))
-        .attr("height", yScale.bandwidth())
-        .attr("fill", d => colorScale(d.route_id)) // Color by route_id
-        .on("click", function (d) {
-          dispatcher.call("selectionUpdated", this, [d]);
-        });
+          dispatcher.call("selectionUpdated", this, svg.selectAll(".bar.selected").data());
+        }
   
-        function brush(g) {
-          const brush = d3.brush() // Create a 2D interactive brush
-            .on("start brush", highlight) // When the brush starts/continues do...
-            .on("end", brushEnd) // When the brush ends do...
-            .extent([
-              [-margin.left, -margin.bottom],
-              [width + margin.right, height + margin.top]
-            ]);
-    
-          ourBrush = brush;
-    
-          g.call(brush); // Adds the brush to this element
-    
-          // Highlight the selected rectangles (bars)
-          function highlight() {
-            if (d3.event.selection === null) return;
-            const [
-              [x0, y0],
-              [x1, y1]
-            ] = d3.event.selection;
-    
-            svg.selectAll(".bar")
-              .classed("selected", d =>
-                x0 <= X(d) && X(d) <= x1 && y0 <= Y(d) && Y(d) <= y1
-              );
-    
-            dispatcher.call("selectionUpdated", this, svg.selectAll(".bar.selected").data());
-          }
-    
-          function brushEnd() {
-            if (d3.event.sourceEvent.type !== "end") {
-              d3.select(this).call(brush.move, null);
-            }
+        function brushEnd() {
+          if (d3.event.sourceEvent.type !== "end") {
+            d3.select(this).call(brush.move, null);
           }
         }
-        svg.call(brush);
+      }
   
-      return chart;
-    }  
+      svg.call(brush);
+
+    return chart;
+  }
 
   // The x-accessor from the datum
   function X(d) {
@@ -171,6 +173,11 @@ function offchart() {
     selectableElements.classed("selected", d => {
       return selectedData.includes(d)
     });
+  };
+
+  chart.colorScale = function(scale) {
+    colorScale = scale;
+    return chart;
   };
 
   return chart;
