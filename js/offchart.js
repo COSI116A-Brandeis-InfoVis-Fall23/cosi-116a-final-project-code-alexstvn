@@ -1,5 +1,4 @@
-// Immediately Invoked Function Expression to limit access to our 
-// variables and prevent 
+
 // Immediately Invoked Function Expression to limit access to our 
 // variables and prevent 
 // Chart configuration
@@ -7,7 +6,8 @@ function offchart() {
   let colorScale;
   const margin = { top: 60, left: 50, right: 30, bottom: 20 };
   let width = 800 - margin.left - margin.right,
-    height = 380 - margin.top - margin.bottom,
+    height = 500 - margin.top - margin.bottom,
+
     xValue = d => d[0],
     yValue = d => d[1],
     xLabelText = "",
@@ -51,12 +51,17 @@ function offchart() {
       .attr("class", "bar")
       .attr("x", 0)
       .attr("y", d => yScale(yValue(d)))
-      .attr("width", d => xScale(xValue(d)))
-      .attr("height", yScale.bandwidth())
+      .attr("width", d => xScale(xValue(d))*0.06)
+      .attr("height", yScale.bandwidth()*0.5)
       .attr("fill", d => colorScale(d.route_id)) // Color by route_id
       .on("click", function (d) {
         dispatcher.call("selectionUpdated", this, [d]);
       });
+
+      svg.call(brush);
+
+      return chart;
+    }
 
       function brush(g) {
         const brush = d3.brush() // Create a 2D interactive brush
@@ -94,10 +99,7 @@ function offchart() {
         }
       }
   
-      svg.call(brush);
-
-    return chart;
-  }
+      
 
   // The x-accessor from the datum
   function X(d) {
