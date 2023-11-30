@@ -5,7 +5,7 @@
 // Chart configuration
 function onchart() {
   let colorScale;
-  const margin = { top: 60, left: 65, right: 30, bottom: 20 };
+  const margin = { top: 60, left: 75, right: 30, bottom: 20 };
   let width = 400 - margin.left - margin.right,
     height = 600 - margin.top - margin.bottom,
     xValue = d => d[0],
@@ -44,7 +44,7 @@ function onchart() {
 
     // Get the maximum sum of x-values across the groups
     const maxSumXValues = d3.max(nestedData, d => d.value);
-    xScale.domain([0, maxSumXValues/7]).range([0, width]); // this adjusts the scale to view all the bars
+    xScale.domain([0, maxSumXValues/20]).range([0, width]); // this adjusts the scale to view all the bars
 
     svg.append("g")
       .attr("transform", "translate(0," + height + ")") // Shift x-axis to bottom
@@ -62,7 +62,7 @@ function onchart() {
       .attr("x", 0)
       .attr("y", d => yScale(yValue(d)))
       .attr("width", d => xScale(xValue(d)))
-      .attr("height", yScale.bandwidth())
+      .attr("height", yScale.bandwidth()*0.8)
       .attr("fill", d => colorScale(d.route_id)) // Color by route_id
       .on("click", function (d) {
         dispatcher.call("selectionUpdated", this, [d]);

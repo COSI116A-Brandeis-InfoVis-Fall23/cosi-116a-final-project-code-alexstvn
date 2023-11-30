@@ -4,9 +4,9 @@
 // Chart configuration
 function offchart() {
   let colorScale;
-  const margin = { top: 60, left: 50, right: 30, bottom: 20 };
-  let width = 800 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom,
+  const margin = { top: 60, left: 75, right: 30, bottom: 20 };
+  let width = 400 - margin.left - margin.right,
+    height = 600 - margin.top - margin.bottom,
 
     xValue = d => d[0],
     yValue = d => d[1],
@@ -27,15 +27,33 @@ function offchart() {
       .append("g")
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
+       //LABELS ON Y-AXIS FORMATTING
     yScale.domain(data.map(d => yValue(d))).range([0, height]).paddingInner(0.1).paddingOuter(0.1);
-
     svg.append("g")
       .attr("transform", "translate(0, 0)") // Shift y-axis to left
       .call(d3.axisLeft(yScale).ticks(data.length)) // Vertical axis
       .selectAll(".tick text") // Adjust font size for y-axis labels
-      .style("font-size", (d, i) => i % 2 === 0 ? "5px" : "0px"); // Font size 5 for even indices, hide odd indices
+      .style("font-size", "5px"); //DO NOT MAKE IT EVERY OTHER STOP (ruins the point of having this graph)
 
-    xScale.domain([0, d3.max(data, d => xValue(d))]).range([0, width]);
+    // LABELS ON X-AXIS 
+    const nestedData = d3.nest()
+      .key(d => yValue(d)) // Group by y-axis labels
+      .rollup(group => d3.sum(group, d => xValue(d))) // Calculate sum of x-values for each group
+      .entries(data);
+
+    // Get the maximum sum of x-values across the groups
+    const maxSumXValues = d3.max(nestedData, d => d.value);
+    xScale.domain([0, maxSumXValues/20]).range([0, width]); // this adjusts the scale to view all the bars
+
+    // yScale.domain(data.map(d => yValue(d))).range([0, height]).paddingInner(0.1).paddingOuter(0.1);
+
+    // svg.append("g")
+    //   .attr("transform", "translate(0, 0)") // Shift y-axis to left
+    //   .call(d3.axisLeft(yScale).ticks(data.length)) // Vertical axis
+    //   .selectAll(".tick text") // Adjust font size for y-axis labels
+    //   .style("font-size", (d, i) => i % 2 === 0 ? "5px" : "0px"); // Font size 5 for even indices, hide odd indices
+
+    // xScale.domain([0, d3.max(data, d => xValue(d))]).range([0, width]);
 
     svg.append("g")
       .attr("transform", "translate(0," + height + ")") // Shift x-axis to bottom
@@ -51,8 +69,8 @@ function offchart() {
       .attr("class", "bar")
       .attr("x", 0)
       .attr("y", d => yScale(yValue(d)))
-      .attr("width", d => xScale(xValue(d))*0.06)
-      .attr("height", yScale.bandwidth()*0.5)
+      .attr("width", d => xScale(xValue(d)))
+      .attr("height", yScale.bandwidth()*0.8)
       .attr("fill", d => colorScale(d.route_id)) // Color by route_id
       .on("click", function (d) {
         dispatcher.call("selectionUpdated", this, [d]);
