@@ -21,6 +21,29 @@ h1, h2, h3 {
   height: 100%;
 }
 
+.point {
+	fill: rgb(153, 31, 31);
+	stroke: #69b3a2;
+	stroke-width: 3;
+  }
+  
+  .linePath {
+	fill: none;
+	stroke: black;
+	stroke-width: 1.5;
+  }
+  
+  .axisLabel {
+	fill: #475d7c;
+  }
+  
+  /* Style for selected marks (circles) */
+  circle.selected {
+	fill: pink;
+	stroke: red;
+	opacity: 5;
+  }
+
 /* Fork on GitHub ribbon via https://codepo8.github.io/css-fork-on-github-ribbon/# */  
 #forkongithub a{
 	background:#00F;
