@@ -24,13 +24,23 @@
       ("#scatterplot", data);
 
     let mbta_ons = onchart()
-      .x(d => d.total_ons)
-      .xLabel("total_ons")
+      .x(d => d.average_ons)
+      .xLabel("average_ons")
       .y(d => d.stop_name)
       .yLabel("stop_name")
       .yLabelOffset(150)
       .selectionDispatcher(d3.dispatch(dispatchString))
         ("#onchart", data);
+
+        
+    let mbta_offs = offchart()
+    .x(d => d.average_offs)
+    .xLabel("average_offs")
+    .y(d => d.stop_name)
+    .yLabel("stop_name")
+    .yLabelOffset(150)
+    .selectionDispatcher(d3.dispatch(dispatchString))
+      ("#onchart", data);
 
     // Create a ons bar graph chart
     //let on_bargraph = onchart()
