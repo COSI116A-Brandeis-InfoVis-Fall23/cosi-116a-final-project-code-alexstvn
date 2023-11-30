@@ -60,11 +60,6 @@
       //off_bargraph.updateSelection(selectedData);
 
     });
-
-
-
-
-
   });
 
 })());
