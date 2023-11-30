@@ -42,18 +42,6 @@
     .selectionDispatcher(d3.dispatch(dispatchString))
       ("#offchart", data);
 
-    // Create a ons bar graph chart
-    //let on_bargraph = onchart()
-    //  .selectionDispatcher(d3.dispatch(dispatchString))
-    //  ("#onchart", data);
-
-    // Create a off bar chart
-    //let off_bargraph = offchart()
-    //  .selectionDispatcher(d3.dispatch(dispatchString))
-    //  ("#sunchart", data);
-
-
-
     // When the sun chart selection is updated via brushing, 
     // tell the on and off graphs to update it's selection (linking)
     scatterplot_delays.selectionDispatcher().on(dispatchString, function(selectedData) {
