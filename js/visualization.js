@@ -25,6 +25,16 @@
     .selectionDispatcher(d3.dispatch(dispatchString))
       ("#scatterplot", data);
 
+      let mbta_ons = onchart()
+    .x(d => d.Year)
+    .xLabel("Year")
+    .y(d => d.Total_Ons)
+    .yLabel("total ons")
+    .yLabelOffset(150)
+
+    .selectionDispatcher(d3.dispatch(dispatchString))
+      ("#onchart", data);
+
     // Create a ons bar graph chart
     //let on_bargraph = onchart()
     //  .selectionDispatcher(d3.dispatch(dispatchString))
@@ -45,21 +55,12 @@
 
     });
 
-        // When the sun chart selection is updated via brushing, 
-    // tell the on and off graphs to update it's selection (linking)
-    //on_bargraph.selectionDispatcher().on(dispatchString, function(selectedData) {
-      //sunchart_mbta.updateSelection(selectedData);
+    mbta_ons.selectionDispatcher().on(dispatchString, function(selectedData) {
+      //on_bargraph.updateSelection(selectedData);
       //off_bargraph.updateSelection(selectedData);
 
-    //});
+    });
 
-        // When the sun chart selection is updated via brushing, 
-    // tell the on and off graphs to update it's selection (linking)
-    //off_bargraph.selectionDispatcher().on(dispatchString, function(selectedData) {
-      //on_bargraph.updateSelection(selectedData);
-      //sunchart.updateSelection(selectedData);
-
-    //});
 
 
 

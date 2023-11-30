@@ -29,6 +29,8 @@ function scatterplot() {
   // specified by the selector using the given data
   function chart(selector, data) {
     let svg = d3.select(selector)
+    .classed("scatterplot", true)
+
       .append("svg")
         .attr("preserveAspectRatio", "xMidYMid meet")
         .attr("viewBox", [0, 0, width + margin.left + margin.right, height + margin.top + margin.bottom].join(' '))

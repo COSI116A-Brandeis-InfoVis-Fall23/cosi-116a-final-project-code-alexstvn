@@ -15,6 +15,7 @@ const svg = d3.select("#onchart")
   .append("g")
   .attr("transform", `translate(${margin.left},${margin.top})`);
 
+<<<<<<< HEAD
 // X-axis scale
 const xScale = d3.scaleLinear().range([0, width]);
 
@@ -23,6 +24,30 @@ const yScale = d3.scaleBand().range([0, height]).padding(0.1);
 
 // X-axis
 const xAxis = d3.axisBottom(xScale);
+=======
+    function chart(selector,data){
+      let svg = d3.select(selector)
+    .classed("onchart", true)
+    .append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform","translate(" + margin.left + "," + margin.top + ")");
+
+    //modeled after tutorial https://d3-graph-gallery.com/graph/barplot_basic.html
+
+    // X axis
+    var x = d3.scaleOrdinal()
+      .range([0, width])
+      .domain(data.map(function (d) { return d.Stop_Name; }))
+      .padding(0.2);
+    svg.append("g")
+      .attr("transform", "translate(0," + height + ")")
+      .call(d3.axisBottom(x))
+      .selectAll("text")
+      .attr("transform", "translate(-10,0)rotate(-45)")
+      .style("text-anchor", "end");
+>>>>>>> 12d288f (changes to onchart - in progress.)
 
 // Y-axis
 const yAxis = d3.axisLeft(yScale);
@@ -80,3 +105,24 @@ d3.csv("../data/MBTA_Data.csv").then(function (data) {
     .attr("fill", "blue"); // Set the fill color to blue
 });
 
+<<<<<<< HEAD
+=======
+    // Bars
+    svg.selectAll("mybar")
+      .data(data)
+      .enter()
+      .append("rect")
+      .attr("x", function (d) { return x(d.Stop_Name); })
+      .attr("y", function (d) { return y(d.Total_Ons); })
+      .attr("width", x.bandwidth())
+      .attr("height", function (d) { return height - y(d.Total_Ons); })
+      .attr("fill", "#69b3a2");
+      return chart;
+    }
+  
+
+  
+  
+    return chart;
+}
+>>>>>>> 12d288f (changes to onchart - in progress.)
