@@ -23,9 +23,7 @@ function onchart(selector, data) {
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
     .append("g")
-    .attr("transform",
-      "translate(" + margin.left + "," + margin.top + ")");
-
+    .attr("transform","translate(" + margin.left + "," + margin.top + ")");
 
   //modeled after tutorial https://d3-graph-gallery.com/graph/barplot_basic.html
   // Parse the Data
@@ -60,9 +58,6 @@ function onchart(selector, data) {
       .attr("width", x.bandwidth())
       .attr("height", function (d) { return height - y(d.Value); })
       .attr("fill", "#69b3a2");
-
-    return chart;
-
-
   })
+    return chart;
 }
