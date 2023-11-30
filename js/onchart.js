@@ -5,53 +5,51 @@
 // Chart configuration
 //STOP HERE
 function onchart() {
-
-  
-  const margin = { top: 60, right: 150, bottom: 40, left: 150 };
+  const margin = { top: 60, left: 50, right: 30, bottom: 20 };
   let width = 800 - margin.left - margin.right,
-  height = 380 - margin.top - margin.bottom,
-  xValue = d => d[0],
-  yValue = d => d[1],
-  xLabelText = "",
-  yLabelText = "",
-  yLabelOffsetPx = 0,
-  xScale = d3.scaleBand(),
-  yScale = d3.scaleLinear(),
-  dispatcher,
-  selectableElements = d3.select(null);
-  
+      height = 380 - margin.top - margin.bottom,
+      xValue = d => d[0],
+      yValue = d => d[1],
+      xLabelText = "",
+      yLabelText = "",
+      xLabelOffsetPx = 0,
+      xScale = d3.scaleLinear(), // Horizontal scale
+      yScale = d3.scaleBand(), // Vertical scale
+      dispatcher,
+      selectableElements = d3.select(null);
+
   function chart(selector, data) {
     let svg = d3.select(selector)
-    .append("svg")
-    .attr("preserveAspectRatio", "xMidYMid meet")
-    .attr("viewBox", [0, 0, width + margin.left + margin.right, height + margin.top + margin.bottom].join(' '))
-    .classed("svg-content", true)
-    .append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-    
-    xScale.domain(data.map(d => xValue(d))).range([0, width]).padding(0.1);
-    yScale.domain([0, d3.max(data, d => yValue(d))]).range([height, 0]);
-    
+      .append("svg")
+      .attr("preserveAspectRatio", "xMidYMid meet")
+      .attr("viewBox", [0, 0, width + margin.left + margin.right, height + margin.top + margin.bottom].join(' '))
+      .classed("svg-content", true)
+      .append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    yScale.domain(data.map(d => yValue(d))).range([0, height]).padding(0.1);
+    xScale.domain([0, d3.max(data, d => xValue(d))]).range([0, width]);
+
     svg.append("g")
-    .attr("transform", "translate(0," + (height) + ")")
-    .call(d3.axisBottom(xScale));
-    
+      .call(d3.axisLeft(yScale)); // Vertical axis
+
     svg.append("g")
-    .call(d3.axisLeft(yScale));
-    
+      .attr("transform", "translate(0," + height + ")") // Shift x-axis to bottom
+      .call(d3.axisBottom(xScale)); // Horizontal axis
+
     svg.selectAll(".bar")
-    .data(data)
-    .enter().append("rect")
-    .attr("class", "bar")
-    .attr("x", d => xScale(xValue(d)))
-    .attr("y", d => yScale(yValue(d)))
-    .attr("width", xScale.bandwidth())
-    .attr("height", d => height - yScale(yValue(d)))
-    .attr("fill", "steelblue")
-    .on("click", function(d) {
-      dispatcher.call("selectionUpdated", this, [d]);
-    });
-    
+      .data(data)
+      .enter().append("rect")
+      .attr("class", "bar")
+      .attr("x", 0)
+      .attr("y", d => yScale(yValue(d)))
+      .attr("width", d => xScale(xValue(d)))
+      .attr("height", yScale.bandwidth())
+      .attr("fill", "steelblue")
+      .on("click", function(d) {
+        dispatcher.call("selectionUpdated", this, [d]);
+      });
+
     return chart;
   }
   

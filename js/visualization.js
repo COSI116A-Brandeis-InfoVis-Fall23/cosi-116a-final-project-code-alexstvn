@@ -24,10 +24,10 @@
       ("#scatterplot", data);
 
     let mbta_ons = onchart()
-      .x(d => d.stop_name)
-      .xLabel("stop_name")
-      .y(d => d.total_ons)
-      .yLabel("Total Ons")
+      .x(d => d.total_ons)
+      .xLabel("total_ons")
+      .y(d => d.stop_name)
+      .yLabel("stop_name")
       .yLabelOffset(150)
       .selectionDispatcher(d3.dispatch(dispatchString))
         ("#onchart", data);
