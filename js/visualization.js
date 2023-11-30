@@ -29,8 +29,9 @@
       'Green': 'green',
       'Blue':'blue',
     };
-    let filteredData = data.filter(d => d.route_id === 'Blue'); // TRY USING SELECTOR WITH THIS
-    // let filteredData=data;
+    //IF USING SELECTOR: use filtered data + see if there's a way to have the changes update without refreshing the page
+    // let filteredData = data.filter(d => d.route_id === 'Blue'); // TRY USING SELECTOR WITH THIS
+    let filteredData=data;
     let mbta_ons = onchart()
       .x(d => d.average_ons)
       .xLabel("average_ons")
