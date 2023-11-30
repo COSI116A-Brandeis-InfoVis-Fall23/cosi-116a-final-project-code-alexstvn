@@ -6,8 +6,8 @@
 function onchart() {
   let colorScale;
   const margin = { top: 60, left: 65, right: 30, bottom: 20 };
-  let width = 800 - margin.left - margin.right,
-    height = 380 - margin.top - margin.bottom,
+  let width = 400 - margin.left - margin.right,
+    height = 600 - margin.top - margin.bottom,
     xValue = d => d[0],
     yValue = d => d[1],
     xLabelText = "",

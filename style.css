@@ -21,6 +21,16 @@ h1, h2, h3 {
   height: 100%;
 }
 
+.barchart-holder {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}  
+
+.barchart-holder div {
+	width: 50%;
+}
+
 .point {
 	fill: rgb(255, 255, 255);
 	stroke: #69b3a2;
