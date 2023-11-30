@@ -10,11 +10,11 @@ function scatterplot() {
   let margin = {
     top: 60,
     left: 50,
-    right: 30,
-    bottom: 20
+    right: 50,
+    bottom: 40
   },
   width = 500 - margin.left - margin.right,
-  height = 500 - margin.top - margin.bottom,
+  height = 300 - margin.top - margin.bottom,
   xValue = d => d[0],
   yValue = d => d[1],
   xLabelText = "",
@@ -60,15 +60,18 @@ function scatterplot() {
     // X axis label
     xAxis.append("text")        
       .attr("class", "axisLabel")
-      .attr("transform", "translate(" + (width - 50) + ",-10)")
+      .attr("transform", "translate(" + (width - 200) + ",30)")
       .text(xLabelText);
     
     let yAxis = svg.append("g")
       .call(d3.axisLeft(yScale))
-    .append("text")
+    .append("g")
       .attr("class", "axisLabel")
-      .attr("transform", "translate(" + yLabelOffsetPx + ", -12)")
-      .text(yLabelText);
+      .attr("transform", "translate(" + "-30" + ", 40)")
+      .append("text")
+      .attr("class", "axisLabel")
+      .attr("transform", "rotate(-90)")
+      .text(yLabelText)
     
     // Add the points
     let points = svg.append("g")
@@ -83,7 +86,7 @@ function scatterplot() {
       .merge(points)
         .attr("cx", X)
         .attr("cy", Y)
-        .attr("r", 5);
+        .attr("r", 3);
     
     selectableElements = points;
     
