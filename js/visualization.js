@@ -15,25 +15,22 @@
 
     // Create a sun chart
     let scatterplot_delays = scatterplot()
-    .x(d => d.Year)
+      .x(d => d.Year)
       .xLabel("Year")
       .y(d => d.Number_Service_Days)
       .yLabel("Number Service Days")
       .yLabelOffset(150)
-    // .z(d => d.Total_Flow) - REMOVED TO SHOW AXIS
-
-    .selectionDispatcher(d3.dispatch(dispatchString))
+      .selectionDispatcher(d3.dispatch(dispatchString))
       ("#scatterplot", data);
 
-      let mbta_ons = onchart()
-    .x(d => d.Year)
-    .xLabel("Year")
-    .y(d => d.Total_Ons)
-    .yLabel("total ons")
-    .yLabelOffset(150)
-
-    .selectionDispatcher(d3.dispatch(dispatchString))
-      ("#onchart", data);
+    let mbta_ons = onchart()
+      .x(d => d.Year)
+      .xLabel("Year")
+      .y(d => d.Total_Ons)
+      .yLabel("total ons")
+      .yLabelOffset(150)
+      .selectionDispatcher(d3.dispatch(dispatchString))
+        ("#onchart", data);
 
     // Create a ons bar graph chart
     //let on_bargraph = onchart()
