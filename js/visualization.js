@@ -20,7 +20,7 @@
     .y(d => d.Number_Service_Days)
     .yLabel("Number Service Days")
     .yLabelOffset(150)
-    .z(d => d.Total_Flow)
+    // .z(d => d.Total_Flow)
 
     .selectionDispatcher(d3.dispatch(dispatchString))
       ("#scatterplot", data);
