@@ -1,4 +1,4 @@
-Season,Route Id,Route Name,Day Type Name,Time Period Id,Time Period Name,Stop Name,Total Ons,Total Offs,Number Service Days,Average Ons,Average Offs,Average Flow,Year
+Season,Route_Id,Route_Name,Day_Type_Name,Time_Period_Id,Time_Period_Name,Stop_Name,Total_Ons,Total_Offs,Number_Service_Days,Average_Ons,Average_Offs,Average_Flow,Year
 Fall 2019,Green,Green Line,Weekday,1,Very Early Morning,Allston Street,0,17,77,0,0,4,2019
 Fall 2019,Green,Green Line,Weekday,1,Very Early Morning,Arlington,2675,8021,77,35,104,381,2019
 Fall 2019,Green,Green Line,Weekday,1,Very Early Morning,Babcock Street,0,151,77,0,2,8,2019
