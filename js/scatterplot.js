@@ -30,60 +30,60 @@ function scatterplot() {
   // specified by the selector using the given data
   function chart(selector, data) {
     let svg = d3.select(selector)
-    .append("svg")
-    .attr("preserveAspectRatio", "xMidYMid meet")
-    .attr("viewBox", [0, 0, width + margin.left + margin.right, height + margin.top + margin.bottom].join(' '))
-    .classed("svg-content", true);
+      .append("svg")
+        .attr("preserveAspectRatio", "xMidYMid meet")
+        .attr("viewBox", [0, 0, width + margin.left + margin.right, height + margin.top + margin.bottom].join(' '))
+        .classed("svg-content", true);
     
     svg = svg.append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
     
     //Define scales
     xScale
-    .domain([
-      d3.min(data, d => xValue(d)),
-      d3.max(data, d => xValue(d))
-    ])
-    .rangeRound([0, width]);
+      .domain([
+        d3.min(data, d => xValue(d)),
+        d3.max(data, d => xValue(d))
+      ])
+      .rangeRound([0, width]);
     
     yScale
-    .domain([
-      d3.min(data, d => yValue(d)),
-      d3.max(data, d => yValue(d))
-    ])
-    .rangeRound([height, 0]);
+      .domain([
+        d3.min(data, d => yValue(d)),
+        d3.max(data, d => yValue(d))
+      ])
+      .rangeRound([height, 0]);
     
     let xAxis = svg.append("g")
-    .attr("transform", "translate(0," + (height) + ")")
-    .call(d3.axisBottom(xScale));
+      .attr("transform", "translate(0," + (height) + ")")
+      .call(d3.axisBottom(xScale));
     
     // X axis label
     xAxis.append("text")        
-    .attr("class", "axisLabel")
-    .attr("transform", "translate(" + (width - 50) + ",-10)")
-    .text(xLabelText);
+      .attr("class", "axisLabel")
+      .attr("transform", "translate(" + (width - 50) + ",-10)")
+      .text(xLabelText);
     
     let yAxis = svg.append("g")
-    .call(d3.axisLeft(yScale))
+      .call(d3.axisLeft(yScale))
     .append("text")
-    .attr("class", "axisLabel")
-    .attr("transform", "translate(" + yLabelOffsetPx + ", -12)")
-    .text(yLabelText);
+      .attr("class", "axisLabel")
+      .attr("transform", "translate(" + yLabelOffsetPx + ", -12)")
+      .text(yLabelText);
     
     // Add the points
     let points = svg.append("g")
-    .selectAll(".scatterPoint")
-    .data(data);
+      .selectAll(".scatterPoint")
+        .data(data);
     
     points.exit().remove();
     
     points = points.enter()
-    .append("circle")
-    .attr("class", "point scatterPoint")
-    .merge(points)
-    .attr("cx", X)
-    .attr("cy", Y)
-    .attr("r", 5);
+      .append("circle")
+        .attr("class", "point scatterPoint")
+      .merge(points)
+        .attr("cx", X)
+        .attr("cy", Y)
+        .attr("r", 5);
     
     selectableElements = points;
     
@@ -92,12 +92,12 @@ function scatterplot() {
     // Highlight points when brushed
     function brush(g) {
       const brush = d3.brush() // Create a 2D interactive brush
-      .on("start brush", highlight) // When the brush starts/continues do...
-      .on("end", brushEnd) // When the brush ends do...
-      .extent([
-        [-margin.left, -margin.bottom],
-        [width + margin.right, height + margin.top]
-      ]);
+        .on("start brush", highlight) // When the brush starts/continues do...
+        .on("end", brushEnd) // When the brush ends do...
+        .extent([
+          [-margin.left, -margin.bottom],
+          [width + margin.right, height + margin.top]
+        ]);
       
       ourBrush = brush;
       
