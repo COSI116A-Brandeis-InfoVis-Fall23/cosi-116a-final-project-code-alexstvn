@@ -15,18 +15,18 @@
 
     // Create a sun chart
     let scatterplot_delays = scatterplot()
-      .x(d => d.Year)
-      .xLabel("Year")
-      .y(d => d.Number_Service_Days)
-      .yLabel("Number Service Days")
+      .x(d => d.year)
+      .xLabel("year")
+      .y(d => d.number_service_days)
+      .yLabel("number_service_days")
       .yLabelOffset(150)
       .selectionDispatcher(d3.dispatch(dispatchString))
       ("#scatterplot", data);
 
     let mbta_ons = onchart()
-      .x(d => d.Year)
-      .xLabel("Year")
-      .y(d => d.Total_Ons)
+      .x(d => d.stop_name)
+      .xLabel("stop_name")
+      .y(d => d.total_ons)
       .yLabel("Total Ons")
       .yLabelOffset(150)
       .selectionDispatcher(d3.dispatch(dispatchString))

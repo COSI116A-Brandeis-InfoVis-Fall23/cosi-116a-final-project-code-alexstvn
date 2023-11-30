@@ -14,7 +14,7 @@ df['year'] = df['season'].str.split().str[-1].astype(int) # creating a year colu
 df['time_period_id'] = df['time_period_id'].str.extract(r'(\d+)').astype(int) # only obtaining integer for id
 
 #RE-CAPITALIZING COLUMN NAMES
-df.columns = [col.title() for col in df.columns]
+# df.columns = [col.title() for col in df.columns]
 
 #EXPORTING DATAFRAME
 directory = "data"

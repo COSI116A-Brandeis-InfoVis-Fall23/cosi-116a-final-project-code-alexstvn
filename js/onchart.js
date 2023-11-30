@@ -3,83 +3,133 @@
 // Immediately Invoked Function Expression to limit access to our 
 // variables and prevent 
 // Chart configuration
+//STOP HERE
 function onchart() {
 
+  
   const margin = { top: 60, right: 150, bottom: 40, left: 150 };
-  let width = 800 - margin.left - margin.right;
-  let height = 380 - margin.top - margin.bottom;
+  let width = 800 - margin.left - margin.right,
+  height = 380 - margin.top - margin.bottom,
+  xValue = d => d[0],
+  yValue = d => d[1],
+  xLabelText = "",
+  yLabelText = "",
+  yLabelOffsetPx = 0,
+  xScale = d3.scaleBand(),
+  yScale = d3.scaleLinear(),
+  dispatcher,
+  selectableElements = d3.select(null);
   
-  // SVG container
-  const svg = d3.select("#onchart")
+  function chart(selector, data) {
+    let svg = d3.select(selector)
     .append("svg")
-      .attr("width", width + margin.left + margin.right)
-      .attr("height", height + margin.top + margin.bottom)
+    .attr("preserveAspectRatio", "xMidYMid meet")
+    .attr("viewBox", [0, 0, width + margin.left + margin.right, height + margin.top + margin.bottom].join(' '))
+    .classed("svg-content", true)
     .append("g")
-    .attr("transform", `translate(${margin.left},${margin.top})`);
-  
-  // X-axis scale
-  const xScale = d3.scaleLinear().range([0, width]);
-  
-  // Y-axis scale
-  const yScale = d3.scaleBand().range([0, height]).padding(0.1);
-  
-  // X-axis
-  const xAxis = d3.axisBottom(xScale);
-  
-  // Y-axis
-  const yAxis = d3.axisLeft(yScale);
-  
-  // Append X-axis to the SVG
-  svg.append("g")
-    .attr("transform", `translate(0,${height})`)
-    .call(xAxis);
-  
-  // Append Y-axis to the SVG
-  svg.append("g")
-    .call(yAxis);
-  
-  // Add chart title
-  svg.append("text")
-    .attr("x", width / 2)
-    .attr("y", -margin.top / 2)
-    .attr("text-anchor", "middle")
-    .style("font-size", "16px")
-    .style("font-weight", "bold")
-    .text("Stops Bar Chart - Average On");
-  
-  svg.append("text")
-    .attr("x", width / 2)
-    .attr("y", height + margin.bottom - 2)
-    .attr("text-anchor", "middle")
-    .style("font-size", "14px")
-    .text("Number Of Riders");
-  
-  svg.append("text")
-    .attr("transform", "rotate(-90)")
-    .attr("y", -margin.left + 10)
-    .attr("x", -height / 2)
-    .attr("dy", "1em")
-    .style("text-anchor", "middle")
-    .style("font-size", "14px")
-    .text("Stop Names");
-  
-  // Load data
-  d3.csv("../data/MBTA_Data.csv", function (data) {
-    console.log(data);
-  
-    // Update scale domains with loaded data
-    xScale.domain([0, d3.max(data, d => +d.average_ons)]);
-    yScale.domain(data.map(d => d.stop_name));
-  
-    // Create bars with blue color
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    
+    xScale.domain(data.map(d => xValue(d))).range([0, width]).padding(0.1);
+    yScale.domain([0, d3.max(data, d => yValue(d))]).range([height, 0]);
+    
+    svg.append("g")
+    .attr("transform", "translate(0," + (height) + ")")
+    .call(d3.axisBottom(xScale));
+    
+    svg.append("g")
+    .call(d3.axisLeft(yScale));
+    
     svg.selectAll(".bar")
-      .data(data)
-      .enter().append("rect")
-      .attr("class", "bar")
-      .attr("y", d => yScale(d.stop_name))
-      .attr("width", d => xScale(+d.average_ons))
-      .attr("height", yScale.bandwidth())
-      .attr("fill", "blue"); // Set the fill color to blue
-  });
+    .data(data)
+    .enter().append("rect")
+    .attr("class", "bar")
+    .attr("x", d => xScale(xValue(d)))
+    .attr("y", d => yScale(yValue(d)))
+    .attr("width", xScale.bandwidth())
+    .attr("height", d => height - yScale(yValue(d)))
+    .attr("fill", "steelblue")
+    .on("click", function(d) {
+      dispatcher.call("selectionUpdated", this, [d]);
+    });
+    
+    return chart;
+  }
   
+  // The x-accessor from the datum
+  function X(d) {
+    return xScale(xValue(d));
+  }
+  
+  // The y-accessor from the datum
+  function Y(d) {
+    return yScale(yValue(d));
+  }
+  
+  chart.margin = function (_) {
+    if (!arguments.length) return margin;
+    margin = _;
+    return chart;
+  };
+  
+  chart.width = function (_) {
+    if (!arguments.length) return width;
+    width = _;
+    return chart;
+  };
+  
+  chart.height = function (_) {
+    if (!arguments.length) return height;
+    height = _;
+    return chart;
+  };
+  
+  chart.x = function (_) {
+    if (!arguments.length) return xValue;
+    xValue = _;
+    return chart;
+  };
+  
+  chart.y = function (_) {
+    if (!arguments.length) return yValue;
+    yValue = _;
+    return chart;
+  };
+  
+  chart.xLabel = function (_) {
+    if (!arguments.length) return xLabelText;
+    xLabelText = _;
+    return chart;
+  };
+  
+  chart.yLabel = function (_) {
+    if (!arguments.length) return yLabelText;
+    yLabelText = _;
+    return chart;
+  };
+  
+  chart.yLabelOffset = function (_) {
+    if (!arguments.length) return yLabelOffsetPx;
+    yLabelOffsetPx = _;
+    return chart;
+  };
+  
+  // Gets or sets the dispatcher we use for selection events
+  chart.selectionDispatcher = function (_) {
+    if (!arguments.length) return dispatcher;
+    dispatcher = _;
+    return chart;
+  };
+  
+  // Given selected data from another visualization 
+  // select the relevant elements here (linking)
+  chart.updateSelection = function (selectedData) {
+    if (!arguments.length) return;
+    
+    // Select an element if its datum was selected
+    selectableElements.classed("selected", d => {
+      return selectedData.includes(d)
+    });
+  };
+  
+  return chart;
 }
