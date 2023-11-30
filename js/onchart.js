@@ -1,63 +1,82 @@
-/* global D3 */
+// Immediately Invoked Function Expression to limit access to our 
+// variables and prevent 
+// Immediately Invoked Function Expression to limit access to our 
+// variables and prevent 
+// Chart configuration
+const margin = { top: 60, right: 150, bottom: 40, left: 150 };
+let width = 800 - margin.left - margin.right;
+let height = 380 - margin.top - margin.bottom;
 
-// Initialize a bar chart. Modeled after Mike Bostock's
-// Reusable Chart framework https://bost.ocks.org/mike/chart/
-function onchart(selector, data) {
-  // Based on Mike Bostock's margin convention
-  // https://bl.ocks.org/mbostock/3019563
-  let margin = {
-    top: 60,
-    left: 50,
-    right: 30,
-    bottom: 35
-  },
-    width = 500 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom,
-    ourBrush = null,
-    selectableElements = d3.select(null),
-    dispatcher;
+// SVG container
+const svg = d3.select("#onchart")
+  .append("svg")
+  .attr("width", width + margin.left + margin.right)
+  .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+  .attr("transform", `translate(${margin.left},${margin.top})`);
 
-  let chart = d3.select(selector)
-    .classed("onchart", true)
-    .append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
-    .append("g")
-    .attr("transform","translate(" + margin.left + "," + margin.top + ")");
+// X-axis scale
+const xScale = d3.scaleLinear().range([0, width]);
 
-  //modeled after tutorial https://d3-graph-gallery.com/graph/barplot_basic.html
-  // Parse the Data
-  d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/7_OneCatOneNum_header.csv", function (data) {
+// Y-axis scale
+const yScale = d3.scaleBand().range([0, height]).padding(0.1);
 
-    // X axis
-    var x = d3.scaleBand()
-      .range([0, width])
-      .domain(data.map(function (d) { return d.Country; }))
-      .padding(0.2);
-    svg.append("g")
-      .attr("transform", "translate(0," + height + ")")
-      .call(d3.axisBottom(x))
-      .selectAll("text")
-      .attr("transform", "translate(-10,0)rotate(-45)")
-      .style("text-anchor", "end");
+// X-axis
+const xAxis = d3.axisBottom(xScale);
 
-    // Add Y axis
-    var y = d3.scaleLinear()
-      .domain([0, 13000])
-      .range([height, 0]);
-    svg.append("g")
-      .call(d3.axisLeft(y));
+// Y-axis
+const yAxis = d3.axisLeft(yScale);
 
-    // Bars
-    svg.selectAll("mybar")
-      .data(data)
-      .enter()
-      .append("rect")
-      .attr("x", function (d) { return x(d.Country); })
-      .attr("y", function (d) { return y(d.Value); })
-      .attr("width", x.bandwidth())
-      .attr("height", function (d) { return height - y(d.Value); })
-      .attr("fill", "#69b3a2");
-  })
-    return chart;
-}
+// Append X-axis to the SVG
+svg.append("g")
+  .attr("transform", `translate(0,${height})`)
+  .call(xAxis);
+
+// Append Y-axis to the SVG
+svg.append("g")
+  .call(yAxis);
+
+// Add chart title
+svg.append("text")
+  .attr("x", width / 2)
+  .attr("y", -margin.top / 2)
+  .attr("text-anchor", "middle")
+  .style("font-size", "16px")
+  .style("font-weight", "bold")
+  .text("Stops Bar Chart - Average On");
+
+svg.append("text")
+  .attr("x", width / 2)
+  .attr("y", height + margin.bottom - 2)
+  .attr("text-anchor", "middle")
+  .style("font-size", "14px")
+  .text("Number Of Riders");
+
+svg.append("text")
+  .attr("transform", "rotate(-90)")
+  .attr("y", -margin.left + 10)
+  .attr("x", -height / 2)
+  .attr("dy", "1em")
+  .style("text-anchor", "middle")
+  .style("font-size", "14px")
+  .text("Stop Names");
+
+// Load data
+d3.csv("../data/MBTA_Data.csv").then(function (data) {
+  console.log(data);
+
+  // Update scale domains with loaded data
+  xScale.domain([0, d3.max(data, d => +d.average_ons)]);
+  yScale.domain(data.map(d => d.stop_name));
+
+  // Create bars with blue color
+  svg.selectAll(".bar")
+    .data(data)
+    .enter().append("rect")
+    .attr("class", "bar")
+    .attr("y", d => yScale(d.stop_name))
+    .attr("width", d => xScale(+d.average_ons))
+    .attr("height", yScale.bandwidth())
+    .attr("fill", "blue"); // Set the fill color to blue
+});
+
