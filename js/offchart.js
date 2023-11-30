@@ -78,9 +78,6 @@ function offchart() {
 
       svg.call(brush);
 
-      return chart;
-    }
-
       function brush(g) {
         const brush = d3.brush() // Create a 2D interactive brush
           .on("start brush", highlight) // When the brush starts/continues do...
@@ -116,6 +113,11 @@ function offchart() {
           }
         }
       }
+
+      return chart;
+    }
+
+      
   
       
 
