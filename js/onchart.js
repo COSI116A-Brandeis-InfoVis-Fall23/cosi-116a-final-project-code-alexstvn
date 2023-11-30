@@ -3,7 +3,6 @@
 // Immediately Invoked Function Expression to limit access to our 
 // variables and prevent 
 // Chart configuration
-//STOP HERE
 function onchart() {
   let colorScale;
   const margin = { top: 60, left: 50, right: 30, bottom: 20 };
