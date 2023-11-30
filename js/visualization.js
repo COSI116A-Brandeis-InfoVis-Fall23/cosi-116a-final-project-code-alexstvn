@@ -5,7 +5,7 @@
   // Load the data from a json file (you can make these using
   // JSON.stringify(YOUR_OBJECT), just remove the surrounding "")
   
-  d3.json("../data/MBTA_Data.json", (data) => {
+  d3.csv("../data/MBTA_Data.csv", (data) => {
     //d3.json({a: 9, b: 20, c:30, d:8, e:12}, (data) => { //dummy data
 
     
@@ -16,9 +16,9 @@
     // Create a sun chart
     let scatterplot_delays = scatterplot()
     .x(d => d.Year)
-    .xLabel("year")
+    .xLabel("Year")
     .y(d => d.Number_Service_Days)
-    .yLabel("number service days")
+    .yLabel("Number Service Days")
     .yLabelOffset(150)
     .z(d => d.Total_Flow)
 
