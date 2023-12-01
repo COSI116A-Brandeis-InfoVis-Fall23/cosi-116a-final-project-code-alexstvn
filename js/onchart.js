@@ -27,7 +27,7 @@ function onchart() {
       .append("g")
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    
+
     //LABELS ON Y-AXIS FORMATTING
     yScale.domain(data.map(d => yValue(d))).range([0, height]).paddingInner(0.1).paddingOuter(0.1);
     svg.append("g")
@@ -44,7 +44,7 @@ function onchart() {
 
     // Get the maximum sum of x-values across the groups
     const maxSumXValues = d3.max(nestedData, d => d.value);
-    xScale.domain([0, maxSumXValues/20]).range([0, width]); // this adjusts the scale to view all the bars
+    xScale.domain([0, maxSumXValues / 20]).range([0, width]); // this adjusts the scale to view all the bars
 
     svg.append("g")
       .attr("transform", "translate(0," + height + ")") // Shift x-axis to bottom
@@ -72,49 +72,49 @@ function onchart() {
       .attr("x", 0)
       .attr("y", d => yScale(yValue(d)))
       .attr("width", d => xScale(xValue(d)))
-      .attr("height", yScale.bandwidth()*0.8)
+      .attr("height", yScale.bandwidth() * 0.8)
       .attr("fill", d => colorScale(d.route_id)) // Color by route_id
       .on("click", function (d) {
         dispatcher.call("selectionUpdated", this, [d]);
       });
 
-      function brush(g) {
-        const brush = d3.brush() // Create a 2D interactive brush
-          .on("start brush", highlight) // When the brush starts/continues do...
-          .on("end", brushEnd) // When the brush ends do...
-          .extent([
-            [-margin.left, -margin.bottom],
-            [width + margin.right, height + margin.top]
-          ]);
-  
-        ourBrush = brush;
-  
-        g.call(brush); // Adds the brush to this element
-  
-        // Highlight the selected rectangles (bars)
-        function highlight() {
-          if (d3.event.selection === null) return;
-          const [
-            [x0, y0],
-            [x1, y1]
-          ] = d3.event.selection;
-  
-          svg.selectAll(".bar")
-            .classed("selected", d =>
-              x0 <= X(d) && X(d) <= x1 && y0 <= Y(d) && Y(d) <= y1
-            );
-  
-          dispatcher.call("selectionUpdated", this, svg.selectAll(".bar.selected").data());
-        }
-  
-        function brushEnd() {
-          if (d3.event.sourceEvent.type !== "end") {
-            d3.select(this).call(brush.move, null);
-          }
+    function brush(g) {
+      const brush = d3.brush() // Create a 2D interactive brush
+        .on("start brush", highlight) // When the brush starts/continues do...
+        .on("end", brushEnd) // When the brush ends do...
+        .extent([
+          [-margin.left, -margin.bottom],
+          [width + margin.right, height + margin.top]
+        ]);
+
+      ourBrush = brush;
+
+      g.call(brush); // Adds the brush to this element
+
+      // Highlight the selected rectangles (bars)
+      function highlight() {
+        if (d3.event.selection === null) return;
+        const [
+          [x0, y0],
+          [x1, y1]
+        ] = d3.event.selection;
+
+        svg.selectAll(".bar")
+          .classed("selected", d =>
+            x0 <= X(d) && X(d) <= x1 && y0 <= Y(d) && Y(d) <= y1
+          );
+
+        dispatcher.call("selectionUpdated", this, svg.selectAll(".bar.selected").data());
+      }
+
+      function brushEnd() {
+        if (d3.event.sourceEvent.type !== "end") {
+          d3.select(this).call(brush.move, null);
         }
       }
-  
-      svg.call(brush);
+    }
+
+    svg.call(brush);
 
     return chart;
   }
@@ -195,7 +195,7 @@ function onchart() {
     });
   };
 
-  chart.colorScale = function(scale) {
+  chart.colorScale = function (scale) {
     colorScale = scale;
     return chart;
   };
