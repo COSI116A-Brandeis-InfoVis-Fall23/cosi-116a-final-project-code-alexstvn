@@ -12,6 +12,9 @@
     // https://github.com/d3/d3-dispatch
     const dispatchString = "selectionUpdated";
 
+    // Extract all unique route IDs from your data
+    const allRouteIDs = Array.from(new Set(data.map(d => d.route_id)));
+
     // Create a scatterplot chart
     let scatterplot_delays = scatterplot()
       .x(d => d.year)
@@ -28,8 +31,8 @@
       'Green': 'green',
       'Blue': 'blue',
     };
-    //IF USING SELECTOR: use filtered data + see if there's a way to have the changes update without refreshing the page
-    // let filteredData = data.filter(d => d.route_id === 'Blue'); // TRY USING SELECTOR WITH THIS
+
+    // Use filtered data
     let filteredData = data;
     let mbta_ons = onchart()
       .x(d => d.average_ons)
@@ -39,7 +42,7 @@
       .yLabelOffset(150)
       .selectionDispatcher(d3.dispatch(dispatchString))
       .colorScale(d3.scaleOrdinal()
-        .domain(allRouteIDs)
+        .domain(allRouteIDs) // Use allRouteIDs here
         .range(filteredData.map(d => routeColors[d.route_id])))
       ("#onchart", filteredData);
 
@@ -51,7 +54,7 @@
       .yLabelOffset(150)
       .selectionDispatcher(d3.dispatch(dispatchString))
       .colorScale(d3.scaleOrdinal()
-        .domain(data.map(d => d.route_id))
+        .domain(allRouteIDs) // Use allRouteIDs here
         .range(data.map(d => routeColors[d.route_id])))
       ("#offchart", data);
 
