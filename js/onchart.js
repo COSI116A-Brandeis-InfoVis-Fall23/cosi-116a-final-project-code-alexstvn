@@ -59,7 +59,7 @@ function onchart() {
       .attr("x", (width + margin.left + margin.right) / 2)
       .attr("y", -margin.top / 2)
       .attr("text-anchor", "middle")
-      .style("font-size", "18px")
+      .style("font-size", "13px")
       .style("text-decoration", "bold")
       .style("fill", "black")
       .text(title);
