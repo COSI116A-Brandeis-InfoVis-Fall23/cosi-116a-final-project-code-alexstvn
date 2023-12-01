@@ -18,7 +18,7 @@ function onchart() {
     dispatcher,
     selectableElements = d3.select(null);
 
-  function chart(selector, data) {
+  function chart(selector, data, title) {
     let svg = d3.select(selector)
       .append("svg")
       .attr("preserveAspectRatio", "xMidYMid meet")
@@ -53,6 +53,16 @@ function onchart() {
       .attr("transform", "rotate(-45)")
       .style("text-anchor", "end")
       .style("font-size", "5px");
+
+    // TITLE
+    svg.append("text")
+      .attr("x", (width + margin.left + margin.right) / 2)
+      .attr("y", -margin.top / 2)
+      .attr("text-anchor", "middle")
+      .style("font-size", "18px")
+      .style("text-decoration", "bold")
+      .style("fill", "black")
+      .text(title);
 
     // BARS ON GRAPH FORMATTING
     svg.selectAll(".bar")

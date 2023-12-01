@@ -31,6 +31,7 @@
     };
     //IF USING SELECTOR: use filtered data + see if there's a way to have the changes update without refreshing the page
     // let filteredData = data.filter(d => d.route_id === 'Blue'); // TRY USING SELECTOR WITH THIS
+    const allRouteIDs = data.map(d => d.route_id)
     let filteredData=data;
     let mbta_ons = onchart()
       .x(d => d.average_ons)
@@ -40,9 +41,9 @@
       .yLabelOffset(150)
       .selectionDispatcher(d3.dispatch(dispatchString))
       .colorScale(d3.scaleOrdinal()
-        .domain(filteredData.map(d => d.route_id))
+        .domain(allRouteIDs)
         .range(filteredData.map(d => routeColors[d.route_id])))
-      ("#onchart", filteredData);
+      ("#onchart", filteredData, "All-time Average On's for Green Line");
         
     let mbta_offs = offchart()
     .x(d => d.average_offs)
