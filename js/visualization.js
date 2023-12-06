@@ -15,6 +15,8 @@
     // Extract all unique route IDs from your data
     const allRouteIDs = Array.from(new Set(data.map(d => d.route_id)));
 
+    let filteredData = data.filter(d => d.route_id === 'Red');
+
     // Create a scatterplot chart
     let scatterplot_delays = scatterplot()
       .x(d => d.stop_name)
@@ -23,7 +25,7 @@
       .yLabel("number_service_days")
       .yLabelOffset(150)
       .selectionDispatcher(d3.dispatch(dispatchString))
-      ("#scatterplot", data);
+      ("#scatterplot", filteredData);
 
     const routeColors = {
       'Red': 'red',
@@ -33,7 +35,6 @@
     };
 
     // Use filtered data
-    let filteredData = data;
     let mbta_ons = onchart()
       .x(d => d.average_ons)
       .xLabel("average_ons")
@@ -55,8 +56,8 @@
       .selectionDispatcher(d3.dispatch(dispatchString))
       .colorScale(d3.scaleOrdinal()
         .domain(allRouteIDs) // Use allRouteIDs here
-        .range(data.map(d => routeColors[d.route_id])))
-      ("#offchart", data);
+        .range(filteredData.map(d => routeColors[d.route_id])))
+      ("#offchart", filteredData);
 
     // When the sun chart selection is updated via brushing, 
     // tell the on and off graphs to update it's selection (linking)

@@ -44,7 +44,7 @@ function onchart() {
 
     // Get the maximum sum of x-values across the groups
     const maxSumXValues = d3.max(nestedData, d => d.value);
-    xScale.domain([0, maxSumXValues / 20]).range([0, width]); // this adjusts the scale to view all the bars
+    xScale.domain([0, maxSumXValues / 15]).range([0, width]); // this adjusts the scale to view all the bars
 
     svg.append("g")
       .attr("transform", "translate(0," + height + ")") // Shift x-axis to bottom
