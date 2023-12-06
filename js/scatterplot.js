@@ -40,13 +40,10 @@ function scatterplot() {
     
     //Define scales
     xScale
-      /*.domain([
-        d3.min(data, d => xValue(d)),
-        d3.max(data, d => xValue(d))
-      ])
-      .rangeRound([0, width]);*/
-
-      .domain(data.map(d => xValue(d))).range([0, width]).paddingInner(0.1).paddingOuter(0.1);
+      .domain(data.map(d => xValue(d)))
+      .range([0, width])
+      .paddingInner(0.1)
+      .paddingOuter(0.1);
     
     yScale
       .domain([
