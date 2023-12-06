@@ -17,8 +17,8 @@
 
     // Create a scatterplot chart
     let scatterplot_delays = scatterplot()
-      .x(d => d.year)
-      .xLabel("year")
+      .x(d => d.stop_name)
+      .xLabel("stop_name")
       .y(d => d.number_service_days)
       .yLabel("number_service_days")
       .yLabelOffset(150)

@@ -13,14 +13,14 @@ function scatterplot() {
     right: 50,
     bottom: 40
   },
-  width = 500 - margin.left - margin.right,
-  height = 300 - margin.top - margin.bottom,
+  width = 1000 - margin.left - margin.right,
+  height = 600 - margin.top - margin.bottom,
   xValue = d => d[0],
   yValue = d => d[1],
   xLabelText = "",
   yLabelText = "",
   yLabelOffsetPx = 0,
-  xScale = d3.scaleLinear(),
+  xScale = d3.scaleBand(),
   yScale = d3.scaleLinear(),
   ourBrush = null,
   selectableElements = d3.select(null),
@@ -40,23 +40,36 @@ function scatterplot() {
     
     //Define scales
     xScale
-      .domain([
+      /*.domain([
         d3.min(data, d => xValue(d)),
         d3.max(data, d => xValue(d))
       ])
-      .rangeRound([0, width]);
+      .rangeRound([0, width]);*/
+
+      .domain(data.map(d => xValue(d))).range([0, width]).paddingInner(0.1).paddingOuter(0.1);
     
     yScale
       .domain([
-        d3.min(data, d => yValue(d)),
-        d3.max(data, d => yValue(d))
+        //d3.min(data, d => yValue(d)),
+        0,
+        //d3.max(data, d => yValue(d))
+        90
       ])
       .rangeRound([height, 0]);
     
     let xAxis = svg.append("g")
       .attr("transform", "translate(0," + (height) + ")")
       .call(d3.axisBottom(xScale));
+
+    //rotate and resize the x-axis labels
+    xAxis.selectAll("text")  
+    .style("text-anchor", "end")
+    .style("font-size", "5px")
+    .attr("dx", "-.8em")
+    .attr("dy", ".15em")
+    .attr("transform", "rotate(-65)");
     
+      
     // X axis label
     xAxis.append("text")        
       .attr("class", "axisLabel")
@@ -65,13 +78,15 @@ function scatterplot() {
     
     let yAxis = svg.append("g")
       .call(d3.axisLeft(yScale))
-    .append("g")
+      .append("g")
       .attr("class", "axisLabel")
-      .attr("transform", "translate(" + "-30" + ", 40)")
-      .append("text")
+      .attr("transform", "translate(" + "-30" + ", 40)");
+
+      //y-axis label
+      yAxis.append("text")
       .attr("class", "axisLabel")
       .attr("transform", "rotate(-90)")
-      .text(yLabelText)
+      .text(yLabelText);
     
     // Add the points
     let points = svg.append("g")
