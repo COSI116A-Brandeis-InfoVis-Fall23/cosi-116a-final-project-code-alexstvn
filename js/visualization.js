@@ -35,7 +35,7 @@
     };
 
     // Use filtered data
-    let mbta_ons = offchart()
+    let mbta_ons = barchart()
       .x(d => d.stop_name)
       .xLabel("Stop Name")
       .y(d => d.average_ons)
@@ -48,7 +48,7 @@
       ("#onchart", filteredData);
 
 
-    let mbta_offs = offchart()
+    let mbta_offs = barchart()
       .x(d => d.stop_name)
       .xLabel("Stop Name")
       .y(d => d.average_offs)

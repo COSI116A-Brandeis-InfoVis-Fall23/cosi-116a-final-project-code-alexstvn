@@ -2,7 +2,7 @@
 // Immediately Invoked Function Expression to limit access to our 
 // variables and prevent 
 // Chart configuration
-function offchart() {
+function barchart() {
   let colorScale;
   let margin = {
     top: 100,
