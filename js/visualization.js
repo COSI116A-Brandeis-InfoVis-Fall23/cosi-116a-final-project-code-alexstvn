@@ -20,9 +20,9 @@
     // Create a scatterplot chart
     let scatterplot_delays = scatterplot()
       .x(d => d.stop_name)
-      .xLabel("stop_name")
+      .xLabel("Stop Name")
       .y(d => d.number_service_days)
-      .yLabel("number_service_days")
+      .yLabel("Number Service Days")
       .yLabelOffset(150)
       .selectionDispatcher(d3.dispatch(dispatchString))
       ("#scatterplot", filteredData);
@@ -35,11 +35,11 @@
     };
 
     // Use filtered data
-    let mbta_ons = onchart()
-      .x(d => d.average_ons)
-      .xLabel("average_ons")
-      .y(d => d.stop_name)
-      .yLabel("stop_name")
+    let mbta_ons = offchart()
+      .x(d => d.stop_name)
+      .xLabel("Stop Name")
+      .y(d => d.average_ons)
+      .yLabel("Average Ons")
       .yLabelOffset(150)
       .selectionDispatcher(d3.dispatch(dispatchString))
       .colorScale(d3.scaleOrdinal()
@@ -47,11 +47,12 @@
         .range(filteredData.map(d => routeColors[d.route_id])))
       ("#onchart", filteredData);
 
+
     let mbta_offs = offchart()
-      .x(d => d.average_offs)
-      .xLabel("average_offs")
-      .y(d => d.stop_name)
-      .yLabel("stop_name")
+      .x(d => d.stop_name)
+      .xLabel("Stop Name")
+      .y(d => d.average_offs)
+      .yLabel("Average Offs")
       .yLabelOffset(150)
       .selectionDispatcher(d3.dispatch(dispatchString))
       .colorScale(d3.scaleOrdinal()

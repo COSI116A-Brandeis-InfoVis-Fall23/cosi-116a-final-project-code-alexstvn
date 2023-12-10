@@ -66,8 +66,8 @@
     <!-- Change viewbox to whatever you want, e.g. "0 0 1000 6000" This determines your aspect ratio and coordinate system -->
     <!-- Delete all the sample SVG code below after the viewbox to before the closing tag. Populate this part of the SVG with D3. -->
     <!-- Our interactive visualizations will go here -->
-    <div id="routeSelector"></div>
-    <div id="stopSelector"></div>
+    <!--<div id="routeSelector"></div>
+    <div id="stopSelector"></div>-->
     <div class="barchart-holder">
       <div class="onchart-holder" id="onchart"></div>
       <div class="offchart-holder" id="offchart"></div>
@@ -99,6 +99,12 @@
 
     <h1>Data Analysis</h1>
     <p><em>Summary of data, data types, and data preprocessing.</em></p>
+    <p><em>The distance to city center for each station was obtained
+      by collecting the latitude and longitude
+      coordinates for Boston city center (42.3601 N, 71.0589 W) and 
+      the distance between this point and all
+      the stations was calculated using Ed Williams' "Great 
+      Circle Calculator:" https://edwilliams.org/gccalc.htm.</em></p>
 
     <p><em>Expectation: Data sources match the problem statement and are appropriate. These descriptions should be very
         explicit so someone could read your page and properly reproduce your results.</em></p>
