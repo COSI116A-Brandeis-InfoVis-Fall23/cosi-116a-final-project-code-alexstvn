@@ -6,9 +6,9 @@ Fall 2019,Red,Red Line,Weekday,5,Midday School,Charles/MGH,102736,34439,77,1334,
 Fall 2019,Red,Red Line,Weekday,5,Midday School,Central,100113,34045,77,1300,442,4835,2019,2.300899444
 Fall 2019,Red,Red Line,Weekday,5,Midday School,Davis,62838,4611,77,816,60,1535,2019,4.091834912
 Fall 2019,Red,Red Line,Weekday,5,Midday School,Downtown Crossing,203502,164500,77,2643,2136,8310,2019,0.32440095
-Fall 2019,Red,Red Line,Weekday,5,Midday School,Fields Corner,16259,72630,77,211,943,1993,2019,
+Fall 2019,Red,Red Line,Weekday,5,Midday School,Fields Corner,16259,72630,77,211,943,1993,2019,0.0
 Fall 2019,Red,Red Line,Weekday,5,Midday School,Harvard,172338,23059,77,2238,299,3977,2019,3.210236017
-Fall 2019,Red,Red Line,Weekday,5,Midday School,JFK/Umass,60261,69807,77,783,907,3506,2019,
+Fall 2019,Red,Red Line,Weekday,5,Midday School,JFK/Umass,60261,69807,77,783,907,3506,2019,0.0
 Fall 2019,Red,Red Line,Weekday,5,Midday School,Kendall/MIT,157385,36882,77,2044,479,6400,2019,1.376744021
 Fall 2019,Red,Red Line,Weekday,5,Midday School,North Quincy,13957,62834,77,181,816,3356,2019,6.042396998
 Fall 2019,Red,Red Line,Weekday,5,Midday School,Park Street,198084,158294,77,2573,2056,7804,2019,0.309052323
@@ -33,9 +33,9 @@ Fall 2019,Red,Red Line,Weekday,2,Early Am,Wollaston,1392,1521,77,18,20,322,2019,
 Fall 2019,Red,Red Line,Weekday,6,Pm Peak,Davis,95174,20443,77,1236,265,2949,2019,4.091834912
 Fall 2019,Red,Red Line,Weekday,6,Pm Peak,Downtown Crossing,403860,282570,77,5245,3670,17815,2019,0.32440095
 Fall 2019,Red,Red Line,Weekday,3,Am Peak,Alewife,372451,0,77,4837,0,4837,2019,4.892849933
-Fall 2019,Red,Red Line,Weekday,6,Pm Peak,Fields Corner,15305,106960,77,199,1389,3816,2019,
+Fall 2019,Red,Red Line,Weekday,6,Pm Peak,Fields Corner,15305,106960,77,199,1389,3816,2019,0.0
 Fall 2019,Red,Red Line,Weekday,6,Pm Peak,Harvard,261472,38963,77,3396,506,6461,2019,3.210236017
-Fall 2019,Red,Red Line,Weekday,6,Pm Peak,JFK/Umass,91894,138189,77,1193,1795,7950,2019,
+Fall 2019,Red,Red Line,Weekday,6,Pm Peak,JFK/Umass,91894,138189,77,1193,1795,7950,2019,0.0
 Fall 2019,Red,Red Line,Weekday,3,Am Peak,Andrew,17199,24009,77,223,312,3203,2019,2.064669418
 Fall 2019,Red,Red Line,Weekday,6,Pm Peak,Kendall/MIT,378498,36503,77,4916,474,12412,2019,1.376744021
 Fall 2019,Red,Red Line,Weekday,3,Am Peak,Ashmont,0,38739,77,0,503,0,2019,5.22382406
@@ -62,9 +62,9 @@ Fall 2019,Red,Red Line,Weekday,3,Am Peak,Charles/MGH,31190,101949,77,405,1324,12
 Fall 2019,Red,Red Line,Weekday,3,Am Peak,Central,199838,120944,77,2595,1571,15139,2019,2.300899444
 Fall 2019,Red,Red Line,Weekday,3,Am Peak,Davis,372722,3231,77,4841,42,9636,2019,4.091834912
 Fall 2019,Red,Red Line,Weekday,3,Am Peak,Downtown Crossing,163998,275678,77,2130,3580,7976,2019,0.32440095
-Fall 2019,Red,Red Line,Weekday,3,Am Peak,Fields Corner,12980,30531,77,169,397,642,2019,
+Fall 2019,Red,Red Line,Weekday,3,Am Peak,Fields Corner,12980,30531,77,169,397,642,2019,0.0
 Fall 2019,Red,Red Line,Weekday,3,Am Peak,Harvard,184960,85248,77,2402,1107,14115,2019,3.210236017
-Fall 2019,Red,Red Line,Weekday,3,Am Peak,JFK/Umass,24565,111386,77,319,1447,1038,2019,
+Fall 2019,Red,Red Line,Weekday,3,Am Peak,JFK/Umass,24565,111386,77,319,1447,1038,2019,0.0
 Fall 2019,Red,Red Line,Weekday,3,Am Peak,Kendall/MIT,56897,227641,77,739,2956,12922,2019,1.376744021
 Fall 2019,Red,Red Line,Weekday,3,Am Peak,North Quincy,6705,36500,77,87,474,819,2019,6.042396998
 Fall 2019,Red,Red Line,Weekday,3,Am Peak,Park Street,105230,303643,77,1367,3943,9426,2019,0.309052323
@@ -84,9 +84,9 @@ Fall 2019,Red,Red Line,Weekday,4,Midday Base,Charles/MGH,62761,78902,77,815,1025
 Fall 2019,Red,Red Line,Weekday,4,Midday Base,Central,189460,85841,77,2461,1115,10904,2019,2.300899444
 Fall 2019,Red,Red Line,Weekday,4,Midday Base,Davis,231035,6548,77,3000,85,5471,2019,4.091834912
 Fall 2019,Red,Red Line,Weekday,4,Midday Base,Downtown Crossing,216904,234465,77,2817,3045,7673,2019,0.32440095
-Fall 2019,Red,Red Line,Weekday,4,Midday Base,Fields Corner,10412,44444,77,135,577,1049,2019,
+Fall 2019,Red,Red Line,Weekday,4,Midday Base,Fields Corner,10412,44444,77,135,577,1049,2019,0.0
 Fall 2019,Red,Red Line,Weekday,4,Midday Base,Harvard,233481,70560,77,3032,916,9558,2019,3.210236017
-Fall 2019,Red,Red Line,Weekday,4,Midday Base,JFK/Umass,45103,130900,77,586,1700,1927,2019,
+Fall 2019,Red,Red Line,Weekday,4,Midday Base,JFK/Umass,45103,130900,77,586,1700,1927,2019,0.0
 Fall 2019,Red,Red Line,Weekday,4,Midday Base,Kendall/MIT,91860,197667,77,1193,2567,9529,2019,1.376744021
 Fall 2019,Red,Red Line,Weekday,4,Midday Base,North Quincy,11873,43771,77,154,568,1817,2019,6.042396998
 Fall 2019,Red,Red Line,Weekday,4,Midday Base,Park Street,161428,270663,77,2096,3515,7901,2019,0.309052323
@@ -108,9 +108,9 @@ Fall 2019,Red,Red Line,Weekday,1,Very Early Morning,Charles/MGH,1011,5657,77,13,
 Fall 2019,Red,Red Line,Weekday,1,Very Early Morning,Central,7345,2808,77,95,36,483,2019,2.300899444
 Fall 2019,Red,Red Line,Weekday,1,Very Early Morning,Davis,8833,77,77,115,1,216,2019,4.091834912
 Fall 2019,Red,Red Line,Weekday,1,Very Early Morning,Downtown Crossing,10933,9313,77,142,121,404,2019,0.32440095
-Fall 2019,Red,Red Line,Weekday,1,Very Early Morning,Fields Corner,628,1822,77,8,24,55,2019,
+Fall 2019,Red,Red Line,Weekday,1,Very Early Morning,Fields Corner,628,1822,77,8,24,55,2019,0.0
 Fall 2019,Red,Red Line,Weekday,1,Very Early Morning,Harvard,12062,1688,77,157,22,424,2019,3.210236017
-Fall 2019,Red,Red Line,Weekday,1,Very Early Morning,JFK/Umass,1600,2164,77,21,28,100,2019,
+Fall 2019,Red,Red Line,Weekday,1,Very Early Morning,JFK/Umass,1600,2164,77,21,28,100,2019,0.0
 Fall 2019,Red,Red Line,Weekday,1,Very Early Morning,Kendall/MIT,1389,5162,77,18,67,434,2019,1.376744021
 Fall 2019,Red,Red Line,Weekday,1,Very Early Morning,North Quincy,18,1725,77,0,22,107,2019,6.042396998
 Fall 2019,Red,Red Line,Weekday,1,Very Early Morning,Park Street,9017,8272,77,117,107,383,2019,0.309052323
@@ -130,9 +130,9 @@ Fall 2019,Red,Red Line,Weekday,2,Early Am,Charles/MGH,3257,32451,77,42,421,1543,
 Fall 2019,Red,Red Line,Weekday,2,Early Am,Central,21951,18096,77,285,235,2159,2019,2.300899444
 Fall 2019,Red,Red Line,Weekday,2,Early Am,Davis,43926,550,77,570,7,1500,2019,4.091834912
 Fall 2019,Red,Red Line,Weekday,2,Early Am,Downtown Crossing,40055,32616,77,520,424,1511,2019,0.32440095
-Fall 2019,Red,Red Line,Weekday,2,Early Am,Fields Corner,3741,6481,77,49,84,189,2019,
+Fall 2019,Red,Red Line,Weekday,2,Early Am,Fields Corner,3741,6481,77,49,84,189,2019,0.0
 Fall 2019,Red,Red Line,Weekday,2,Early Am,Harvard,27623,7437,77,359,97,2109,2019,3.210236017
-Fall 2019,Red,Red Line,Weekday,2,Early Am,JFK/Umass,6176,17447,77,80,227,320,2019,
+Fall 2019,Red,Red Line,Weekday,2,Early Am,JFK/Umass,6176,17447,77,80,227,320,2019,0.0
 Fall 2019,Red,Red Line,Weekday,2,Early Am,Kendall/MIT,6930,25192,77,90,327,1922,2019,1.376744021
 Fall 2019,Red,Red Line,Weekday,2,Early Am,North Quincy,2371,9448,77,31,123,323,2019,6.042396998
 Fall 2019,Red,Red Line,Weekday,2,Early Am,Park Street,27070,36978,77,352,480,1414,2019,0.309052323
@@ -160,9 +160,9 @@ Fall 2019,Red,Red Line,Saturday,10,Off Peak,Charles/MGH,17067,15027,12,1422,1252
 Fall 2019,Red,Red Line,Saturday,10,Off Peak,Central,22853,50006,12,1904,4167,14437,2019,2.300899444
 Fall 2019,Red,Red Line,Saturday,10,Off Peak,Davis,2716,52742,12,226,4395,3511,2019,4.091834912
 Fall 2019,Red,Red Line,Saturday,10,Off Peak,Downtown Crossing,45721,58665,12,3810,4889,15555,2019,0.32440095
-Fall 2019,Red,Red Line,Saturday,10,Off Peak,Fields Corner,19732,3723,12,1644,310,4741,2019,
+Fall 2019,Red,Red Line,Saturday,10,Off Peak,Fields Corner,19732,3723,12,1644,310,4741,2019,0.0
 Fall 2019,Red,Red Line,Saturday,10,Off Peak,Harvard,24135,74149,12,2011,6179,10269,2019,3.210236017
-Fall 2019,Red,Red Line,Saturday,10,Off Peak,JFK/Umass,22476,10078,12,1873,840,13110,2019,
+Fall 2019,Red,Red Line,Saturday,10,Off Peak,JFK/Umass,22476,10078,12,1873,840,13110,2019,0.0
 Fall 2019,Red,Red Line,Saturday,10,Off Peak,Kendall/MIT,16913,24874,12,1409,2073,16700,2019,1.376744021
 Fall 2019,Red,Red Line,Saturday,10,Off Peak,North Quincy,17671,3468,12,1473,289,6784,2019,6.042396998
 Fall 2019,Red,Red Line,Saturday,10,Off Peak,Park Street,98762,79104,12,8230,6592,17193,2019,0.309052323
@@ -182,9 +182,9 @@ Fall 2019,Red,Red Line,Sunday,11,Off Peak,Charles/MGH,12460,10290,8,1557,1286,18
 Fall 2019,Red,Red Line,Sunday,11,Off Peak,Central,17643,36527,8,2205,4566,15158,2019,2.300899444
 Fall 2019,Red,Red Line,Sunday,11,Off Peak,Davis,1438,35857,8,180,4482,3260,2019,4.091834912
 Fall 2019,Red,Red Line,Sunday,11,Off Peak,Downtown Crossing,35054,39301,8,4382,4913,16361,2019,0.32440095
-Fall 2019,Red,Red Line,Sunday,11,Off Peak,Fields Corner,12463,1779,8,1558,222,4523,2019,
+Fall 2019,Red,Red Line,Sunday,11,Off Peak,Fields Corner,12463,1779,8,1558,222,4523,2019,0.0
 Fall 2019,Red,Red Line,Sunday,11,Off Peak,Harvard,15557,53002,8,1945,6625,10477,2019,3.210236017
-Fall 2019,Red,Red Line,Sunday,11,Off Peak,JFK/Umass,14607,4746,8,1826,593,12391,2019,
+Fall 2019,Red,Red Line,Sunday,11,Off Peak,JFK/Umass,14607,4746,8,1826,593,12391,2019,0.0
 Fall 2019,Red,Red Line,Sunday,11,Off Peak,Kendall/MIT,12295,17421,8,1537,2178,17518,2019,1.376744021
 Fall 2019,Red,Red Line,Sunday,11,Off Peak,North Quincy,11881,2240,8,1485,280,6209,2019,6.042396998
 Fall 2019,Red,Red Line,Sunday,11,Off Peak,Park Street,62805,50592,8,7851,6324,17888,2019,0.309052323
@@ -198,28 +198,28 @@ Fall 2019,Red,Red Line,Sunday,11,Off Peak,Wollaston,7858,1635,8,982,204,5004,201
 Fall 2019,Red,Red Line,Weekday,3,Am Peak,Charles/MGH,53239,156500,77,691,2032,9742,2019,0.598630827
 Fall 2019,Red,Red Line,Weekday,7,Evening,Quincy Center,32886,2590,77,427,34,691,2019,7.946997833
 Fall 2019,Red,Red Line,Weekday,9,Night,Wollaston,51,1885,77,1,24,58,2019,6.756258622
-Fall 2019,Red,Red Line,Weekday,7,Evening,Fields Corner,6134,68546,77,80,890,1913,2019,
+Fall 2019,Red,Red Line,Weekday,7,Evening,Fields Corner,6134,68546,77,80,890,1913,2019,0.0
 Fall 2019,Red,Red Line,Saturday,10,Off Peak,Alewife,42458,0,12,3538,0,3538,2019,4.892849933
 Fall 2019,Red,Red Line,Weekday,7,Evening,Savin Hill,6113,2245,77,79,29,784,2019,3.380449346
 Fall 2019,Red,Red Line,Weekday,3,Am Peak,Central,29389,143156,77,382,1859,3997,2019,2.300899444
 Fall 2019,Red,Red Line,Sunday,11,Off Peak,Wollaston,1635,9036,8,204,1130,4229,2019,6.756258622
-Fall 2019,Red,Red Line,Weekday,5,Midday School,JFK/Umass,114824,27207,77,1491,353,4629,2019,
+Fall 2019,Red,Red Line,Weekday,5,Midday School,JFK/Umass,114824,27207,77,1491,353,4629,2019,0.0
 Fall 2019,Red,Red Line,Weekday,7,Evening,Harvard,148541,28143,77,1929,365,3620,2019,3.210236017
 Fall 2019,Red,Red Line,Weekday,3,Am Peak,Davis,16320,47496,77,212,617,1255,2019,4.091834912
 Fall 2019,Red,Red Line,Saturday,10,Off Peak,Andrew,8599,19190,12,717,1599,13094,2019,2.064669418
 Fall 2019,Red,Red Line,Weekday,5,Midday School,Kendall/MIT,74515,60019,77,968,779,5944,2019,1.376744021
 Fall 2019,Red,Red Line,Weekday,1,Very Early Morning,Alewife,0,7794,77,0,101,0,2019,4.892849933
 Fall 2019,Red,Red Line,Weekday,7,Evening,Shawmut,6711,2174,77,87,28,585,2019,4.637936196
-Fall 2019,Red,Red Line,Weekday,7,Evening,JFK/Umass,55308,93942,77,718,1220,3854,2019,
+Fall 2019,Red,Red Line,Weekday,7,Evening,JFK/Umass,55308,93942,77,718,1220,3854,2019,0.0
 Fall 2019,Red,Red Line,Weekday,3,Am Peak,Downtown Crossing,197611,409877,77,2566,5323,13602,2019,0.32440095
 Fall 2019,Red,Red Line,Saturday,10,Off Peak,Ashmont,0,30430,12,0,2536,0,2019,5.22382406
 Fall 2019,Red,Red Line,Weekday,5,Midday School,North Quincy,30260,8482,77,393,110,1604,2019,6.042396998
 Fall 2019,Red,Red Line,Weekday,1,Very Early Morning,Andrew,12279,4277,77,159,56,1427,2019,2.064669418
 Fall 2019,Red,Red Line,Weekday,7,Evening,South Station,196369,21307,77,2550,277,4761,2019,0.598479405
 Fall 2019,Red,Red Line,Weekday,7,Evening,Kendall/MIT,116815,28006,77,1517,364,5431,2019,1.376744021
-Fall 2019,Red,Red Line,Weekday,3,Am Peak,Fields Corner,95861,18464,77,1245,240,4945,2019,
+Fall 2019,Red,Red Line,Weekday,3,Am Peak,Fields Corner,95861,18464,77,1245,240,4945,2019,0.0
 Fall 2019,Red,Red Line,Weekday,3,Am Peak,Harvard,16938,176222,77,220,2289,1928,2019,3.210236017
-Fall 2019,Red,Red Line,Weekday,3,Am Peak,JFK/Umass,106596,80675,77,1384,1048,15131,2019,
+Fall 2019,Red,Red Line,Weekday,3,Am Peak,JFK/Umass,106596,80675,77,1384,1048,15131,2019,0.0
 Fall 2019,Red,Red Line,Weekday,3,Am Peak,Kendall/MIT,13960,342585,77,181,4449,5474,2019,1.376744021
 Fall 2019,Red,Red Line,Weekday,3,Am Peak,North Quincy,156174,18180,77,2028,236,9135,2019,6.042396998
 Fall 2019,Red,Red Line,Weekday,3,Am Peak,Park Street,131586,325508,77,1709,4227,11083,2019,0.309052323
@@ -239,9 +239,9 @@ Fall 2019,Red,Red Line,Weekday,4,Midday Base,Charles/MGH,65593,99003,77,852,1286
 Fall 2019,Red,Red Line,Weekday,4,Midday Base,Central,48849,147544,77,634,1916,5279,2019,2.300899444
 Fall 2019,Red,Red Line,Weekday,4,Midday Base,Davis,8917,88989,77,116,1156,1093,2019,4.091834912
 Fall 2019,Red,Red Line,Weekday,4,Midday Base,Downtown Crossing,219075,328264,77,2845,4263,9976,2019,0.32440095
-Fall 2019,Red,Red Line,Weekday,4,Midday Base,Fields Corner,84700,11325,77,1100,147,3380,2019,
+Fall 2019,Red,Red Line,Weekday,4,Midday Base,Fields Corner,84700,11325,77,1100,147,3380,2019,0.0
 Fall 2019,Red,Red Line,Weekday,4,Midday Base,Harvard,36576,216085,77,475,2806,2948,2019,3.210236017
-Fall 2019,Red,Red Line,Weekday,4,Midday Base,JFK/Umass,122634,73503,77,1593,955,9546,2019,
+Fall 2019,Red,Red Line,Weekday,4,Midday Base,JFK/Umass,122634,73503,77,1593,955,9546,2019,0.0
 Fall 2019,Red,Red Line,Weekday,4,Midday Base,Kendall/MIT,52114,211932,77,677,2752,6561,2019,1.376744021
 Fall 2019,Red,Red Line,Weekday,4,Midday Base,North Quincy,99983,14684,77,1298,191,5076,2019,6.042396998
 Fall 2019,Red,Red Line,Weekday,4,Midday Base,Park Street,189161,258951,77,2457,3363,9070,2019,0.309052323
@@ -261,7 +261,7 @@ Fall 2019,Red,Red Line,Weekday,5,Midday School,Charles/MGH,48567,48904,77,631,63
 Fall 2019,Red,Red Line,Weekday,5,Midday School,Central,47597,107786,77,618,1400,5162,2019,2.300899444
 Fall 2019,Red,Red Line,Weekday,5,Midday School,Davis,3597,110015,77,47,1429,1720,2019,4.091834912
 Fall 2019,Red,Red Line,Weekday,5,Midday School,Downtown Crossing,147778,210525,77,1919,2734,5532,2019,0.32440095
-Fall 2019,Red,Red Line,Weekday,5,Midday School,Fields Corner,53917,15640,77,700,203,1732,2019,
+Fall 2019,Red,Red Line,Weekday,5,Midday School,Fields Corner,53917,15640,77,700,203,1732,2019,0.0
 Fall 2019,Red,Red Line,Weekday,7,Evening,North Quincy,6189,91628,77,80,1190,3357,2019,6.042396998
 Fall 2019,Red,Red Line,Weekday,7,Evening,Wollaston,6766,5228,77,88,68,711,2019,6.756258622
 Fall 2019,Red,Red Line,Weekday,7,Evening,Park Street,251472,144674,77,3266,1879,7387,2019,0.309052323
@@ -288,9 +288,9 @@ Fall 2019,Red,Red Line,Weekday,8,Late Evening,Charles/MGH,12271,5259,77,159,68,1
 Fall 2019,Red,Red Line,Weekday,8,Late Evening,Central,15375,29313,77,200,381,1500,2019,2.300899444
 Fall 2019,Red,Red Line,Weekday,8,Late Evening,Davis,1246,44182,77,16,574,420,2019,4.091834912
 Fall 2019,Red,Red Line,Weekday,8,Late Evening,Downtown Crossing,30415,20835,77,395,271,1043,2019,0.32440095
-Fall 2019,Red,Red Line,Weekday,8,Late Evening,Fields Corner,4138,1995,77,54,26,168,2019,
+Fall 2019,Red,Red Line,Weekday,8,Late Evening,Fields Corner,4138,1995,77,54,26,168,2019,0.0
 Fall 2019,Red,Red Line,Weekday,8,Late Evening,Harvard,14453,27627,77,188,359,1329,2019,3.210236017
-Fall 2019,Red,Red Line,Weekday,8,Late Evening,JFK/Umass,4857,4810,77,63,62,404,2019,
+Fall 2019,Red,Red Line,Weekday,8,Late Evening,JFK/Umass,4857,4810,77,63,62,404,2019,0.0
 Fall 2019,Red,Red Line,Weekday,8,Late Evening,Kendall/MIT,13235,13275,77,172,172,1681,2019,1.376744021
 Fall 2019,Red,Red Line,Weekday,8,Late Evening,North Quincy,4304,1410,77,56,18,221,2019,6.042396998
 Fall 2019,Red,Red Line,Weekday,8,Late Evening,Park Street,66446,24316,77,863,316,1590,2019,0.309052323
@@ -310,9 +310,9 @@ Fall 2019,Red,Red Line,Weekday,9,Night,Charles/MGH,1503,634,77,20,8,195,2019,0.5
 Fall 2019,Red,Red Line,Weekday,9,Night,Central,2245,4038,77,29,52,177,2019,2.300899444
 Fall 2019,Red,Red Line,Weekday,9,Night,Davis,101,7021,77,1,91,23,2019,4.091834912
 Fall 2019,Red,Red Line,Weekday,9,Night,Downtown Crossing,3582,3091,77,47,40,137,2019,0.32440095
-Fall 2019,Red,Red Line,Weekday,9,Night,Fields Corner,537,220,77,7,3,23,2019,
+Fall 2019,Red,Red Line,Weekday,9,Night,Fields Corner,537,220,77,7,3,23,2019,0.0
 Fall 2019,Red,Red Line,Weekday,9,Night,Harvard,2460,3508,77,32,46,164,2019,3.210236017
-Fall 2019,Red,Red Line,Weekday,9,Night,JFK/Umass,395,753,77,5,10,37,2019,
+Fall 2019,Red,Red Line,Weekday,9,Night,JFK/Umass,395,753,77,5,10,37,2019,0.0
 Fall 2019,Red,Red Line,Weekday,9,Night,Kendall/MIT,2251,1801,77,29,23,201,2019,1.376744021
 Fall 2019,Red,Red Line,Weekday,9,Night,North Quincy,363,166,77,5,2,19,2019,6.042396998
 Fall 2019,Red,Red Line,Weekday,9,Night,Park Street,7577,3979,77,98,52,184,2019,0.309052323
@@ -329,7 +329,7 @@ Fall 2019,Red,Red Line,Weekday,1,Very Early Morning,Charles/MGH,788,20015,77,10,
 Fall 2019,Red,Red Line,Saturday,10,Off Peak,Downtown Crossing,46830,44291,12,3903,3691,15172,2019,0.32440095
 Fall 2019,Red,Red Line,Weekday,7,Evening,Shawmut,1212,45323,77,16,589,1340,2019,4.637936196
 Fall 2019,Red,Red Line,Weekday,1,Very Early Morning,Central,1104,10171,77,14,132,261,2019,2.300899444
-Fall 2019,Red,Red Line,Saturday,10,Off Peak,Fields Corner,3744,21950,12,312,1829,3369,2019,
+Fall 2019,Red,Red Line,Saturday,10,Off Peak,Fields Corner,3744,21950,12,312,1829,3369,2019,0.0
 Fall 2019,Red,Red Line,Weekday,7,Evening,South Station,154908,93704,77,2012,1217,9321,2019,0.598479405
 Fall 2019,Red,Red Line,Weekday,1,Very Early Morning,Davis,668,2871,77,9,37,101,2019,4.091834912
 Fall 2019,Red,Red Line,Weekday,5,Midday School,Savin Hill,16287,4319,77,212,56,1887,2019,3.380449346
@@ -337,9 +337,9 @@ Fall 2019,Red,Red Line,Saturday,10,Off Peak,Harvard,78755,23259,12,6563,1938,147
 Fall 2019,Red,Red Line,Weekday,7,Evening,Wollaston,2891,59767,77,38,776,2618,2019,6.756258622
 Fall 2019,Red,Red Line,Weekday,1,Very Early Morning,Downtown Crossing,12187,28392,77,158,369,997,2019,0.32440095
 Fall 2019,Red,Red Line,Weekday,5,Midday School,Shawmut,17338,2832,77,225,37,1234,2019,4.637936196
-Fall 2019,Red,Red Line,Saturday,10,Off Peak,JFK/Umass,13087,25025,12,1091,2085,6050,2019,
+Fall 2019,Red,Red Line,Saturday,10,Off Peak,JFK/Umass,13087,25025,12,1091,2085,6050,2019,0.0
 Fall 2019,Red,Red Line,Weekday,8,Late Evening,Alewife,9202,0,77,120,0,120,2019,4.892849933
-Fall 2019,Red,Red Line,Weekday,1,Very Early Morning,Fields Corner,17356,31,77,225,0,370,2019,
+Fall 2019,Red,Red Line,Weekday,1,Very Early Morning,Fields Corner,17356,31,77,225,0,370,2019,0.0
 Fall 2019,Red,Red Line,Weekday,5,Midday School,South Station,149227,51783,77,1938,673,6347,2019,0.598479405
 Fall 2019,Red,Red Line,Saturday,10,Off Peak,Kendall/MIT,23808,17751,12,1984,1479,16786,2019,1.376744021
 Fall 2019,Red,Red Line,Weekday,8,Late Evening,Andrew,6109,17622,77,79,229,2361,2019,2.064669418
@@ -363,9 +363,9 @@ Fall 2019,Red,Red Line,Sunday,11,Off Peak,Charles/MGH,10400,11771,8,1300,1471,16
 Fall 2019,Red,Red Line,Sunday,11,Off Peak,Central,31730,17906,8,3966,2238,16458,2019,2.300899444
 Fall 2019,Red,Red Line,Sunday,11,Off Peak,Davis,32138,1655,8,4017,207,7135,2019,4.091834912
 Fall 2019,Red,Red Line,Sunday,11,Off Peak,Downtown Crossing,32730,33488,8,4091,4186,14995,2019,0.32440095
-Fall 2019,Red,Red Line,Sunday,11,Off Peak,Fields Corner,1711,14838,8,214,1855,3220,2019,
+Fall 2019,Red,Red Line,Sunday,11,Off Peak,Fields Corner,1711,14838,8,214,1855,3220,2019,0.0
 Fall 2019,Red,Red Line,Sunday,11,Off Peak,Harvard,54548,14568,8,6818,1821,14730,2019,3.210236017
-Fall 2019,Red,Red Line,Sunday,11,Off Peak,JFK/Umass,6869,17467,8,859,2183,5934,2019,
+Fall 2019,Red,Red Line,Sunday,11,Off Peak,JFK/Umass,6869,17467,8,859,2183,5934,2019,0.0
 Fall 2019,Red,Red Line,Sunday,11,Off Peak,Kendall/MIT,16594,12443,8,2074,1555,16977,2019,1.376744021
 Fall 2019,Red,Red Line,Sunday,11,Off Peak,North Quincy,2161,13239,8,270,1655,5154,2019,6.042396998
 Fall 2019,Red,Red Line,Sunday,11,Off Peak,Park Street,50858,64584,8,6357,8073,15090,2019,0.309052323
@@ -375,7 +375,7 @@ Fall 2019,Red,Red Line,Sunday,11,Off Peak,Quincy Center,698,19431,8,87,2429,1887
 Fall 2019,Red,Red Line,Sunday,11,Off Peak,Savin Hill,2059,5801,8,257,725,4861,2019,3.380449346
 Fall 2019,Red,Red Line,Sunday,11,Off Peak,Shawmut,182,6589,8,23,824,2419,2019,4.637936196
 Fall 2019,Red,Red Line,Weekday,8,Late Evening,Ashmont,0,30148,77,0,392,0,2019,5.22382406
-Fall 2019,Red,Red Line,Weekday,1,Very Early Morning,JFK/Umass,7172,2852,77,93,37,1323,2019,
+Fall 2019,Red,Red Line,Weekday,1,Very Early Morning,JFK/Umass,7172,2852,77,93,37,1323,2019,0.0
 Fall 2019,Red,Red Line,Weekday,6,Pm Peak,Alewife,0,408993,77,0,5312,0,2019,4.892849933
 Fall 2019,Red,Red Line,Weekday,8,Late Evening,Broadway,6748,10516,77,88,137,2510,2019,1.211795205
 Fall 2019,Red,Red Line,Weekday,6,Pm Peak,Andrew,42037,20536,77,546,267,4788,2019,2.064669418
@@ -391,13 +391,13 @@ Fall 2019,Red,Red Line,Weekday,6,Pm Peak,Broadway,58050,18530,77,754,241,5301,20
 Fall 2019,Red,Red Line,Weekday,1,Very Early Morning,Porter,214,2432,77,3,32,130,2019,3.64796599
 Fall 2019,Red,Red Line,Weekday,8,Late Evening,Downtown Crossing,44470,30784,77,578,400,2360,2019,0.32440095
 Fall 2019,Red,Red Line,Weekday,6,Pm Peak,Braintree,31235,0,77,406,0,406,2019,10.93713477
-Fall 2019,Red,Red Line,Weekday,8,Late Evening,Fields Corner,1359,29221,77,18,379,561,2019,
+Fall 2019,Red,Red Line,Weekday,8,Late Evening,Fields Corner,1359,29221,77,18,379,561,2019,0.0
 Fall 2019,Red,Red Line,Weekday,1,Very Early Morning,Quincy Adams,15298,0,77,199,0,199,2019,9.157278678
 Fall 2019,Red,Red Line,Weekday,8,Late Evening,Harvard,41924,4848,77,544,63,963,2019,3.210236017
 Fall 2019,Red,Red Line,Weekday,6,Pm Peak,Charles/MGH,113559,42691,77,1475,554,15253,2019,0.598630827
 Fall 2019,Red,Red Line,Weekday,1,Very Early Morning,Quincy Center,16790,99,77,218,1,415,2019,7.946997833
 Fall 2019,Red,Red Line,Weekday,6,Pm Peak,Central,134531,278212,77,1747,3613,15604,2019,2.300899444
-Fall 2019,Red,Red Line,Weekday,8,Late Evening,JFK/Umass,8193,24075,77,106,313,1077,2019,
+Fall 2019,Red,Red Line,Weekday,8,Late Evening,JFK/Umass,8193,24075,77,106,313,1077,2019,0.0
 Fall 2019,Red,Red Line,Weekday,1,Very Early Morning,Savin Hill,6694,125,77,87,2,455,2019,3.380449346
 Fall 2019,Red,Red Line,Weekday,6,Pm Peak,Davis,6465,403390,77,84,5239,5312,2019,4.091834912
 Fall 2019,Red,Red Line,Weekday,8,Late Evening,Kendall/MIT,22520,4825,77,292,63,1461,2019,1.376744021
@@ -405,10 +405,10 @@ Fall 2019,Red,Red Line,Weekday,6,Pm Peak,Downtown Crossing,337645,267593,77,4385
 Fall 2019,Red,Red Line,Weekday,8,Late Evening,North Quincy,1920,21301,77,25,277,837,2019,6.042396998
 Fall 2019,Red,Red Line,Weekday,1,Very Early Morning,Shawmut,10390,2,77,135,0,145,2019,4.637936196
 Fall 2019,Red,Red Line,Weekday,8,Late Evening,Park Street,85566,46130,77,1111,599,2182,2019,0.309052323
-Fall 2019,Red,Red Line,Weekday,6,Pm Peak,Fields Corner,38727,11460,77,503,149,1392,2019,
+Fall 2019,Red,Red Line,Weekday,6,Pm Peak,Fields Corner,38727,11460,77,503,149,1392,2019,0.0
 Fall 2019,Red,Red Line,Weekday,6,Pm Peak,Harvard,106292,227207,77,1380,2951,14034,2019,3.210236017
 Fall 2019,Red,Red Line,Weekday,8,Late Evening,Porter,13569,1169,77,176,15,481,2019,3.64796599
-Fall 2019,Red,Red Line,Weekday,6,Pm Peak,JFK/Umass,110424,29899,77,1434,388,4509,2019,
+Fall 2019,Red,Red Line,Weekday,6,Pm Peak,JFK/Umass,110424,29899,77,1434,388,4509,2019,0.0
 Fall 2019,Red,Red Line,Weekday,8,Late Evening,Quincy Adams,124,15110,77,2,196,149,2019,9.157278678
 Fall 2019,Red,Red Line,Weekday,6,Pm Peak,Kendall/MIT,268943,98205,77,3493,1275,17470,2019,1.376744021
 Fall 2019,Red,Red Line,Weekday,8,Late Evening,Quincy Center,264,22753,77,3,295,344,2019,7.946997833
@@ -442,9 +442,9 @@ Fall 2019,Red,Red Line,Weekday,7,Evening,Charles/MGH,62786,27055,77,815,351,8154
 Fall 2019,Red,Red Line,Weekday,7,Evening,Central,79696,162964,77,1035,2116,7788,2019,2.300899444
 Fall 2019,Red,Red Line,Weekday,7,Evening,Davis,6037,229692,77,78,2983,2144,2019,4.091834912
 Fall 2019,Red,Red Line,Weekday,7,Evening,Downtown Crossing,172740,105452,77,2243,1370,5635,2019,0.32440095
-Fall 2019,Red,Red Line,Weekday,7,Evening,Fields Corner,18560,7113,77,241,92,733,2019,
+Fall 2019,Red,Red Line,Weekday,7,Evening,Fields Corner,18560,7113,77,241,92,733,2019,0.0
 Fall 2019,Red,Red Line,Weekday,7,Evening,Harvard,70628,140972,77,917,1831,6874,2019,3.210236017
-Fall 2019,Red,Red Line,Weekday,7,Evening,JFK/Umass,49491,15390,77,643,200,2091,2019,
+Fall 2019,Red,Red Line,Weekday,7,Evening,JFK/Umass,49491,15390,77,643,200,2091,2019,0.0
 Fall 2019,Red,Red Line,Weekday,7,Evening,Kendall/MIT,116818,61766,77,1517,802,8869,2019,1.376744021
 Fall 2019,Red,Red Line,Weekday,7,Evening,North Quincy,17752,5899,77,231,77,864,2019,6.042396998
 Fall 2019,Red,Red Line,Weekday,7,Evening,Park Street,252883,94623,77,3284,1229,7690,2019,0.309052323
@@ -457,18 +457,18 @@ Fall 2019,Red,Red Line,Weekday,9,Night,Davis,1729,39,77,22,1,30,2019,4.091834912
 Fall 2019,Red,Red Line,Weekday,2,Early Am,Broadway,17757,17991,77,231,234,5578,2019,1.211795205
 Fall 2019,Red,Red Line,Weekday,9,Night,Downtown Crossing,6541,2822,77,85,37,302,2019,0.32440095
 Fall 2019,Red,Red Line,Weekday,2,Early Am,Braintree,96199,0,77,1249,0,1249,2019,10.93713477
-Fall 2019,Red,Red Line,Weekday,9,Night,Fields Corner,264,6012,77,3,78,90,2019,
+Fall 2019,Red,Red Line,Weekday,9,Night,Fields Corner,264,6012,77,3,78,90,2019,0.0
 Fall 2019,Red,Red Line,Weekday,2,Early Am,Charles/MGH,4774,105056,77,62,1364,2457,2019,0.598630827
 Fall 2019,Red,Red Line,Weekday,9,Night,Harvard,5108,374,77,66,5,106,2019,3.210236017
 Fall 2019,Red,Red Line,Weekday,2,Early Am,Central,4272,36905,77,55,479,945,2019,2.300899444
-Fall 2019,Red,Red Line,Weekday,9,Night,JFK/Umass,1065,3637,77,14,47,147,2019,
+Fall 2019,Red,Red Line,Weekday,9,Night,JFK/Umass,1065,3637,77,14,47,147,2019,0.0
 Fall 2019,Red,Red Line,Weekday,2,Early Am,Davis,3082,9795,77,40,127,327,2019,4.091834912
 Fall 2019,Red,Red Line,Weekday,9,Night,Kendall/MIT,3190,502,77,41,7,177,2019,1.376744021
 Fall 2019,Red,Red Line,Weekday,2,Early Am,Downtown Crossing,57229,120148,77,743,1560,4671,2019,0.32440095
 Fall 2019,Red,Red Line,Weekday,9,Night,North Quincy,161,2087,77,2,27,82,2019,6.042396998
-Fall 2019,Red,Red Line,Weekday,2,Early Am,Fields Corner,36814,2905,77,478,38,2040,2019,
+Fall 2019,Red,Red Line,Weekday,2,Early Am,Fields Corner,36814,2905,77,478,38,2040,2019,0.0
 Fall 2019,Red,Red Line,Weekday,2,Early Am,Harvard,2670,36096,77,35,469,511,2019,3.210236017
-Fall 2019,Red,Red Line,Weekday,2,Early Am,JFK/Umass,21468,23879,77,279,310,5502,2019,
+Fall 2019,Red,Red Line,Weekday,2,Early Am,JFK/Umass,21468,23879,77,279,310,5502,2019,0.0
 Fall 2019,Red,Red Line,Weekday,2,Early Am,Kendall/MIT,1439,85225,77,19,1107,1369,2019,1.376744021
 Fall 2019,Red,Red Line,Weekday,2,Early Am,North Quincy,41220,2995,77,535,39,3335,2019,6.042396998
 Fall 2019,Red,Red Line,Weekday,2,Early Am,Park Street,32535,102787,77,423,1335,3759,2019,0.309052323
@@ -487,11 +487,11 @@ Fall 2018,Red,Red Line,Weekday,5,Midday School,Park Street,51433,41119,19,2707,2
 Fall 2018,Red,Red Line,Weekday,1,Very Early Morning,Ashmont,0,624,19,0,33,0,2018,5.22382406
 Fall 2018,Red,Red Line,Weekday,3,Am Peak,Downtown Crossing,46837,71405,19,2465,3758,9193,2018,0.32440095
 Fall 2018,Red,Red Line,Weekday,5,Midday School,Porter,10965,1431,19,577,75,2012,2018,3.64796599
-Fall 2018,Red,Red Line,Weekday,3,Am Peak,Fields Corner,2778,6973,19,146,367,611,2018,
+Fall 2018,Red,Red Line,Weekday,3,Am Peak,Fields Corner,2778,6973,19,146,367,611,2018,0.0
 Fall 2018,Red,Red Line,Weekday,1,Very Early Morning,Broadway,362,686,19,19,36,283,2018,1.211795205
 Fall 2018,Red,Red Line,Weekday,3,Am Peak,Harvard,51287,21875,19,2699,1151,14624,2018,3.210236017
 Fall 2018,Red,Red Line,Weekday,5,Midday School,Quincy Adams,51,15360,19,3,808,938,2018,9.157278678
-Fall 2018,Red,Red Line,Weekday,3,Am Peak,JFK/Umass,5598,32647,19,295,1718,1219,2018,
+Fall 2018,Red,Red Line,Weekday,3,Am Peak,JFK/Umass,5598,32647,19,295,1718,1219,2018,0.0
 Fall 2018,Red,Red Line,Weekday,5,Midday School,Quincy Center,750,22914,19,39,1206,1744,2018,7.946997833
 Fall 2018,Red,Red Line,Weekday,1,Very Early Morning,Braintree,0,604,19,0,32,0,2018,10.93713477
 Fall 2018,Red,Red Line,Weekday,3,Am Peak,Kendall/MIT,14154,56433,19,745,2970,13512,2018,1.376744021
@@ -505,9 +505,9 @@ Fall 2018,Red,Red Line,Weekday,1,Very Early Morning,Davis,2052,4,19,108,0,210,20
 Fall 2018,Red,Red Line,Weekday,5,Midday School,Shawmut,318,9887,19,17,520,1611,2018,4.637936196
 Fall 2018,Red,Red Line,Weekday,3,Am Peak,Quincy Adams,130,4714,19,7,248,163,2018,9.157278678
 Fall 2018,Red,Red Line,Weekday,1,Very Early Morning,Downtown Crossing,2714,1965,19,143,103,411,2018,0.32440095
-Fall 2018,Red,Red Line,Weekday,1,Very Early Morning,Fields Corner,91,376,19,5,20,40,2018,
+Fall 2018,Red,Red Line,Weekday,1,Very Early Morning,Fields Corner,91,376,19,5,20,40,2018,0.0
 Fall 2018,Red,Red Line,Weekday,1,Very Early Morning,Harvard,2424,518,19,128,27,378,2018,3.210236017
-Fall 2018,Red,Red Line,Weekday,1,Very Early Morning,JFK/Umass,406,421,19,21,22,109,2018,
+Fall 2018,Red,Red Line,Weekday,1,Very Early Morning,JFK/Umass,406,421,19,21,22,109,2018,0.0
 Fall 2018,Red,Red Line,Weekday,1,Very Early Morning,Kendall/MIT,409,1214,19,22,64,385,2018,1.376744021
 Fall 2018,Red,Red Line,Weekday,1,Very Early Morning,North Quincy,46,692,19,2,36,126,2018,6.042396998
 Fall 2018,Red,Red Line,Weekday,1,Very Early Morning,Park Street,2722,1916,19,143,101,371,2018,0.309052323
@@ -527,9 +527,9 @@ Fall 2018,Red,Red Line,Weekday,2,Early Am,Charles/MGH,873,7774,19,46,409,1588,20
 Fall 2018,Red,Red Line,Weekday,2,Early Am,Central,6277,4688,19,330,247,2200,2018,2.300899444
 Fall 2018,Red,Red Line,Weekday,2,Early Am,Davis,10423,107,19,549,6,1537,2018,4.091834912
 Fall 2018,Red,Red Line,Weekday,2,Early Am,Downtown Crossing,9822,7888,19,517,415,1566,2018,0.32440095
-Fall 2018,Red,Red Line,Weekday,2,Early Am,Fields Corner,805,1609,19,42,85,192,2018,
+Fall 2018,Red,Red Line,Weekday,2,Early Am,Fields Corner,805,1609,19,42,85,192,2018,0.0
 Fall 2018,Red,Red Line,Weekday,2,Early Am,Harvard,7144,2352,19,376,124,2117,2018,3.210236017
-Fall 2018,Red,Red Line,Weekday,2,Early Am,JFK/Umass,1564,4257,19,82,224,329,2018,
+Fall 2018,Red,Red Line,Weekday,2,Early Am,JFK/Umass,1564,4257,19,82,224,329,2018,0.0
 Fall 2018,Red,Red Line,Weekday,2,Early Am,Kendall/MIT,1637,6365,19,86,335,1951,2018,1.376744021
 Fall 2018,Red,Red Line,Weekday,2,Early Am,North Quincy,503,2245,19,26,118,310,2018,6.042396998
 Fall 2018,Red,Red Line,Weekday,2,Early Am,Park Street,7084,9439,19,373,497,1464,2018,0.309052323
@@ -572,20 +572,20 @@ Fall 2018,Red,Red Line,Weekday,6,Pm Peak,Charles/MGH,44191,15528,19,2326,817,144
 Fall 2018,Red,Red Line,Weekday,4,Midday Base,Central,49105,22284,19,2584,1173,11146,2018,2.300899444
 Fall 2018,Red,Red Line,Weekday,4,Midday Base,Davis,55746,1558,19,2934,82,5388,2018,4.091834912
 Fall 2018,Red,Red Line,Weekday,4,Midday Base,Downtown Crossing,59911,58785,19,3153,3094,8538,2018,0.32440095
-Fall 2018,Red,Red Line,Weekday,4,Midday Base,Fields Corner,2685,10821,19,141,570,1135,2018,
+Fall 2018,Red,Red Line,Weekday,4,Midday Base,Fields Corner,2685,10821,19,141,570,1135,2018,0.0
 Fall 2018,Red,Red Line,Weekday,4,Midday Base,Harvard,64578,18236,19,3399,960,9734,2018,3.210236017
-Fall 2018,Red,Red Line,Weekday,4,Midday Base,JFK/Umass,11614,38907,19,611,2048,2135,2018,
+Fall 2018,Red,Red Line,Weekday,4,Midday Base,JFK/Umass,11614,38907,19,611,2048,2135,2018,0.0
 Fall 2018,Red,Red Line,Weekday,4,Midday Base,Kendall/MIT,22397,49503,19,1179,2605,9719,2018,1.376744021
 Fall 2018,Red,Red Line,Weekday,6,Pm Peak,Central,43997,14873,19,2316,783,8446,2018,2.300899444
 Fall 2018,Red,Red Line,Weekday,4,Midday Base,North Quincy,2149,18056,19,113,950,1693,2018,6.042396998
 Fall 2018,Red,Red Line,Weekday,6,Pm Peak,Davis,24016,5303,19,1264,279,3013,2018,4.091834912
 Fall 2018,Red,Red Line,Weekday,6,Pm Peak,Downtown Crossing,105004,69086,19,5527,3636,18794,2018,0.32440095
 Fall 2018,Red,Red Line,Weekday,4,Midday Base,Park Street,46827,65879,19,2465,3467,8479,2018,0.309052323
-Fall 2018,Red,Red Line,Weekday,6,Pm Peak,Fields Corner,3799,26448,19,200,1392,3906,2018,
+Fall 2018,Red,Red Line,Weekday,6,Pm Peak,Fields Corner,3799,26448,19,200,1392,3906,2018,0.0
 Fall 2018,Red,Red Line,Weekday,4,Midday Base,Porter,39059,2834,19,2056,149,7295,2018,3.64796599
 Fall 2018,Red,Red Line,Weekday,6,Pm Peak,Harvard,72092,9748,19,3794,513,6913,2018,3.210236017
 Fall 2018,Red,Red Line,Weekday,4,Midday Base,Quincy Adams,140,7428,19,7,391,350,2018,9.157278678
-Fall 2018,Red,Red Line,Weekday,6,Pm Peak,JFK/Umass,19410,30933,19,1022,1628,8538,2018,
+Fall 2018,Red,Red Line,Weekday,6,Pm Peak,JFK/Umass,19410,30933,19,1022,1628,8538,2018,0.0
 Fall 2018,Red,Red Line,Weekday,6,Pm Peak,Kendall/MIT,94375,9432,19,4967,496,12916,2018,1.376744021
 Fall 2018,Red,Red Line,Weekday,6,Pm Peak,North Quincy,4160,71877,19,219,3783,7607,2018,6.042396998
 Fall 2018,Red,Red Line,Weekday,6,Pm Peak,Park Street,115239,68155,19,6065,3587,16903,2018,0.309052323
@@ -605,9 +605,9 @@ Fall 2018,Red,Red Line,Weekday,7,Evening,Charles/MGH,19693,8336,19,1036,439,6733
 Fall 2018,Red,Red Line,Weekday,7,Evening,Central,27274,12367,19,1435,651,4889,2018,2.300899444
 Fall 2018,Red,Red Line,Weekday,7,Evening,Davis,17509,2168,19,922,114,1612,2018,4.091834912
 Fall 2018,Red,Red Line,Weekday,7,Evening,Downtown Crossing,55361,37395,19,2914,1968,9048,2018,0.32440095
-Fall 2018,Red,Red Line,Weekday,7,Evening,Fields Corner,1762,17620,19,93,927,2162,2018,
+Fall 2018,Red,Red Line,Weekday,7,Evening,Fields Corner,1762,17620,19,93,927,2162,2018,0.0
 Fall 2018,Red,Red Line,Weekday,7,Evening,Harvard,43580,7489,19,2294,394,4104,2018,3.210236017
-Fall 2018,Red,Red Line,Weekday,7,Evening,JFK/Umass,12194,22583,19,642,1189,4121,2018,
+Fall 2018,Red,Red Line,Weekday,7,Evening,JFK/Umass,12194,22583,19,642,1189,4121,2018,0.0
 Fall 2018,Red,Red Line,Weekday,7,Evening,Kendall/MIT,31132,7451,19,1639,392,6135,2018,1.376744021
 Fall 2018,Red,Red Line,Weekday,7,Evening,North Quincy,1357,38545,19,71,2029,2708,2018,6.042396998
 Fall 2018,Red,Red Line,Weekday,7,Evening,Park Street,65327,39293,19,3438,2068,8103,2018,0.309052323
@@ -630,13 +630,13 @@ Fall 2018,Red,Red Line,Weekday,5,Midday School,Charles/MGH,25216,8296,19,1327,43
 Fall 2018,Red,Red Line,Weekday,5,Midday School,Central,24764,8884,19,1303,468,5026,2018,2.300899444
 Fall 2018,Red,Red Line,Weekday,5,Midday School,Davis,15327,1096,19,807,58,1510,2018,4.091834912
 Fall 2018,Red,Red Line,Weekday,5,Midday School,Downtown Crossing,49794,38068,19,2621,2004,8403,2018,0.32440095
-Fall 2018,Red,Red Line,Weekday,5,Midday School,Fields Corner,4104,17305,19,216,911,2115,2018,
+Fall 2018,Red,Red Line,Weekday,5,Midday School,Fields Corner,4104,17305,19,216,911,2115,2018,0.0
 Fall 2018,Red,Red Line,Weekday,5,Midday School,Harvard,47152,5755,19,2482,303,4191,2018,3.210236017
-Fall 2018,Red,Red Line,Weekday,5,Midday School,JFK/Umass,15080,17237,19,794,907,3608,2018,
+Fall 2018,Red,Red Line,Weekday,5,Midday School,JFK/Umass,15080,17237,19,794,907,3608,2018,0.0
 Fall 2018,Red,Red Line,Weekday,5,Midday School,Kendall/MIT,34671,9474,19,1825,499,6353,2018,1.376744021
 Fall 2018,Red,Red Line,Weekday,5,Midday School,North Quincy,1758,24383,19,93,1283,2924,2018,6.042396998
 Fall 2018,Red,Red Line,Weekday,1,Very Early Morning,Harvard,165,2948,19,9,155,152,2018,3.210236017
-Fall 2018,Red,Red Line,Weekday,1,Very Early Morning,JFK/Umass,1889,733,19,99,39,1328,2018,
+Fall 2018,Red,Red Line,Weekday,1,Very Early Morning,JFK/Umass,1889,733,19,99,39,1328,2018,0.0
 Fall 2018,Red,Red Line,Weekday,1,Very Early Morning,Kendall/MIT,108,4304,19,6,227,399,2018,1.376744021
 Fall 2018,Red,Red Line,Weekday,1,Very Early Morning,North Quincy,6939,53,19,365,3,802,2018,6.042396998
 Fall 2018,Red,Red Line,Weekday,1,Very Early Morning,Park Street,2890,6454,19,152,340,869,2018,0.309052323
@@ -662,9 +662,9 @@ Fall 2018,Red,Red Line,Weekday,2,Early Am,Charles/MGH,1248,26473,19,66,1393,2473
 Fall 2018,Red,Red Line,Weekday,2,Early Am,Central,1024,8597,19,54,452,1054,2018,2.300899444
 Fall 2018,Red,Red Line,Weekday,2,Early Am,Davis,811,2643,19,43,139,351,2018,4.091834912
 Fall 2018,Red,Red Line,Weekday,2,Early Am,Downtown Crossing,13742,32805,19,723,1727,4779,2018,0.32440095
-Fall 2018,Red,Red Line,Weekday,2,Early Am,Fields Corner,9815,632,19,517,33,2192,2018,
+Fall 2018,Red,Red Line,Weekday,2,Early Am,Fields Corner,9815,632,19,517,33,2192,2018,0.0
 Fall 2018,Red,Red Line,Weekday,2,Early Am,Harvard,682,10598,19,36,558,532,2018,3.210236017
-Fall 2018,Red,Red Line,Weekday,2,Early Am,JFK/Umass,5854,5522,19,308,291,5921,2018,
+Fall 2018,Red,Red Line,Weekday,2,Early Am,JFK/Umass,5854,5522,19,308,291,5921,2018,0.0
 Fall 2018,Red,Red Line,Weekday,2,Early Am,Kendall/MIT,362,19747,19,19,1039,1453,2018,1.376744021
 Fall 2018,Red,Red Line,Weekday,2,Early Am,North Quincy,16281,417,19,857,22,3534,2018,6.042396998
 Fall 2018,Red,Red Line,Weekday,2,Early Am,Park Street,9065,27660,19,477,1456,3801,2018,0.309052323
@@ -684,9 +684,9 @@ Fall 2018,Red,Red Line,Weekday,3,Am Peak,Charles/MGH,13747,41343,19,724,2176,102
 Fall 2018,Red,Red Line,Weekday,3,Am Peak,Central,7363,35223,19,388,1854,4377,2018,2.300899444
 Fall 2018,Red,Red Line,Weekday,3,Am Peak,Davis,3654,12492,19,192,657,1224,2018,4.091834912
 Fall 2018,Red,Red Line,Weekday,3,Am Peak,Downtown Crossing,50820,108989,19,2675,5736,14296,2018,0.32440095
-Fall 2018,Red,Red Line,Weekday,3,Am Peak,Fields Corner,25842,4459,19,1360,235,5440,2018,
+Fall 2018,Red,Red Line,Weekday,3,Am Peak,Fields Corner,25842,4459,19,1360,235,5440,2018,0.0
 Fall 2018,Red,Red Line,Weekday,3,Am Peak,Harvard,4257,48885,19,224,2573,2028,2018,3.210236017
-Fall 2018,Red,Red Line,Weekday,3,Am Peak,JFK/Umass,26881,23113,19,1415,1216,16643,2018,
+Fall 2018,Red,Red Line,Weekday,3,Am Peak,JFK/Umass,26881,23113,19,1415,1216,16643,2018,0.0
 Fall 2018,Red,Red Line,Weekday,3,Am Peak,Kendall/MIT,3707,87335,19,195,4597,5843,2018,1.376744021
 Fall 2018,Red,Red Line,Weekday,3,Am Peak,North Quincy,64500,3414,19,3395,180,10198,2018,6.042396998
 Fall 2018,Red,Red Line,Weekday,3,Am Peak,Park Street,36574,85957,19,1925,4524,11697,2018,0.309052323
@@ -704,7 +704,7 @@ Fall 2018,Red,Red Line,Saturday,10,Off Peak,Park Street,61937,58147,5,12387,1162
 Fall 2018,Red,Red Line,Weekday,8,Late Evening,Alewife,3120,0,19,164,0,164,2018,4.892849933
 Fall 2018,Red,Red Line,Weekday,6,Pm Peak,Ashmont,17817,0,19,938,0,938,2018,5.22382406
 Fall 2018,Red,Red Line,Saturday,10,Off Peak,Davis,31788,1804,5,6358,361,11540,2018,4.091834912
-Fall 2018,Red,Red Line,Weekday,8,Late Evening,Fields Corner,1400,575,19,74,30,212,2018,
+Fall 2018,Red,Red Line,Weekday,8,Late Evening,Fields Corner,1400,575,19,74,30,212,2018,0.0
 Fall 2018,Red,Red Line,Weekday,3,Am Peak,Shawmut,17437,809,19,918,43,4314,2018,4.637936196
 Fall 2018,Red,Red Line,Saturday,10,Off Peak,Porter,2143,21604,5,429,4321,11769,2018,3.64796599
 Fall 2018,Red,Red Line,Weekday,8,Late Evening,Andrew,1703,4855,19,90,256,2212,2018,2.064669418
@@ -715,8 +715,8 @@ Fall 2018,Red,Red Line,Weekday,3,Am Peak,South Station,73074,91886,19,3846,4836,
 Fall 2018,Red,Red Line,Saturday,10,Off Peak,Quincy Adams,1507,41,5,301,8,682,2018,9.157278678
 Fall 2018,Red,Red Line,Weekday,8,Late Evening,Ashmont,0,7576,19,0,399,0,2018,5.22382406
 Fall 2018,Red,Red Line,Weekday,6,Pm Peak,Braintree,8770,0,19,462,0,462,2018,10.93713477
-Fall 2018,Red,Red Line,Saturday,10,Off Peak,Fields Corner,2367,14380,5,473,2876,5609,2018,
-Fall 2018,Red,Red Line,Weekday,8,Late Evening,JFK/Umass,1931,1158,19,102,61,577,2018,
+Fall 2018,Red,Red Line,Saturday,10,Off Peak,Fields Corner,2367,14380,5,473,2876,5609,2018,0.0
+Fall 2018,Red,Red Line,Weekday,8,Late Evening,JFK/Umass,1931,1158,19,102,61,577,2018,0.0
 Fall 2018,Red,Red Line,Weekday,8,Late Evening,Kendall/MIT,3864,3662,19,203,193,1982,2018,1.376744021
 Fall 2018,Red,Red Line,Weekday,8,Late Evening,North Quincy,5273,37,19,278,2,305,2018,6.042396998
 Fall 2018,Red,Red Line,Weekday,8,Late Evening,Park Street,18981,7315,19,999,385,1905,2018,0.309052323
@@ -736,9 +736,9 @@ Fall 2018,Red,Red Line,Weekday,9,Night,Charles/MGH,539,202,19,28,11,248,2018,0.5
 Fall 2018,Red,Red Line,Weekday,9,Night,Central,855,1364,19,45,72,234,2018,2.300899444
 Fall 2018,Red,Red Line,Weekday,9,Night,Davis,24,2461,19,1,130,31,2018,4.091834912
 Fall 2018,Red,Red Line,Weekday,9,Night,Downtown Crossing,1167,1146,19,61,60,180,2018,0.32440095
-Fall 2018,Red,Red Line,Weekday,9,Night,Fields Corner,134,89,19,7,5,23,2018,
+Fall 2018,Red,Red Line,Weekday,9,Night,Fields Corner,134,89,19,7,5,23,2018,0.0
 Fall 2018,Red,Red Line,Weekday,9,Night,Harvard,951,1057,19,50,56,228,2018,3.210236017
-Fall 2018,Red,Red Line,Weekday,9,Night,JFK/Umass,196,172,19,10,9,55,2018,
+Fall 2018,Red,Red Line,Weekday,9,Night,JFK/Umass,196,172,19,10,9,55,2018,0.0
 Fall 2018,Red,Red Line,Weekday,9,Night,Kendall/MIT,736,502,19,39,26,261,2018,1.376744021
 Fall 2018,Red,Red Line,Weekday,9,Night,North Quincy,531,0,19,28,0,31,2018,6.042396998
 Fall 2018,Red,Red Line,Weekday,9,Night,Park Street,2231,1280,19,117,67,231,2018,0.309052323
@@ -758,16 +758,16 @@ Fall 2018,Red,Red Line,Saturday,10,Off Peak,Charles/MGH,11314,10509,5,2263,2102,
 Fall 2018,Red,Red Line,Saturday,10,Off Peak,Central,15169,35272,5,3034,7054,23296,2018,2.300899444
 Fall 2018,Red,Red Line,Saturday,10,Off Peak,Davis,1689,33468,5,338,6694,5413,2018,4.091834912
 Fall 2018,Red,Red Line,Saturday,10,Off Peak,Downtown Crossing,43183,45118,5,8637,9024,27793,2018,0.32440095
-Fall 2018,Red,Red Line,Saturday,10,Off Peak,Fields Corner,13503,2254,5,2701,451,8090,2018,
+Fall 2018,Red,Red Line,Saturday,10,Off Peak,Fields Corner,13503,2254,5,2701,451,8090,2018,0.0
 Fall 2018,Red,Red Line,Saturday,10,Off Peak,Harvard,13187,51360,5,2637,10272,15661,2018,3.210236017
-Fall 2018,Red,Red Line,Saturday,10,Off Peak,JFK/Umass,17029,5540,5,3406,1108,22214,2018,
+Fall 2018,Red,Red Line,Saturday,10,Off Peak,JFK/Umass,17029,5540,5,3406,1108,22214,2018,0.0
 Fall 2018,Red,Red Line,Weekday,6,Pm Peak,Charles/MGH,28256,11518,19,1487,606,15027,2018,0.598630827
 Fall 2018,Red,Red Line,Saturday,10,Off Peak,Harvard,55705,12205,5,11141,2441,23750,2018,3.210236017
 Fall 2018,Red,Red Line,Weekday,3,Am Peak,Wollaston,0,118,19,0,6,6983,2018,6.756258622
 Fall 2018,Red,Red Line,Saturday,10,Off Peak,Quincy Center,3305,175,5,661,35,1308,2018,7.946997833
 Fall 2018,Red,Red Line,Weekday,8,Late Evening,Broadway,1706,2928,19,90,154,2378,2018,1.211795205
 Fall 2018,Red,Red Line,Weekday,6,Pm Peak,Central,34046,67695,19,1792,3563,15389,2018,2.300899444
-Fall 2018,Red,Red Line,Saturday,10,Off Peak,JFK/Umass,5434,16905,5,1087,3381,9271,2018,
+Fall 2018,Red,Red Line,Saturday,10,Off Peak,JFK/Umass,5434,16905,5,1087,3381,9271,2018,0.0
 Fall 2018,Red,Red Line,Saturday,10,Off Peak,Savin Hill,5911,748,5,1182,150,9123,2018,3.380449346
 Fall 2018,Red,Red Line,Weekday,4,Midday Base,Alewife,0,21640,19,0,1139,0,2018,4.892849933
 Fall 2018,Red,Red Line,Weekday,4,Midday Base,Andrew,20075,7281,19,1057,383,11218,2018,2.064669418
@@ -799,9 +799,9 @@ Fall 2018,Red,Red Line,Sunday,11,Off Peak,Charles/MGH,8662,9514,5,1732,1903,2171
 Fall 2018,Red,Red Line,Sunday,11,Off Peak,Central,27035,13661,5,5407,2732,21054,2018,2.300899444
 Fall 2018,Red,Red Line,Sunday,11,Off Peak,Davis,24079,1305,5,4816,261,8611,2018,4.091834912
 Fall 2018,Red,Red Line,Sunday,11,Off Peak,Downtown Crossing,28680,28515,5,5736,5703,19526,2018,0.32440095
-Fall 2018,Red,Red Line,Sunday,11,Off Peak,Fields Corner,1549,10956,5,310,2191,4289,2018,
+Fall 2018,Red,Red Line,Sunday,11,Off Peak,Fields Corner,1549,10956,5,310,2191,4289,2018,0.0
 Fall 2018,Red,Red Line,Sunday,11,Off Peak,Harvard,44185,8938,5,8837,1788,18380,2018,3.210236017
-Fall 2018,Red,Red Line,Sunday,11,Off Peak,JFK/Umass,3079,13010,5,616,2602,7247,2018,
+Fall 2018,Red,Red Line,Sunday,11,Off Peak,JFK/Umass,3079,13010,5,616,2602,7247,2018,0.0
 Fall 2018,Red,Red Line,Sunday,11,Off Peak,Kendall/MIT,14369,10229,5,2874,2046,21882,2018,1.376744021
 Fall 2018,Red,Red Line,Sunday,11,Off Peak,North Quincy,244,31836,5,49,6367,1102,2018,6.042396998
 Fall 2018,Red,Red Line,Sunday,11,Off Peak,Park Street,39846,50941,5,7969,10188,19493,2018,0.309052323
@@ -821,25 +821,25 @@ Fall 2018,Red,Red Line,Weekday,1,Very Early Morning,Charles/MGH,171,4900,19,9,25
 Fall 2018,Red,Red Line,Weekday,1,Very Early Morning,Central,365,2269,19,19,119,299,2018,2.300899444
 Fall 2018,Red,Red Line,Weekday,1,Very Early Morning,Davis,257,600,19,14,32,104,2018,4.091834912
 Fall 2018,Red,Red Line,Weekday,1,Very Early Morning,Downtown Crossing,3551,7111,19,187,374,1056,2018,0.32440095
-Fall 2018,Red,Red Line,Weekday,1,Very Early Morning,Fields Corner,4334,20,19,228,1,380,2018,
+Fall 2018,Red,Red Line,Weekday,1,Very Early Morning,Fields Corner,4334,20,19,228,1,380,2018,0.0
 Fall 2018,Red,Red Line,Weekday,8,Late Evening,Central,8574,2372,19,451,125,1551,2018,2.300899444
-Fall 2018,Red,Red Line,Weekday,6,Pm Peak,Fields Corner,10215,2705,19,538,142,1502,2018,
+Fall 2018,Red,Red Line,Weekday,6,Pm Peak,Fields Corner,10215,2705,19,538,142,1502,2018,0.0
 Fall 2018,Red,Red Line,Weekday,8,Late Evening,Davis,5137,392,19,270,21,414,2018,4.091834912
 Fall 2018,Red,Red Line,Weekday,6,Pm Peak,Harvard,27191,59920,19,1431,3154,13666,2018,3.210236017
 Fall 2018,Red,Red Line,Saturday,10,Off Peak,Wollaston,0,6,5,0,1,1307,2018,6.756258622
 Fall 2018,Red,Red Line,Weekday,4,Midday Base,Charles/MGH,16352,26149,19,861,1376,9050,2018,0.598630827
-Fall 2018,Red,Red Line,Weekday,6,Pm Peak,JFK/Umass,32229,7875,19,1696,414,5309,2018,
+Fall 2018,Red,Red Line,Weekday,6,Pm Peak,JFK/Umass,32229,7875,19,1696,414,5309,2018,0.0
 Fall 2018,Red,Red Line,Weekday,4,Midday Base,Central,13003,37661,19,684,1982,5673,2018,2.300899444
 Fall 2018,Red,Red Line,Weekday,6,Pm Peak,Kendall/MIT,64157,23644,19,3377,1244,17160,2018,1.376744021
 Fall 2018,Red,Red Line,Weekday,4,Midday Base,Davis,2350,22433,19,124,1181,1139,2018,4.091834912
 Fall 2018,Red,Red Line,Weekday,6,Pm Peak,North Quincy,18719,1864,19,985,98,2372,2018,6.042396998
 Fall 2018,Red,Red Line,Weekday,4,Midday Base,Downtown Crossing,56453,85000,19,2971,4474,10641,2018,0.32440095
 Fall 2018,Red,Red Line,Weekday,6,Pm Peak,Park Street,86316,52743,19,4543,2776,14146,2018,0.309052323
-Fall 2018,Red,Red Line,Weekday,4,Midday Base,Fields Corner,22122,2814,19,1164,148,3594,2018,
+Fall 2018,Red,Red Line,Weekday,4,Midday Base,Fields Corner,22122,2814,19,1164,148,3594,2018,0.0
 Fall 2018,Red,Red Line,Weekday,6,Pm Peak,Porter,2635,68960,19,139,3629,10175,2018,3.64796599
 Fall 2018,Red,Red Line,Weekday,4,Midday Base,Harvard,9403,59900,19,495,3153,3015,2018,3.210236017
 Fall 2018,Red,Red Line,Weekday,6,Pm Peak,Quincy Adams,9669,863,19,509,45,925,2018,9.157278678
-Fall 2018,Red,Red Line,Weekday,4,Midday Base,JFK/Umass,34216,20843,19,1801,1097,10544,2018,
+Fall 2018,Red,Red Line,Weekday,4,Midday Base,JFK/Umass,34216,20843,19,1801,1097,10544,2018,0.0
 Fall 2018,Red,Red Line,Weekday,6,Pm Peak,Quincy Center,13071,2365,19,688,124,1488,2018,7.946997833
 Fall 2018,Red,Red Line,Weekday,4,Midday Base,Kendall/MIT,13462,52968,19,709,2788,6970,2018,1.376744021
 Fall 2018,Red,Red Line,Weekday,6,Pm Peak,Savin Hill,3866,959,19,203,50,1655,2018,3.380449346
@@ -865,9 +865,9 @@ Fall 2018,Red,Red Line,Weekday,5,Midday School,Charles/MGH,11393,12884,19,600,67
 Fall 2018,Red,Red Line,Weekday,5,Midday School,Central,11836,26941,19,623,1418,5084,2018,2.300899444
 Fall 2018,Red,Red Line,Weekday,5,Midday School,Davis,783,25370,19,41,1335,1640,2018,4.091834912
 Fall 2018,Red,Red Line,Weekday,5,Midday School,Downtown Crossing,36323,54611,19,1912,2874,5793,2018,0.32440095
-Fall 2018,Red,Red Line,Weekday,5,Midday School,Fields Corner,13413,2965,19,706,156,1830,2018,
+Fall 2018,Red,Red Line,Weekday,5,Midday School,Fields Corner,13413,2965,19,706,156,1830,2018,0.0
 Fall 2018,Red,Red Line,Weekday,5,Midday School,Harvard,11518,34134,19,606,1797,3894,2018,3.210236017
-Fall 2018,Red,Red Line,Weekday,5,Midday School,JFK/Umass,32843,7211,19,1729,380,5187,2018,
+Fall 2018,Red,Red Line,Weekday,5,Midday School,JFK/Umass,32843,7211,19,1729,380,5187,2018,0.0
 Fall 2018,Red,Red Line,Weekday,5,Midday School,Kendall/MIT,17614,14088,19,927,741,5879,2018,1.376744021
 Fall 2018,Red,Red Line,Weekday,5,Midday School,North Quincy,11513,1238,19,606,65,1811,2018,6.042396998
 Fall 2018,Red,Red Line,Weekday,5,Midday School,Park Street,36716,37112,19,1932,1953,5772,2018,0.309052323
@@ -880,11 +880,11 @@ Fall 2018,Red,Red Line,Weekday,5,Midday School,South Station,34954,13908,19,1840
 Fall 2018,Red,Red Line,Weekday,5,Midday School,Wollaston,0,35,19,0,2,1271,2018,6.756258622
 Fall 2018,Red,Red Line,Sunday,11,Off Peak,Alewife,0,19617,5,0,3923,0,2018,4.892849933
 Fall 2018,Red,Red Line,Weekday,8,Late Evening,Downtown Crossing,10885,11902,19,573,626,2341,2018,0.32440095
-Fall 2018,Red,Red Line,Weekday,8,Late Evening,Fields Corner,358,8182,19,19,431,656,2018,
+Fall 2018,Red,Red Line,Weekday,8,Late Evening,Fields Corner,358,8182,19,19,431,656,2018,0.0
 Fall 2018,Red,Red Line,Weekday,8,Late Evening,Harvard,13686,1277,19,720,67,1224,2018,3.210236017
 Fall 2018,Red,Red Line,Sunday,11,Off Peak,Andrew,9776,4061,5,1955,812,17992,2018,2.064669418
 Fall 2018,Red,Red Line,Weekday,7,Evening,Andrew,5962,3560,19,314,187,2778,2018,2.064669418
-Fall 2018,Red,Red Line,Weekday,8,Late Evening,JFK/Umass,1604,6776,19,84,357,970,2018,
+Fall 2018,Red,Red Line,Weekday,8,Late Evening,JFK/Umass,1604,6776,19,84,357,970,2018,0.0
 Fall 2018,Red,Red Line,Weekday,8,Late Evening,Kendall/MIT,6142,1419,19,323,75,1799,2018,1.376744021
 Fall 2018,Red,Red Line,Weekday,7,Evening,Ashmont,11068,0,19,583,0,583,2018,5.22382406
 Fall 2018,Red,Red Line,Weekday,8,Late Evening,North Quincy,80,11442,19,4,602,113,2018,6.042396998
@@ -900,11 +900,11 @@ Fall 2018,Red,Red Line,Weekday,7,Evening,Davis,1633,59941,19,86,3155,2264,2018,4
 Fall 2018,Red,Red Line,Weekday,8,Late Evening,Savin Hill,97,3171,19,5,167,1067,2018,3.380449346
 Fall 2018,Red,Red Line,Weekday,7,Evening,Downtown Crossing,44747,32609,19,2355,1716,6184,2018,0.32440095
 Fall 2018,Red,Red Line,Weekday,8,Late Evening,Shawmut,41,4923,19,2,259,399,2018,4.637936196
-Fall 2018,Red,Red Line,Weekday,7,Evening,Fields Corner,5229,1890,19,275,99,834,2018,
+Fall 2018,Red,Red Line,Weekday,7,Evening,Fields Corner,5229,1890,19,275,99,834,2018,0.0
 Fall 2018,Red,Red Line,Weekday,8,Late Evening,South Station,8194,6272,19,431,330,2442,2018,0.598479405
 Fall 2018,Red,Red Line,Weekday,7,Evening,Harvard,18963,38610,19,998,2032,7190,2018,3.210236017
 Fall 2018,Red,Red Line,Weekday,8,Late Evening,Wollaston,0,40,19,0,2,110,2018,6.756258622
-Fall 2018,Red,Red Line,Weekday,7,Evening,JFK/Umass,17690,4510,19,931,237,2652,2018,
+Fall 2018,Red,Red Line,Weekday,7,Evening,JFK/Umass,17690,4510,19,931,237,2652,2018,0.0
 Fall 2018,Red,Red Line,Weekday,9,Night,Alewife,152,0,19,8,0,8,2018,4.892849933
 Fall 2018,Red,Red Line,Weekday,7,Evening,Kendall/MIT,31526,14985,19,1659,789,9336,2018,1.376744021
 Fall 2018,Red,Red Line,Weekday,9,Night,Andrew,255,968,19,13,51,333,2018,2.064669418
@@ -917,9 +917,9 @@ Fall 2018,Red,Red Line,Weekday,9,Night,Charles/MGH,491,181,19,26,10,245,2018,0.5
 Fall 2018,Red,Red Line,Weekday,9,Night,Central,1275,242,19,67,13,191,2018,2.300899444
 Fall 2018,Red,Red Line,Weekday,9,Night,Davis,652,18,19,34,1,41,2018,4.091834912
 Fall 2018,Red,Red Line,Weekday,9,Night,Downtown Crossing,1851,1083,19,97,57,336,2018,0.32440095
-Fall 2018,Red,Red Line,Weekday,9,Night,Fields Corner,55,1753,19,3,92,114,2018,
+Fall 2018,Red,Red Line,Weekday,9,Night,Fields Corner,55,1753,19,3,92,114,2018,0.0
 Fall 2018,Red,Red Line,Weekday,9,Night,Harvard,1685,124,19,89,7,137,2018,3.210236017
-Fall 2018,Red,Red Line,Weekday,9,Night,JFK/Umass,225,1175,19,12,62,142,2018,
+Fall 2018,Red,Red Line,Weekday,9,Night,JFK/Umass,225,1175,19,12,62,142,2018,0.0
 Fall 2018,Red,Red Line,Weekday,9,Night,Kendall/MIT,877,170,19,46,9,229,2018,1.376744021
 Fall 2018,Red,Red Line,Weekday,9,Night,North Quincy,7,741,19,0,39,12,2018,6.042396998
 Fall 2018,Red,Red Line,Weekday,9,Night,Park Street,3129,2170,19,165,114,295,2018,0.309052323
@@ -946,9 +946,9 @@ Fall 2018,Red,Red Line,Weekday,7,Evening,Savin Hill,1918,512,19,101,27,908,2018,
 Fall 2018,Red,Red Line,Sunday,11,Off Peak,Davis,1112,26600,5,222,5320,3923,2018,4.091834912
 Fall 2018,Red,Red Line,Weekday,7,Evening,Shawmut,1867,434,19,98,23,658,2018,4.637936196
 Fall 2018,Red,Red Line,Sunday,11,Off Peak,Downtown Crossing,34222,34039,5,6844,6808,22322,2018,0.32440095
-Fall 2018,Red,Red Line,Sunday,11,Off Peak,Fields Corner,10126,1457,5,2025,291,6042,2018,
+Fall 2018,Red,Red Line,Sunday,11,Off Peak,Fields Corner,10126,1457,5,2025,291,6042,2018,0.0
 Fall 2018,Red,Red Line,Sunday,11,Off Peak,Harvard,9851,41592,5,1970,8318,12150,2018,3.210236017
-Fall 2018,Red,Red Line,Sunday,11,Off Peak,JFK/Umass,13788,4456,5,2758,891,16849,2018,
+Fall 2018,Red,Red Line,Sunday,11,Off Peak,JFK/Umass,13788,4456,5,2758,891,16849,2018,0.0
 Fall 2018,Red,Red Line,Sunday,11,Off Peak,Kendall/MIT,9998,15097,5,2000,3019,21867,2018,1.376744021
 Fall 2018,Red,Red Line,Sunday,11,Off Peak,North Quincy,35468,204,5,7094,41,8123,2018,6.042396998
 Fall 2018,Red,Red Line,Sunday,11,Off Peak,Park Street,45442,43364,5,9088,8673,22738,2018,0.309052323
@@ -995,9 +995,9 @@ Fall 2017,Red,Red Line,Weekday,2,Early Am,Charles/MGH,3632,33437,82,44,408,1577,
 Fall 2017,Red,Red Line,Weekday,2,Early Am,Central,24952,19152,82,304,234,2163,2017,2.300899444
 Fall 2017,Red,Red Line,Weekday,2,Early Am,Davis,43809,514,82,534,6,1474,2017,4.091834912
 Fall 2017,Red,Red Line,Weekday,2,Early Am,Downtown Crossing,42037,36850,82,513,449,1484,2017,0.32440095
-Fall 2017,Red,Red Line,Weekday,2,Early Am,Fields Corner,2983,5998,82,36,73,202,2017,
+Fall 2017,Red,Red Line,Weekday,2,Early Am,Fields Corner,2983,5998,82,36,73,202,2017,0.0
 Fall 2017,Red,Red Line,Weekday,2,Early Am,Harvard,33772,8712,82,412,106,2092,2017,3.210236017
-Fall 2017,Red,Red Line,Weekday,2,Early Am,JFK/Umass,6827,17186,82,83,210,350,2017,
+Fall 2017,Red,Red Line,Weekday,2,Early Am,JFK/Umass,6827,17186,82,83,210,350,2017,0.0
 Fall 2017,Red,Red Line,Weekday,2,Early Am,Kendall/MIT,6513,24759,82,79,302,1941,2017,1.376744021
 Fall 2017,Red,Red Line,Weekday,2,Early Am,North Quincy,2526,10272,82,31,125,346,2017,6.042396998
 Fall 2017,Red,Red Line,Weekday,2,Early Am,Park Street,30063,42903,82,367,523,1420,2017,0.309052323
@@ -1017,9 +1017,9 @@ Fall 2017,Red,Red Line,Weekday,3,Am Peak,Charles/MGH,34611,114608,82,422,1398,12
 Fall 2017,Red,Red Line,Weekday,3,Am Peak,Central,210465,117778,82,2567,1436,15039,2017,2.300899444
 Fall 2017,Red,Red Line,Weekday,3,Am Peak,Davis,388406,3839,82,4737,47,9357,2017,4.091834912
 Fall 2017,Red,Red Line,Weekday,3,Am Peak,Downtown Crossing,186271,296397,82,2272,3615,8186,2017,0.32440095
-Fall 2017,Red,Red Line,Weekday,3,Am Peak,Fields Corner,11218,18488,82,137,225,584,2017,
+Fall 2017,Red,Red Line,Weekday,3,Am Peak,Fields Corner,11218,18488,82,137,225,584,2017,0.0
 Fall 2017,Red,Red Line,Weekday,3,Am Peak,Harvard,220528,94359,82,2689,1151,13909,2017,3.210236017
-Fall 2017,Red,Red Line,Weekday,3,Am Peak,JFK/Umass,23171,122081,82,283,1489,1160,2017,
+Fall 2017,Red,Red Line,Weekday,3,Am Peak,JFK/Umass,23171,122081,82,283,1489,1160,2017,0.0
 Fall 2017,Red,Red Line,Weekday,3,Am Peak,Kendall/MIT,58931,218512,82,719,2665,13093,2017,1.376744021
 Fall 2017,Red,Red Line,Weekday,3,Am Peak,North Quincy,7251,52829,82,88,644,1022,2017,6.042396998
 Fall 2017,Red,Red Line,Weekday,3,Am Peak,Park Street,128689,340979,82,1569,4158,9529,2017,0.309052323
@@ -1030,18 +1030,18 @@ Fall 2017,Red,Red Line,Weekday,3,Am Peak,Savin Hill,2923,8600,82,36,105,673,2017
 Fall 2017,Red,Red Line,Weekday,3,Am Peak,Shawmut,1234,11408,82,15,139,460,2017,4.637936196
 Fall 2017,Red,Red Line,Weekday,6,Pm Peak,Downtown Crossing,452105,282605,82,5513,3446,17773,2017,0.32440095
 Fall 2017,Red,Red Line,Weekday,4,Midday Base,Charles/MGH,67711,88732,82,826,1082,9544,2017,0.598630827
-Fall 2017,Red,Red Line,Weekday,6,Pm Peak,Fields Corner,15414,108986,82,188,1329,3937,2017,
+Fall 2017,Red,Red Line,Weekday,6,Pm Peak,Fields Corner,15414,108986,82,188,1329,3937,2017,0.0
 Fall 2017,Red,Red Line,Weekday,4,Midday Base,Central,207775,90354,82,2534,1102,11094,2017,2.300899444
 Fall 2017,Red,Red Line,Weekday,6,Pm Peak,Harvard,309278,43073,82,3772,525,6722,2017,3.210236017
 Fall 2017,Red,Red Line,Weekday,4,Midday Base,Davis,241781,6588,82,2949,80,5373,2017,4.091834912
-Fall 2017,Red,Red Line,Weekday,6,Pm Peak,JFK/Umass,78749,120202,82,960,1466,8504,2017,
+Fall 2017,Red,Red Line,Weekday,6,Pm Peak,JFK/Umass,78749,120202,82,960,1466,8504,2017,0.0
 Fall 2017,Red,Red Line,Weekday,4,Midday Base,Downtown Crossing,247878,248101,82,3023,3026,8168,2017,0.32440095
-Fall 2017,Red,Red Line,Weekday,4,Midday Base,Fields Corner,10970,46689,82,134,569,1105,2017,
+Fall 2017,Red,Red Line,Weekday,4,Midday Base,Fields Corner,10970,46689,82,134,569,1105,2017,0.0
 Fall 2017,Red,Red Line,Weekday,6,Pm Peak,Kendall/MIT,362420,39034,82,4420,476,12030,2017,1.376744021
 Fall 2017,Red,Red Line,Weekday,4,Midday Base,Harvard,278377,77758,82,3395,948,9662,2017,3.210236017
 Fall 2017,Red,Red Line,Weekday,6,Pm Peak,North Quincy,22290,200313,82,272,2443,9028,2017,6.042396998
 Fall 2017,Red,Red Line,Weekday,6,Pm Peak,Park Street,485837,305139,82,5925,3721,15706,2017,0.309052323
-Fall 2017,Red,Red Line,Weekday,4,Midday Base,JFK/Umass,48758,145762,82,595,1778,2209,2017,
+Fall 2017,Red,Red Line,Weekday,4,Midday Base,JFK/Umass,48758,145762,82,595,1778,2209,2017,0.0
 Fall 2017,Red,Red Line,Weekday,6,Pm Peak,Porter,63940,14385,82,780,175,3476,2017,3.64796599
 Fall 2017,Red,Red Line,Weekday,4,Midday Base,Kendall/MIT,95688,201829,82,1167,2461,9800,2017,1.376744021
 Fall 2017,Red,Red Line,Weekday,4,Midday Base,North Quincy,12084,59019,82,147,720,2129,2017,6.042396998
@@ -1069,9 +1069,9 @@ Fall 2017,Red,Red Line,Weekday,5,Midday School,Charles/MGH,104850,37116,82,1279,
 Fall 2017,Red,Red Line,Weekday,5,Midday School,Central,105742,40133,82,1290,489,5162,2017,2.300899444
 Fall 2017,Red,Red Line,Weekday,5,Midday School,Davis,71632,5001,82,874,61,1613,2017,4.091834912
 Fall 2017,Red,Red Line,Weekday,5,Midday School,Downtown Crossing,220177,171631,82,2685,2093,8170,2017,0.32440095
-Fall 2017,Red,Red Line,Weekday,5,Midday School,Fields Corner,14854,73136,82,181,892,2050,2017,
+Fall 2017,Red,Red Line,Weekday,5,Midday School,Fields Corner,14854,73136,82,181,892,2050,2017,0.0
 Fall 2017,Red,Red Line,Weekday,5,Midday School,Harvard,208944,27406,82,2548,334,4362,2017,3.210236017
-Fall 2017,Red,Red Line,Weekday,5,Midday School,JFK/Umass,59326,70880,82,723,864,3642,2017,
+Fall 2017,Red,Red Line,Weekday,5,Midday School,JFK/Umass,59326,70880,82,723,864,3642,2017,0.0
 Fall 2017,Red,Red Line,Weekday,5,Midday School,Kendall/MIT,139808,40545,82,1705,494,6373,2017,1.376744021
 Fall 2017,Red,Red Line,Weekday,5,Midday School,North Quincy,13219,68392,82,161,834,3555,2017,6.042396998
 Fall 2017,Red,Red Line,Weekday,5,Midday School,Park Street,220309,189229,82,2687,2308,7578,2017,0.309052323
@@ -1094,9 +1094,9 @@ Fall 2017,Red,Red Line,Weekday,7,Evening,Charles/MGH,78902,35973,82,962,439,6452
 Fall 2017,Red,Red Line,Weekday,7,Evening,Central,111736,50680,82,1363,618,4788,2017,2.300899444
 Fall 2017,Red,Red Line,Weekday,7,Evening,Davis,76115,8566,82,928,104,1594,2017,4.091834912
 Fall 2017,Red,Red Line,Weekday,7,Evening,Downtown Crossing,240004,151119,82,2927,1843,8864,2017,0.32440095
-Fall 2017,Red,Red Line,Weekday,7,Evening,Fields Corner,7607,70501,82,93,860,2002,2017,
+Fall 2017,Red,Red Line,Weekday,7,Evening,Fields Corner,7607,70501,82,93,860,2002,2017,0.0
 Fall 2017,Red,Red Line,Weekday,7,Evening,Harvard,186363,31630,82,2273,386,4044,2017,3.210236017
-Fall 2017,Red,Red Line,Weekday,7,Evening,JFK/Umass,44413,82826,82,542,1010,4161,2017,
+Fall 2017,Red,Red Line,Weekday,7,Evening,JFK/Umass,44413,82826,82,542,1010,4161,2017,0.0
 Fall 2017,Red,Red Line,Weekday,7,Evening,Kendall/MIT,124270,30760,82,1515,375,5929,2017,1.376744021
 Fall 2017,Red,Red Line,Weekday,7,Evening,North Quincy,8520,108692,82,104,1326,3809,2017,6.042396998
 Fall 2017,Red,Red Line,Weekday,7,Evening,Park Street,288033,179133,82,3513,2185,7780,2017,0.309052323
@@ -1116,7 +1116,7 @@ Fall 2017,Red,Red Line,Weekday,8,Late Evening,Charles/MGH,24151,6105,82,295,74,2
 Fall 2017,Red,Red Line,Weekday,8,Late Evening,Central,37287,11257,82,455,137,1554,2017,2.300899444
 Fall 2017,Red,Red Line,Weekday,8,Late Evening,Davis,23046,1957,82,281,24,411,2017,4.091834912
 Fall 2017,Red,Red Line,Weekday,8,Late Evening,Downtown Crossing,52227,50963,82,637,622,2489,2017,0.32440095
-Fall 2017,Red,Red Line,Weekday,8,Late Evening,Fields Corner,1474,31645,82,18,386,645,2017,
+Fall 2017,Red,Red Line,Weekday,8,Late Evening,Fields Corner,1474,31645,82,18,386,645,2017,0.0
 Fall 2017,Red,Red Line,Weekday,1,Very Early Morning,Alewife,8270,0,82,101,0,101,2017,4.892849933
 Fall 2017,Red,Red Line,Weekday,1,Very Early Morning,Andrew,2598,6682,82,32,81,242,2017,2.064669418
 Fall 2017,Red,Red Line,Weekday,1,Very Early Morning,Ashmont,0,4366,82,0,53,0,2017,5.22382406
@@ -1126,9 +1126,9 @@ Fall 2017,Red,Red Line,Weekday,1,Very Early Morning,Charles/MGH,848,5664,82,10,6
 Fall 2017,Red,Red Line,Weekday,1,Very Early Morning,Central,7387,3293,82,90,40,453,2017,2.300899444
 Fall 2017,Red,Red Line,Weekday,1,Very Early Morning,Davis,10814,48,82,132,1,232,2017,4.091834912
 Fall 2017,Red,Red Line,Weekday,1,Very Early Morning,Downtown Crossing,12662,8538,82,154,104,425,2017,0.32440095
-Fall 2017,Red,Red Line,Weekday,1,Very Early Morning,Fields Corner,627,1899,82,8,23,59,2017,
+Fall 2017,Red,Red Line,Weekday,1,Very Early Morning,Fields Corner,627,1899,82,8,23,59,2017,0.0
 Fall 2017,Red,Red Line,Weekday,1,Very Early Morning,Harvard,10034,1869,82,122,23,404,2017,3.210236017
-Fall 2017,Red,Red Line,Weekday,1,Very Early Morning,JFK/Umass,1670,1978,82,20,24,119,2017,
+Fall 2017,Red,Red Line,Weekday,1,Very Early Morning,JFK/Umass,1670,1978,82,20,24,119,2017,0.0
 Fall 2017,Red,Red Line,Weekday,1,Very Early Morning,Kendall/MIT,1512,5295,82,18,65,407,2017,1.376744021
 Fall 2017,Red,Red Line,Weekday,1,Very Early Morning,North Quincy,9,2662,82,0,32,129,2017,6.042396998
 Fall 2017,Red,Red Line,Weekday,4,Midday Base,Savin Hill,44904,3642,82,548,44,3997,2017,3.380449346
@@ -1136,7 +1136,7 @@ Fall 2017,Red,Red Line,Weekday,2,Early Am,Downtown Crossing,56379,134267,82,688,
 Fall 2017,Red,Red Line,Weekday,4,Midday Base,Shawmut,47238,5881,82,576,72,2532,2017,4.637936196
 Fall 2017,Red,Red Line,Weekday,4,Midday Base,South Station,215142,170522,82,2624,2080,12038,2017,0.598479405
 Fall 2017,Red,Red Line,Weekday,4,Midday Base,Wollaston,79652,8365,82,971,102,4543,2017,6.756258622
-Fall 2017,Red,Red Line,Weekday,2,Early Am,Fields Corner,42898,2145,82,523,26,2161,2017,
+Fall 2017,Red,Red Line,Weekday,2,Early Am,Fields Corner,42898,2145,82,523,26,2161,2017,0.0
 Fall 2017,Red,Red Line,Weekday,5,Midday School,Alewife,0,140094,82,0,1708,0,2017,4.892849933
 Fall 2017,Red,Red Line,Weekday,2,Early Am,Harvard,3738,42967,82,46,524,529,2017,3.210236017
 Fall 2017,Red,Red Line,Weekday,9,Night,Quincy Adams,170,9,82,2,0,7,2017,9.157278678
@@ -1150,9 +1150,9 @@ Fall 2017,Red,Red Line,Weekday,5,Midday School,Charles/MGH,50858,53332,82,620,65
 Fall 2017,Red,Red Line,Weekday,5,Midday School,Central,50566,114815,82,617,1400,5248,2017,2.300899444
 Fall 2017,Red,Red Line,Weekday,5,Midday School,Davis,3987,116058,82,49,1415,1708,2017,4.091834912
 Fall 2017,Red,Red Line,Weekday,5,Midday School,Downtown Crossing,163502,233657,82,1994,2849,5860,2017,0.32440095
-Fall 2017,Red,Red Line,Weekday,5,Midday School,Fields Corner,49275,12596,82,601,154,1706,2017,
+Fall 2017,Red,Red Line,Weekday,5,Midday School,Fields Corner,49275,12596,82,601,154,1706,2017,0.0
 Fall 2017,Red,Red Line,Weekday,5,Midday School,Harvard,51568,151785,82,629,1851,4026,2017,3.210236017
-Fall 2017,Red,Red Line,Weekday,5,Midday School,JFK/Umass,123384,30062,82,1505,367,4948,2017,
+Fall 2017,Red,Red Line,Weekday,5,Midday School,JFK/Umass,123384,30062,82,1505,367,4948,2017,0.0
 Fall 2017,Red,Red Line,Weekday,5,Midday School,Kendall/MIT,74711,61994,82,911,756,6032,2017,1.376744021
 Fall 2017,Red,Red Line,Weekday,5,Midday School,North Quincy,37620,7858,82,459,96,1913,2017,6.042396998
 Fall 2017,Red,Red Line,Weekday,5,Midday School,Park Street,172211,168410,82,2100,2054,5907,2017,0.309052323
@@ -1172,10 +1172,10 @@ Fall 2017,Red,Red Line,Weekday,6,Pm Peak,Charles/MGH,120487,46231,82,1469,564,14
 Fall 2017,Red,Red Line,Weekday,6,Pm Peak,Central,132852,277175,82,1620,3380,14628,2017,2.300899444
 Fall 2017,Red,Red Line,Weekday,6,Pm Peak,Davis,6294,402935,82,77,4914,4905,2017,4.091834912
 Fall 2017,Red,Red Line,Weekday,6,Pm Peak,Downtown Crossing,361736,297227,82,4411,3625,11622,2017,0.32440095
-Fall 2017,Red,Red Line,Weekday,6,Pm Peak,Fields Corner,39194,11251,82,478,137,1462,2017,
+Fall 2017,Red,Red Line,Weekday,6,Pm Peak,Fields Corner,39194,11251,82,478,137,1462,2017,0.0
 Fall 2017,Red,Red Line,Weekday,6,Pm Peak,Harvard,116791,254547,82,1424,3104,12948,2017,3.210236017
 Fall 2017,Red,Red Line,Weekday,7,Evening,Central,88699,182693,82,1082,2228,8047,2017,2.300899444
-Fall 2017,Red,Red Line,Weekday,6,Pm Peak,JFK/Umass,126926,33967,82,1548,414,5253,2017,
+Fall 2017,Red,Red Line,Weekday,6,Pm Peak,JFK/Umass,126926,33967,82,1548,414,5253,2017,0.0
 Fall 2017,Red,Red Line,Weekday,6,Pm Peak,Kendall/MIT,252347,97756,82,3077,1192,16388,2017,1.376744021
 Fall 2017,Red,Red Line,Weekday,6,Pm Peak,North Quincy,67667,10720,82,825,131,2514,2017,6.042396998
 Fall 2017,Red,Red Line,Weekday,6,Pm Peak,Park Street,386407,224450,82,4712,2737,13597,2017,0.309052323
@@ -1193,16 +1193,16 @@ Fall 2017,Red,Red Line,Weekday,7,Evening,Broadway,42077,11653,82,513,142,3009,20
 Fall 2017,Red,Red Line,Weekday,7,Evening,Braintree,18250,0,82,223,0,223,2017,10.93713477
 Fall 2017,Red,Red Line,Weekday,7,Evening,Charles/MGH,71080,28409,82,867,346,8431,2017,0.598630827
 Fall 2017,Red,Red Line,Weekday,7,Evening,Davis,6504,255487,82,79,3116,2229,2017,4.091834912
-Fall 2017,Red,Red Line,Weekday,2,Early Am,JFK/Umass,21446,21965,82,262,268,5780,2017,
+Fall 2017,Red,Red Line,Weekday,2,Early Am,JFK/Umass,21446,21965,82,262,268,5780,2017,0.0
 Fall 2017,Red,Red Line,Saturday,10,Off Peak,Wollaston,5325,31334,16,333,1958,7236,2017,6.756258622
-Fall 2017,Red,Red Line,Weekday,8,Late Evening,JFK/Umass,6789,25040,82,83,305,1131,2017,
+Fall 2017,Red,Red Line,Weekday,8,Late Evening,JFK/Umass,6789,25040,82,83,305,1131,2017,0.0
 Fall 2017,Red,Red Line,Weekday,7,Evening,Downtown Crossing,196301,132152,82,2394,1612,5954,2017,0.32440095
-Fall 2017,Red,Red Line,Weekday,7,Evening,Fields Corner,20701,7294,82,252,89,787,2017,
+Fall 2017,Red,Red Line,Weekday,7,Evening,Fields Corner,20701,7294,82,252,89,787,2017,0.0
 Fall 2017,Red,Red Line,Weekday,9,Night,Quincy Center,1225,57,82,15,1,21,2017,7.946997833
 Fall 2017,Red,Red Line,Weekday,7,Evening,Harvard,81468,164363,82,994,2004,7037,2017,3.210236017
 Fall 2017,Red,Red Line,Weekday,2,Early Am,Kendall/MIT,1409,72645,82,17,886,1407,2017,1.376744021
 Fall 2017,Red,Red Line,Weekday,9,Night,Savin Hill,212,168,82,3,2,23,2017,3.380449346
-Fall 2017,Red,Red Line,Weekday,7,Evening,JFK/Umass,62062,18143,82,757,221,2538,2017,
+Fall 2017,Red,Red Line,Weekday,7,Evening,JFK/Umass,62062,18143,82,757,221,2538,2017,0.0
 Fall 2017,Red,Red Line,Weekday,2,Early Am,North Quincy,41809,2720,82,510,33,3461,2017,6.042396998
 Fall 2017,Red,Red Line,Weekday,9,Night,Shawmut,196,115,82,2,1,20,2017,4.637936196
 Fall 2017,Red,Red Line,Weekday,7,Evening,Kendall/MIT,124742,62232,82,1521,759,9194,2017,1.376744021
@@ -1234,9 +1234,9 @@ Fall 2017,Red,Red Line,Sunday,11,Off Peak,Charles/MGH,12140,17681,17,714,1040,13
 Fall 2017,Red,Red Line,Sunday,11,Off Peak,Central,58528,60460,17,3443,3556,13782,2017,2.300899444
 Fall 2017,Red,Red Line,Sunday,11,Off Peak,Davis,74652,6042,17,4391,355,7538,2017,4.091834912
 Fall 2017,Red,Red Line,Sunday,11,Off Peak,Downtown Crossing,101883,66221,17,5993,3895,16509,2017,0.32440095
-Fall 2017,Red,Red Line,Sunday,11,Off Peak,Fields Corner,4724,34272,17,278,2016,3574,2017,
+Fall 2017,Red,Red Line,Sunday,11,Off Peak,Fields Corner,4724,34272,17,278,2016,3574,2017,0.0
 Fall 2017,Red,Red Line,Sunday,11,Off Peak,Harvard,114932,46230,17,6761,2719,13895,2017,3.210236017
-Fall 2017,Red,Red Line,Sunday,11,Off Peak,JFK/Umass,13084,36835,17,770,2167,6915,2017,
+Fall 2017,Red,Red Line,Sunday,11,Off Peak,JFK/Umass,13084,36835,17,770,2167,6915,2017,0.0
 Fall 2017,Red,Red Line,Sunday,11,Off Peak,Kendall/MIT,21484,22807,17,1264,1342,13704,2017,1.376744021
 Fall 2017,Red,Red Line,Sunday,11,Off Peak,North Quincy,5553,33214,17,327,1954,6125,2017,6.042396998
 Fall 2017,Red,Red Line,Sunday,11,Off Peak,Park Street,127358,109783,17,7492,6458,14412,2017,0.309052323
@@ -1256,9 +1256,9 @@ Fall 2017,Red,Red Line,Weekday,1,Very Early Morning,Charles/MGH,814,19750,82,10,
 Fall 2017,Red,Red Line,Weekday,1,Very Early Morning,Central,1342,10185,82,16,124,305,2017,2.300899444
 Fall 2017,Red,Red Line,Weekday,1,Very Early Morning,Davis,766,2889,82,9,35,103,2017,4.091834912
 Fall 2017,Red,Red Line,Weekday,1,Very Early Morning,Downtown Crossing,13986,30835,82,171,376,1046,2017,0.32440095
-Fall 2017,Red,Red Line,Weekday,1,Very Early Morning,Fields Corner,18432,30,82,225,0,363,2017,
+Fall 2017,Red,Red Line,Weekday,1,Very Early Morning,Fields Corner,18432,30,82,225,0,363,2017,0.0
 Fall 2017,Red,Red Line,Weekday,1,Very Early Morning,Harvard,822,13206,82,10,161,154,2017,3.210236017
-Fall 2017,Red,Red Line,Weekday,1,Very Early Morning,JFK/Umass,7611,3432,82,93,42,1358,2017,
+Fall 2017,Red,Red Line,Weekday,1,Very Early Morning,JFK/Umass,7611,3432,82,93,42,1358,2017,0.0
 Fall 2017,Red,Red Line,Weekday,1,Very Early Morning,Kendall/MIT,350,17354,82,4,212,412,2017,1.376744021
 Fall 2017,Red,Red Line,Weekday,1,Very Early Morning,North Quincy,14891,416,82,182,5,856,2017,6.042396998
 Fall 2017,Red,Red Line,Weekday,1,Very Early Morning,Park Street,13215,29272,82,161,357,851,2017,0.309052323
@@ -1306,9 +1306,9 @@ Fall 2017,Red,Red Line,Weekday,8,Late Evening,Charles/MGH,14959,6813,82,182,83,1
 Fall 2017,Red,Red Line,Weekday,8,Late Evening,Central,18968,36109,82,231,440,1705,2017,2.300899444
 Fall 2017,Red,Red Line,Weekday,8,Late Evening,Davis,1415,54915,82,17,670,482,2017,4.091834912
 Fall 2017,Red,Red Line,Weekday,8,Late Evening,Downtown Crossing,40269,37080,82,491,452,1223,2017,0.32440095
-Fall 2017,Red,Red Line,Weekday,8,Late Evening,Fields Corner,6157,2631,82,75,32,221,2017,
+Fall 2017,Red,Red Line,Weekday,8,Late Evening,Fields Corner,6157,2631,82,75,32,221,2017,0.0
 Fall 2017,Red,Red Line,Weekday,8,Late Evening,Harvard,18978,34604,82,231,422,1514,2017,3.210236017
-Fall 2017,Red,Red Line,Weekday,8,Late Evening,JFK/Umass,6839,5198,82,83,63,570,2017,
+Fall 2017,Red,Red Line,Weekday,8,Late Evening,JFK/Umass,6839,5198,82,83,63,570,2017,0.0
 Fall 2017,Red,Red Line,Weekday,8,Late Evening,Kendall/MIT,16004,15189,82,195,185,1914,2017,1.376744021
 Fall 2017,Red,Red Line,Weekday,8,Late Evening,North Quincy,9928,1376,82,121,17,312,2017,6.042396998
 Fall 2017,Red,Red Line,Weekday,8,Late Evening,Park Street,79412,31711,82,968,387,1805,2017,0.309052323
@@ -1328,9 +1328,9 @@ Fall 2017,Red,Red Line,Weekday,9,Night,Charles/MGH,1963,726,82,24,9,239,2017,0.5
 Fall 2017,Red,Red Line,Weekday,9,Night,Central,3467,5602,82,42,68,224,2017,2.300899444
 Fall 2017,Red,Red Line,Weekday,9,Night,Davis,84,9920,82,1,121,24,2017,4.091834912
 Fall 2017,Red,Red Line,Weekday,9,Night,Downtown Crossing,4951,4259,82,60,52,167,2017,0.32440095
-Fall 2017,Red,Red Line,Weekday,9,Night,Fields Corner,476,261,82,6,3,23,2017,
+Fall 2017,Red,Red Line,Weekday,9,Night,Fields Corner,476,261,82,6,3,23,2017,0.0
 Fall 2017,Red,Red Line,Weekday,9,Night,Harvard,3309,4486,82,40,55,210,2017,3.210236017
-Fall 2017,Red,Red Line,Weekday,9,Night,JFK/Umass,654,829,82,8,10,52,2017,
+Fall 2017,Red,Red Line,Weekday,9,Night,JFK/Umass,654,829,82,8,10,52,2017,0.0
 Fall 2017,Red,Red Line,Weekday,9,Night,Kendall/MIT,2992,2109,82,36,26,250,2017,1.376744021
 Fall 2017,Red,Red Line,Weekday,9,Night,North Quincy,1171,356,82,14,4,31,2017,6.042396998
 Fall 2017,Red,Red Line,Weekday,9,Night,Park Street,9827,5130,82,120,63,224,2017,0.309052323
@@ -1342,26 +1342,26 @@ Fall 2017,Red,Red Line,Weekday,3,Am Peak,Ashmont,257146,0,82,3136,0,3136,2017,5.
 Fall 2017,Red,Red Line,Saturday,10,Off Peak,Downtown Crossing,78028,163770,16,4877,10236,19693,2017,0.32440095
 Fall 2017,Red,Red Line,Weekday,9,Night,Broadway,1282,1798,82,16,22,409,2017,1.211795205
 Fall 2017,Red,Red Line,Weekday,3,Am Peak,Broadway,109984,57670,82,1341,703,17496,2017,1.211795205
-Fall 2017,Red,Red Line,Saturday,10,Off Peak,Fields Corner,39366,6665,16,2460,417,7218,2017,
+Fall 2017,Red,Red Line,Saturday,10,Off Peak,Fields Corner,39366,6665,16,2460,417,7218,2017,0.0
 Fall 2017,Red,Red Line,Weekday,3,Am Peak,Braintree,131342,0,82,1602,0,1602,2017,10.93713477
 Fall 2017,Red,Red Line,Weekday,9,Night,Braintree,0,119,82,0,1,0,2017,10.93713477
 Fall 2017,Red,Red Line,Saturday,10,Off Peak,Harvard,62066,101387,16,3879,6337,12208,2017,3.210236017
 Fall 2017,Red,Red Line,Weekday,3,Am Peak,Charles/MGH,56295,168399,82,687,2054,9142,2017,0.598630827
 Fall 2017,Red,Red Line,Weekday,9,Night,Charles/MGH,1868,784,82,23,10,233,2017,0.598630827
-Fall 2017,Red,Red Line,Saturday,10,Off Peak,JFK/Umass,43184,17436,16,2699,1090,20448,2017,
+Fall 2017,Red,Red Line,Saturday,10,Off Peak,JFK/Umass,43184,17436,16,2699,1090,20448,2017,0.0
 Fall 2017,Red,Red Line,Weekday,3,Am Peak,Central,29767,133171,82,363,1624,4045,2017,2.300899444
 Fall 2017,Red,Red Line,Weekday,3,Am Peak,Davis,13403,49542,82,163,604,1085,2017,4.091834912
 Fall 2017,Red,Red Line,Weekday,9,Night,Central,5228,1246,82,64,15,181,2017,2.300899444
 Fall 2017,Red,Red Line,Saturday,10,Off Peak,Kendall/MIT,18457,27267,16,1154,1704,14415,2017,1.376744021
 Fall 2017,Red,Red Line,Weekday,3,Am Peak,Downtown Crossing,195194,444652,82,2380,5423,13363,2017,0.32440095
 Fall 2017,Red,Red Line,Weekday,9,Night,Davis,2677,193,82,33,2,42,2017,4.091834912
-Fall 2017,Red,Red Line,Weekday,3,Am Peak,Fields Corner,103424,13799,82,1261,168,5013,2017,
+Fall 2017,Red,Red Line,Weekday,3,Am Peak,Fields Corner,103424,13799,82,1261,168,5013,2017,0.0
 Fall 2017,Red,Red Line,Saturday,10,Off Peak,North Quincy,35259,7048,16,2204,441,10699,2017,6.042396998
 Fall 2017,Red,Red Line,Weekday,9,Night,Downtown Crossing,8042,4243,82,98,52,361,2017,0.32440095
 Fall 2017,Red,Red Line,Weekday,3,Am Peak,Harvard,18538,199219,82,226,2430,1841,2017,3.210236017
 Fall 2017,Red,Red Line,Saturday,10,Off Peak,Park Street,108516,183027,16,6782,11439,15036,2017,0.309052323
-Fall 2017,Red,Red Line,Weekday,3,Am Peak,JFK/Umass,101809,92539,82,1242,1129,15990,2017,
-Fall 2017,Red,Red Line,Weekday,9,Night,Fields Corner,306,6099,82,4,74,115,2017,
+Fall 2017,Red,Red Line,Weekday,3,Am Peak,JFK/Umass,101809,92539,82,1242,1129,15990,2017,0.0
+Fall 2017,Red,Red Line,Weekday,9,Night,Fields Corner,306,6099,82,4,74,115,2017,0.0
 Fall 2017,Red,Red Line,Saturday,10,Off Peak,Porter,8021,56150,16,501,3509,9200,2017,3.64796599
 Fall 2017,Red,Red Line,Weekday,3,Am Peak,Kendall/MIT,14251,328871,82,174,4011,5306,2017,1.376744021
 Fall 2017,Red,Red Line,Weekday,3,Am Peak,North Quincy,178310,19617,82,2175,239,10169,2017,6.042396998
@@ -1382,9 +1382,9 @@ Fall 2017,Red,Red Line,Weekday,4,Midday Base,Charles/MGH,69209,109240,82,844,133
 Fall 2017,Red,Red Line,Weekday,4,Midday Base,Central,54068,156109,82,659,1904,5599,2017,2.300899444
 Fall 2017,Red,Red Line,Weekday,4,Midday Base,Davis,9075,98946,82,111,1207,1145,2017,4.091834912
 Fall 2017,Red,Red Line,Weekday,4,Midday Base,Downtown Crossing,238415,373936,82,2908,4560,10385,2017,0.32440095
-Fall 2017,Red,Red Line,Weekday,4,Midday Base,Fields Corner,90544,11667,82,1104,142,3494,2017,
+Fall 2017,Red,Red Line,Weekday,4,Midday Base,Fields Corner,90544,11667,82,1104,142,3494,2017,0.0
 Fall 2017,Red,Red Line,Weekday,4,Midday Base,Harvard,40905,251344,82,499,3065,3033,2017,3.210236017
-Fall 2017,Red,Red Line,Weekday,4,Midday Base,JFK/Umass,138904,82108,82,1694,1001,10492,2017,
+Fall 2017,Red,Red Line,Weekday,4,Midday Base,JFK/Umass,138904,82108,82,1694,1001,10492,2017,0.0
 Fall 2017,Red,Red Line,Weekday,4,Midday Base,Kendall/MIT,56535,214980,82,689,2622,6844,2017,1.376744021
 Fall 2017,Red,Red Line,Weekday,4,Midday Base,North Quincy,122003,18713,82,1488,228,5803,2017,6.042396998
 Fall 2017,Red,Red Line,Weekday,4,Midday Base,Park Street,223553,315474,82,2726,3847,9264,2017,0.309052323
@@ -1394,7 +1394,7 @@ Fall 2017,Red,Red Line,Weekday,4,Midday Base,Quincy Center,173360,5652,82,2114,6
 Fall 2017,Red,Red Line,Saturday,10,Off Peak,Quincy Adams,29131,2044,16,1821,128,3945,2017,9.157278678
 Fall 2017,Red,Red Line,Weekday,9,Night,Harvard,6972,547,82,85,7,133,2017,3.210236017
 Fall 2017,Red,Red Line,Saturday,10,Off Peak,Quincy Center,60730,2913,16,3796,182,7558,2017,7.946997833
-Fall 2017,Red,Red Line,Weekday,9,Night,JFK/Umass,1162,4470,82,14,55,168,2017,
+Fall 2017,Red,Red Line,Weekday,9,Night,JFK/Umass,1162,4470,82,14,55,168,2017,0.0
 Fall 2017,Red,Red Line,Saturday,10,Off Peak,Savin Hill,17139,2391,16,1071,149,8140,2017,3.380449346
 Fall 2017,Red,Red Line,Saturday,10,Off Peak,Shawmut,17371,3347,16,1086,209,5174,2017,4.637936196
 Fall 2017,Red,Red Line,Saturday,10,Off Peak,South Station,84603,44584,16,5288,2787,25052,2017,0.598479405
@@ -1408,9 +1408,9 @@ Fall 2017,Red,Red Line,Sunday,11,Off Peak,Charles/MGH,13718,13679,17,807,805,113
 Fall 2017,Red,Red Line,Sunday,11,Off Peak,Central,53245,51717,17,3132,3042,10995,2017,2.300899444
 Fall 2017,Red,Red Line,Sunday,11,Off Peak,Davis,3149,75701,17,185,4453,2442,2017,4.091834912
 Fall 2017,Red,Red Line,Sunday,11,Off Peak,Downtown Crossing,60429,129978,17,3555,7646,14942,2017,0.32440095
-Fall 2017,Red,Red Line,Sunday,11,Off Peak,Fields Corner,31988,4241,17,1882,249,5311,2017,
+Fall 2017,Red,Red Line,Sunday,11,Off Peak,Fields Corner,31988,4241,17,1882,249,5311,2017,0.0
 Fall 2017,Red,Red Line,Sunday,11,Off Peak,Harvard,50428,83009,17,2966,4883,9078,2017,3.210236017
-Fall 2017,Red,Red Line,Sunday,11,Off Peak,JFK/Umass,33959,12650,17,1998,744,14855,2017,
+Fall 2017,Red,Red Line,Sunday,11,Off Peak,JFK/Umass,33959,12650,17,1998,744,14855,2017,0.0
 Fall 2017,Red,Red Line,Sunday,11,Off Peak,Kendall/MIT,16311,23491,17,959,1382,10905,2017,1.376744021
 Fall 2017,Red,Red Line,Sunday,11,Off Peak,North Quincy,29357,5927,17,1727,349,7603,2017,6.042396998
 Fall 2017,Red,Red Line,Sunday,11,Off Peak,Park Street,81416,142916,17,4789,8407,11325,2017,0.309052323
@@ -1440,9 +1440,9 @@ Fall 2017,Red,Red Line,Saturday,10,Off Peak,Charles/MGH,16489,21239,16,1031,1327
 Fall 2017,Red,Red Line,Saturday,10,Off Peak,Central,67035,70741,16,4190,4421,18884,2017,2.300899444
 Fall 2017,Red,Red Line,Saturday,10,Off Peak,Davis,98983,7231,16,6186,452,10753,2017,4.091834912
 Fall 2017,Red,Red Line,Saturday,10,Off Peak,Downtown Crossing,136336,81750,16,8521,5109,23474,2017,0.32440095
-Fall 2017,Red,Red Line,Saturday,10,Off Peak,Fields Corner,7192,41625,16,450,2602,5085,2017,
+Fall 2017,Red,Red Line,Saturday,10,Off Peak,Fields Corner,7192,41625,16,450,2602,5085,2017,0.0
 Fall 2017,Red,Red Line,Saturday,10,Off Peak,Harvard,144119,59737,16,9007,3734,19115,2017,3.210236017
-Fall 2017,Red,Red Line,Saturday,10,Off Peak,JFK/Umass,18415,44673,16,1151,2792,9535,2017,
+Fall 2017,Red,Red Line,Saturday,10,Off Peak,JFK/Umass,18415,44673,16,1151,2792,9535,2017,0.0
 Fall 2017,Red,Red Line,Saturday,10,Off Peak,Kendall/MIT,25566,27030,16,1598,1689,18792,2017,1.376744021
 Fall 2017,Red,Red Line,Saturday,10,Off Peak,North Quincy,6876,38365,16,430,2398,8862,2017,6.042396998
 Fall 2017,Red,Red Line,Saturday,10,Off Peak,Park Street,173831,148767,16,10864,9298,20062,2017,0.309052323
