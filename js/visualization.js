@@ -18,11 +18,11 @@
     let filteredData = data.filter(d => d.route_id === 'Red');
 
     // Create a scatterplot chart
-    let scatterplot_delays = scatterplot()
+    let scatterplot_distance = scatterplot()
       .x(d => d.stop_name)
       .xLabel("Stop Name")
-      .y(d => d.number_service_days)
-      .yLabel("Number Service Days")
+      .y(d => d.distance_to_center)
+      .yLabel("Distance to Center of Boston")
       .yLabelOffset(150)
       .selectionDispatcher(d3.dispatch(dispatchString))
       ("#scatterplot", filteredData);
@@ -60,20 +60,19 @@
         .range(filteredData.map(d => routeColors[d.route_id])))
       ("#offchart", filteredData);
 
-    // When the sun chart selection is updated via brushing, 
     // tell the on and off graphs to update it's selection (linking)
-    scatterplot_delays.selectionDispatcher().on(dispatchString, function (selectedData) {
+    scatterplot_distance.selectionDispatcher().on(dispatchString, function (selectedData) {
       mbta_ons.updateSelection(selectedData);
       mbta_offs.updateSelection(selectedData);
     });
 
     mbta_ons.selectionDispatcher().on(dispatchString, function (selectedData) {
-      scatterplot_delays.updateSelection(selectedData);
+      scatterplot_distance.updateSelection(selectedData);
       mbta_offs.updateSelection(selectedData);
     });
 
     mbta_offs.selectionDispatcher().on(dispatchString, function (selectedData) {
-      scatterplot_delays.updateSelection(selectedData);
+      scatterplot_distance.updateSelection(selectedData);
       mbta_ons.updateSelection(selectedData);
     });
 
