@@ -16,6 +16,8 @@ df['time_period_id'] = df['time_period_id'].str.extract(r'(\d+)').astype(int) # 
 #RE-CAPITALIZING COLUMN NAMES
 # df.columns = [col.title() for col in df.columns]
 
+#ADDING DISTANCE FROM CENTER DATA
+
 #EXPORTING DATAFRAME
 directory = "data"
 file_name_csv = "MBTA_Data.csv"
