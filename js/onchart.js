@@ -69,7 +69,7 @@ function onchart() {
       .data(data)
       .enter().append("rect")
       .attr("class", "bar")
-      .attr("x", 0)
+      .attr("x",0)
       .attr("y", d => yScale(yValue(d)))
       .attr("width", d => xScale(xValue(d)))
       .attr("height", yScale.bandwidth() * 0.8)

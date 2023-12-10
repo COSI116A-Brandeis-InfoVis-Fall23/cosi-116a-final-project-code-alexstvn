@@ -59,31 +59,42 @@ function scatterplot() {
       .call(d3.axisBottom(xScale));
 
     //rotate and resize the x-axis labels
-    xAxis.selectAll("text")  
-    .style("text-anchor", "end")
-    .style("font-size", "5px")
-    .attr("dx", "-.8em")
-    .attr("dy", ".15em")
-    .attr("transform", "rotate(-65)");
+  xAxis.selectAll("text")  
+  .style("text-anchor", "end")
+  .style("font-size", "10px")
+  .attr("dx", "-.8em")
+  .attr("dy", ".15em")
+  .attr("transform", "rotate(-65)");
+  
+  
     
-      
-    // X axis label
-    xAxis.append("text")        
-      .attr("class", "axisLabel")
-      .attr("transform", "translate(" + (width - 200) + ",30)")
-      .text(xLabelText);
-    
-    let yAxis = svg.append("g")
-      .call(d3.axisLeft(yScale))
-      .append("g")
-      .attr("class", "axisLabel")
-      .attr("transform", "translate(" + "-30" + ", 40)");
+  // X axis label
+  xAxis.append("text")        
+  .attr("class", "axisLabel")
+  .attr("x", width / 2) 
+  .attr("y", 80)
+  .style("text-anchor", "middle")
+  .style("font-size", "16px") 
+  .style("fill", "red") 
+  .text(xLabelText);
 
-      //y-axis label
-      yAxis.append("text")
-      .attr("class", "axisLabel")
-      .attr("transform", "rotate(-90)")
-      .text(yLabelText);
+  
+  let yAxis = svg.append("g")
+    .call(d3.axisLeft(yScale))
+    .append("g")
+    .attr("class", "axisLabel")
+    .attr("transform", "translate(" + "-30" + ", 40)");
+
+    //y-axis label
+    yAxis.append("text")
+    .attr("class", "axisLabel")
+    .attr("transform", "rotate(-90)")
+    .attr("y", -30) // Adjust the vertical position
+    .attr("x", -height/2) // Center the y-axis label
+    .style("text-anchor", "middle") // Center the y-axis label
+    .style("font-size", "16px") 
+    .style("fill", "red") 
+    .text(yLabelText);
     
     // Add the points
     let points = svg.append("g")

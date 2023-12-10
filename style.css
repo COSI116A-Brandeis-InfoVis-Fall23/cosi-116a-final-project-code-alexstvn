@@ -27,8 +27,16 @@ h1, h2, h3 {
 	justify-content: space-between;
 }  
 
+.onchart-holder,
+.offchart-holder {
+  flex: 1;
+  margin-right: 10px;
+}
+
+
+
 .barchart-holder div {
-	width: 50%;
+	width: 75%;
 }
 
 .point {

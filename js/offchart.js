@@ -4,77 +4,106 @@
 // Chart configuration
 function offchart() {
   let colorScale;
-  const margin = { top: 60, left: 75, right: 30, bottom: 20 };
-  let width = 400 - margin.left - margin.right,
-    height = 600 - margin.top - margin.bottom,
+  let margin = {
+    top: 100,
+    left: 100,
+    right: 100,
+    bottom: 100
+  },
+  width = 800 - margin.left - margin.right,
+  height = 600 - margin.top - margin.bottom,
+
 
     xValue = d => d[0],
     yValue = d => d[1],
     xLabelText = "",
     yLabelText = "",
     xLabelOffsetPx = 0,
-    xScale = d3.scaleLinear(), // Horizontal scale
-    yScale = d3.scaleBand(), // Vertical scale
-    dispatcher,
-    selectableElements = d3.select(null);
+    xScale = d3.scaleBand(),
+    yScale = d3.scaleLinear(),
+    ourBrush = null,
+    selectableElements = d3.select(null),
+    dispatcher;
 
   function chart(selector, data) {
     let svg = d3.select(selector)
-      .append("svg")
+    .append("svg")
       .attr("preserveAspectRatio", "xMidYMid meet")
       .attr("viewBox", [0, 0, width + margin.left + margin.right, height + margin.top + margin.bottom].join(' '))
-      .classed("svg-content", true)
-      .append("g")
-      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+      .classed("svg-content", true);
+  
+  svg = svg.append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+  
+  //Define scales
+  xScale
+    .domain(data.map(d => xValue(d)))
+    .range([0, width])
+    .paddingInner(0.1)
+    .paddingOuter(0.1);
+  
+  yScale
+    .domain([
+      0, 16000
+    ])
+    .rangeRound([height, 0]);
+  
+  let xAxis = svg.append("g")
+    .attr("transform", "translate(0," + (height) + ")")
+    .call(d3.axisBottom(xScale));
 
-    //LABELS ON Y-AXIS FORMATTING
-    yScale.domain(data.map(d => yValue(d))).range([0, height]).paddingInner(0.1).paddingOuter(0.1);
-    svg.append("g")
-      .attr("transform", "translate(0, 0)") // Shift y-axis to left
-      .call(d3.axisLeft(yScale).ticks(data.length)) // Vertical axis
-      .selectAll(".tick text") // Adjust font size for y-axis labels
-      .style("font-size", "5px"); //DO NOT MAKE IT EVERY OTHER STOP (ruins the point of having this graph)
+  //rotate and resize the x-axis labels
+  xAxis.selectAll("text")  
+  .style("text-anchor", "end")
+  .style("font-size", "10px")
+  .attr("dx", "-.8em")
+  .attr("dy", ".15em")
+  .attr("transform", "rotate(-65)");
+  
+  
+    
+  // X axis label
+  xAxis.append("text")        
+  .attr("class", "axisLabel")
+  .attr("x", width / 2) 
+  .attr("y", 80)
+  .style("text-anchor", "middle")
+  .style("font-size", "16px") 
+  .style("fill", "red") 
+  .text(xLabelText);
 
-    // LABELS ON X-AXIS 
-    const nestedData = d3.nest()
-      .key(d => yValue(d)) // Group by y-axis labels
-      .rollup(group => d3.sum(group, d => xValue(d))) // Calculate sum of x-values for each group
-      .entries(data);
+  
+  let yAxis = svg.append("g")
+    .call(d3.axisLeft(yScale))
+    .append("g")
+    .attr("class", "axisLabel")
+    .attr("transform", "translate(" + "-30" + ", 40)");
 
-    // Get the maximum sum of x-values across the groups
-    const maxSumXValues = d3.max(nestedData, d => d.value);
-    xScale.domain([0, maxSumXValues / 15]).range([0, width]); // this adjusts the scale to view all the bars
-
-    // yScale.domain(data.map(d => yValue(d))).range([0, height]).paddingInner(0.1).paddingOuter(0.1);
-
-    // svg.append("g")
-    //   .attr("transform", "translate(0, 0)") // Shift y-axis to left
-    //   .call(d3.axisLeft(yScale).ticks(data.length)) // Vertical axis
-    //   .selectAll(".tick text") // Adjust font size for y-axis labels
-    //   .style("font-size", (d, i) => i % 2 === 0 ? "5px" : "0px"); // Font size 5 for even indices, hide odd indices
-
-    // xScale.domain([0, d3.max(data, d => xValue(d))]).range([0, width]);
-
-    svg.append("g")
-      .attr("transform", "translate(0," + height + ")") // Shift x-axis to bottom
-      .call(d3.axisBottom(xScale)) // Horizontal axis
-      .selectAll(".tick text") // Rotate and adjust font size for x-axis labels
-      .attr("transform", "rotate(-45)")
-      .style("text-anchor", "end")
-      .style("font-size", "5px");
+    //y-axis label
+    yAxis.append("text")
+    .attr("class", "axisLabel")
+    .attr("transform", "rotate(-90)")
+    .attr("y", -30) // Adjust the vertical position
+    .attr("x", -height/2) // Center the y-axis label
+    .style("text-anchor", "middle") // Center the y-axis label
+    .style("font-size", "16px") 
+    .style("fill", "red") 
+    .text(yLabelText);
+  
 
     svg.selectAll(".bar")
-      .data(data)
-      .enter().append("rect")
-      .attr("class", "bar")
-      .attr("x", 0)
-      .attr("y", d => yScale(yValue(d)))
-      .attr("width", d => xScale(xValue(d)))
-      .attr("height", yScale.bandwidth() * 0.8)
-      .attr("fill", d => colorScale(d.route_id)) // Color by route_id
-      .on("click", function (d) {
-        dispatcher.call("selectionUpdated", this, [d]);
-      });
+    .data(data)
+    .enter().append("rect")
+    .attr("class", "bar")
+    .attr("x", d => xScale(xValue(d)))
+    .attr("y", d => yScale(yValue(d)))
+    .attr("width", xScale.bandwidth() * 0.8)
+    .attr("height", d => height - yScale(yValue(d)))
+    .attr("fill", d => colorScale(d.route_id)) // Color by route_id
+    .on("click", function (d) {
+      dispatcher.call("selectionUpdated", this, [d]);
+    });
+  
 
     svg.call(brush);
 
@@ -87,7 +116,7 @@ function offchart() {
           [width + margin.right, height + margin.top]
         ]);
 
-      ourBrush = brush;
+        ourBrush = brush;
 
       g.call(brush); // Adds the brush to this element
 
