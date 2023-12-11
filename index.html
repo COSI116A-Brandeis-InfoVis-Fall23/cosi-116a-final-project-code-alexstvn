@@ -50,17 +50,10 @@
 
     <!-- MOTIVATION: Motivating quesstions + user needs -->
     <h1>Motivation</h1>
-    <p><em>Summary of user needs and motivating questions.</em></p>
-    <p><em>Expectation: There is a clear focus, and a developed explanation of the problem, and a reasonable response is
-        proposed.</em></p>
-    <p><em>Since the MBTA is an integral part of our life as Brandeis University students from commuting to taking
-        advantage of opportunities in the city to staying in touch with loved ones and traveling beyond campus, we chose
-        the MBTA Dataset 4. We are dedicated to enhancing the performance of the MBTA, not only for our campus but also
-        for communities all throughout the city and perhaps even the entire country. We want to establish a standard for
-        more effective and environmentally friendly public transit systems by tackling post-COVID problems, speed, and
-        ridership. Our objective is to provide an example for cities looking for better transit solutions and to benefit
-        local communities and the environment,
-        ultimately leading the way for a better future for everybody.</em></p>
+    <p><em>The MBTA is an integral part of life in the Boston area, and affects us as Brandeis University students. Public transit is important to millions for commuting, taking advantage of opportunities in the city, and staying in touch with loved ones. We chose the MBTA dataset for our project because of our belief in the value of enhancing MBTA performance, not only for our student body, but also for communities throughout Boston.</em></p>
+    <p><em>The MBTA system, including high-speed rail, buses, and commuter rail, generates lots of data from daily use. However, these data are not readily understandable or useful in typical tabular formats. Visualizations are essential for observing and predicting trends and correlations between various aspects of the data. By providing an interactive element, our target audience can engage with the data in meaningful, productive ways that lead to data-driven decisions.</em></p>
+    <p><em>For our particular visualization, the problem we wanted to address was how a station’s distance from the center of Boston influences its average daily traffic.</em></p>
+    <p><em>By designing and creating an interactive visualization for MBTA ridership data, we seek to enable MBTA planners, designers, and engineers to identify stops on the Red Line that garner the most activity. By allowing MBTA employees and city planners to engage directly with Red Line ridership data through our visualization tool, we seek to enable informed, data-driven transit solutions for the Red Line. Thus, our objective in visualizing ridership data is to provide a model for cities seeking efficient, environmentally friendly, community-serving transit solutions.</em></p>
 
     <!-- VISUALIZATION: -->
     <h1>Visualization</h1>
@@ -88,8 +81,7 @@
   <!-- ============== WRITEUP: Your writeup goes here. ============== -->
   <div class="content-column">
     <!-- ALEX: COMMENTING OUT DEMO VIDEO FOR NOW TO MAKE VIEWING WEBPAGE CLEARER -->
-    <!-- DEMO VIDEO -->
-    <!--     
+    <!-- DEMO VIDEO -->    
     <h1>Demo Video</h1>
     
     <p><em>Embedded MP4 demo video using the HTML5 &lt;video&gt; tag. For example, this screen recording Prof. Cody Dunne made of Mike Bostock's flexible transitions in D3 slide:</em></p>
@@ -97,26 +89,28 @@
     <video controls width="100%">
       <source src="http://www.ccs.neu.edu/home/cody/courses/shared/d3-flexible-transitions.mp4" type="video/mp4">
       <p>Your browser doesn't support HTML5 video. Here is a <a href="http://www.ccs.neu.edu/home/cody/courses/shared/d3-flexible-transitions.mp4">link to the video</a> instead.</p>
-    </video> -->
+    </video>
 
     <!-- VISUALIZATION EXPLANATION -->
     <h1>Visualization explanation</h1>
-
-    <p><em>Final visualization screenshots (PNG images), design justifications, UI walk-through, and linked presentation
-        slides.</em></p>
+    <div id="vis-explanation-content">
+      <img src="images/VisWalkthrough.gif">
+      <div class="vis-text">
+        <p>We employed bar graph and scatterplot visualizations in our project. For displaying the Average Ons and Average Offs data, we used a bar graph, with the stops arranged in order on the x-axis, and each bar mark’s length corresponding to how many people get on or off a train at that station on average per day.</p>
+        <p>We positioned the Average Ons and Average Offs bar graphs side by side, since they display similar trends, and the user can easily observe how the number of people getting on a train at the station is directly correlated with how many people get off. Brushing and linking techniques enhance these observations; when one selects some bars or points in any chart, the corresponding marks are highlighted in the other two charts.</p>
+        <p>In the scatterplot below the bar charts, we sort the stops on the x axis in the same order as the bar charts. When one brushes over the bar charts and selects some of the stations, the corresponding points in the distance graph are also highlighted. Through this technique, we display the inverse relationship between the average level of activity in a station and its distance from the city center; the busiest stations tend to be closest to the center.</p>
+      </div>
+    </div>
 
     <h1>Data Analysis</h1>
     <p><em>Summary of data, data types, and data preprocessing.</em></p>
-    <p><em>The distance to city center for each station was obtained
-        by collecting the latitude and longitude
-        coordinates for Boston city center (42.3601 N, 71.0589 W) and
-        the distance between this point and all
-        the stations was calculated using Ed Williams' "Great
-        Circle Calculator:" https://edwilliams.org/gccalc.htm.</em></p>
-
-    <p><em>Expectation: Data sources match the problem statement and are appropriate. These descriptions should be very
-        explicit so someone could read your page and properly reproduce your results.</em></p>
-
+    <p>Our data came from a CSV file downloaded from the MBTA’s online data hub. The fields we used in our visualization are as follows:</p>
+    <ul>
+      <li><b>Stop Name: </b>a String representing a station in the Red Line. These stations represent x-axis positions for our marks in the visualizations, such as points and bars.</li>
+      <li><b>Average Ons: </b>the mean number of people per day who get on a train at this Red Line stop for the given time period (example: Harvard Station had 2,238 passengers get on a train on an average weekday in Fall 2019)</li>
+      <li><b>Average Offs: </b>the mean number of people per day who get off a train at this Red Line stop for the given time period.</li>
+      <li><b>Distance to Center of Boston: </b>The distance to city center for each station was obtained by collecting the latitude and longitude coordinates for Boston city center (42.3601 N, 71.0589 W) and all stops on the Red Line. These coordinates were obtained from the Google Maps links on the MBTA station webpages. The distance between the coordinates of the center point and all the stations’ coordinates was calculated using <a href="https://edwilliams.org/gccalc.htm">Ed Williams' "Great Circle Calculator"</a>.</li>
+    </ul>
     <!-- TASK ANALYSIS -->
     <h1>Task Analysis</h1>
 
