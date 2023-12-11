@@ -7,20 +7,15 @@ function scatterplot() {
 
   // Based on Mike Bostock's margin convention
   // https://bl.ocks.org/mbostock/3019563
-  /*let margin = {
-    top: 60,
-    left: 50,
-    right: 50,
-    bottom: 40
-  },*/
+
   let margin = {
     top: 100,
     left: 100,
     right: 100,
     bottom: 100
   },
-    width = 800 - margin.left - margin.right,
-    height = 600 - margin.top - margin.bottom,
+    width = 750 - margin.left - margin.right,
+    height = 470 - margin.top - margin.bottom,
     xValue = d => d[0],
     yValue = d => d[1],
     xLabelText = "",

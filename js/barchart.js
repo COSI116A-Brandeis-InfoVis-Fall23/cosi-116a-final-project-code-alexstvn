@@ -10,8 +10,8 @@ function barchart() {
     right: 100,
     bottom: 100
   },
-  width = 800 - margin.left - margin.right,
-  height = 600 - margin.top - margin.bottom,
+    width = 800 - margin.left - margin.right,
+    height = 600 - margin.top - margin.bottom,
 
 
     xValue = d => d[0],
@@ -27,85 +27,85 @@ function barchart() {
 
   function chart(selector, data) {
     let svg = d3.select(selector)
-    .append("svg")
+      .append("svg")
       .attr("preserveAspectRatio", "xMidYMid meet")
       .attr("viewBox", [0, 0, width + margin.left + margin.right, height + margin.top + margin.bottom].join(' '))
       .classed("svg-content", true);
-  
-  svg = svg.append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-  
-  //Define scales
-  xScale
-    .domain(data.map(d => xValue(d)))
-    .range([0, width])
-    .paddingInner(0.1)
-    .paddingOuter(0.1);
-  
-  yScale
-    .domain([
-      0, 16000
-    ])
-    .rangeRound([height, 0]);
-  
-  let xAxis = svg.append("g")
-    .attr("transform", "translate(0," + (height) + ")")
-    .call(d3.axisBottom(xScale));
 
-  //rotate and resize the x-axis labels
-  xAxis.selectAll("text")  
-  .style("text-anchor", "end")
-  .style("font-size", "10px")
-  .attr("dx", "-.8em")
-  .attr("dy", ".15em")
-  .attr("transform", "rotate(-65)");
-  
-  
-    
-  // X axis label
-  xAxis.append("text")        
-  .attr("class", "axisLabel")
-  .attr("x", width / 2) 
-  .attr("y", 80)
-  .style("text-anchor", "middle")
-  .style("font-size", "16px") 
-  .style("fill", "red") 
-  .text(xLabelText);
+    svg = svg.append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-  
-  let yAxis = svg.append("g")
-    .call(d3.axisLeft(yScale))
-    .append("g")
-    .attr("class", "axisLabel")
-    .attr("transform", "translate(" + "-30" + ", 40)");
+    //Define scales
+    xScale
+      .domain(data.map(d => xValue(d)))
+      .range([0, width])
+      .paddingInner(0.1)
+      .paddingOuter(0.1);
+
+    yScale
+      .domain([
+        0, 16000
+      ])
+      .rangeRound([height, 0]);
+
+    let xAxis = svg.append("g")
+      .attr("transform", "translate(0," + (height) + ")")
+      .call(d3.axisBottom(xScale));
+
+    //rotate and resize the x-axis labels
+    xAxis.selectAll("text")
+      .style("text-anchor", "end")
+      .style("font-size", "10px")
+      .attr("dx", "-.8em")
+      .attr("dy", ".15em")
+      .attr("transform", "rotate(-65)");
+
+
+
+    // X axis label
+    xAxis.append("text")
+      .attr("class", "axisLabel")
+      .attr("x", width / 2)
+      .attr("y", 80)
+      .style("text-anchor", "middle")
+      .style("font-size", "16px")
+      .style("fill", "red")
+      .text(xLabelText);
+
+
+    let yAxis = svg.append("g")
+      .call(d3.axisLeft(yScale))
+      .append("g")
+      .attr("class", "axisLabel")
+      .attr("transform", "translate(" + "-30" + ", 40)");
 
     //y-axis label
     yAxis.append("text")
-    .attr("class", "axisLabel")
-    .attr("transform", "rotate(-90)")
-    .attr("y", -30) // Adjust the vertical position
-    .attr("x", -height/2) // Center the y-axis label
-    .style("text-anchor", "middle") // Center the y-axis label
-    .style("font-size", "16px") 
-    .style("fill", "red") 
-    .text(yLabelText);
-  
+      .attr("class", "axisLabel")
+      .attr("transform", "rotate(-90)")
+      .attr("y", -30) // Adjust the vertical position
+      .attr("x", -height / 2) // Center the y-axis label
+      .style("text-anchor", "middle") // Center the y-axis label
+      .style("font-size", "16px")
+      .style("fill", "red")
+      .text(yLabelText);
+
 
     let bars = svg.selectAll(".bar")
-    .data(data)
-    .enter().append("rect")
-    .attr("class", "bar")
-    .attr("x", d => xScale(xValue(d)))
-    .attr("y", d => yScale(yValue(d)))
-    .attr("width", xScale.bandwidth() * 0.8)
-    .attr("height", d => height - yScale(yValue(d)))
-    .attr("fill", d => colorScale(d.route_id)) // Color by route_id
-    .on("click", function (d) {
-      dispatcher.call("selectionUpdated", this, [d]);
-    });
+      .data(data)
+      .enter().append("rect")
+      .attr("class", "bar")
+      .attr("x", d => xScale(xValue(d)))
+      .attr("y", d => yScale(yValue(d)))
+      .attr("width", xScale.bandwidth() * 0.8)
+      .attr("height", d => height - yScale(yValue(d)))
+      .attr("fill", d => colorScale(d.route_id)) // Color by route_id
+      .on("click", function (d) {
+        dispatcher.call("selectionUpdated", this, [d]);
+      });
 
     selectableElements = bars;
-  
+
 
     svg.call(brush);
 
@@ -118,7 +118,7 @@ function barchart() {
           [width + margin.right, height + margin.top]
         ]);
 
-        ourBrush = brush;
+      ourBrush = brush;
 
       g.call(brush); // Adds the brush to this element
 
@@ -226,10 +226,10 @@ function barchart() {
     selectableElements.classed("selected", d => {
       return selectedData.includes(d)
     });
-    
+
   };
-  
-  
+
+
 
   chart.colorScale = function (scale) {
     colorScale = scale;
