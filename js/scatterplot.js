@@ -4,7 +4,7 @@
 // Reusable Chart framework https://bost.ocks.org/mike/chart/
 
 function scatterplot() {
-  
+
   // Based on Mike Bostock's margin convention
   // https://bl.ocks.org/mbostock/3019563
   /*let margin = {
@@ -14,114 +14,114 @@ function scatterplot() {
     bottom: 40
   },*/
   let margin = {
-    top: 60,
+    top: 100,
     left: 100,
-    right: 50,
+    right: 100,
     bottom: 100
   },
-  width = 1000 - margin.left - margin.right,
-  height = 600 - margin.top - margin.bottom,
-  xValue = d => d[0],
-  yValue = d => d[1],
-  xLabelText = "",
-  yLabelText = "",
-  yLabelOffsetPx = 0,
-  xScale = d3.scaleBand(),
-  yScale = d3.scaleLinear(),
-  ourBrush = null,
-  selectableElements = d3.select(null),
-  dispatcher;
-  
+    width = 800 - margin.left - margin.right,
+    height = 600 - margin.top - margin.bottom,
+    xValue = d => d[0],
+    yValue = d => d[1],
+    xLabelText = "",
+    yLabelText = "",
+    yLabelOffsetPx = 0,
+    xScale = d3.scaleBand(),
+    yScale = d3.scaleLinear(),
+    ourBrush = null,
+    selectableElements = d3.select(null),
+    dispatcher;
+
   // Create the chart by adding an svg to the div with the id 
   // specified by the selector using the given data
   function chart(selector, data) {
     let svg = d3.select(selector)
       .append("svg")
-        .attr("preserveAspectRatio", "xMidYMid meet")
-        .attr("viewBox", [0, 0, width + margin.left + margin.right, height + margin.top + margin.bottom].join(' '))
-        .classed("svg-content", true);
-    
+      .attr("preserveAspectRatio", "xMidYMid meet")
+      .attr("viewBox", [0, 0, width + margin.left + margin.right, height + margin.top + margin.bottom].join(' '))
+      .classed("svg-content", true);
+
     svg = svg.append("g")
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-    
+
     //Define scales
     xScale
       .domain(data.map(d => xValue(d)))
       .range([0, width])
       .paddingInner(0.1)
       .paddingOuter(0.1);
-    
+
     yScale
       .domain([
         //d3.min(data, d => yValue(d)),
-        0,16
+        0, 16
         //d3.max(data, d => yValue(d))
-        
+
       ])
       .rangeRound([height, 0]);
-    
+
     let xAxis = svg.append("g")
       .attr("transform", "translate(0," + (height) + ")")
       .call(d3.axisBottom(xScale));
 
     //rotate and resize the x-axis labels
-  xAxis.selectAll("text")  
-  .style("text-anchor", "end")
-  .style("font-size", "10px")
-  .attr("dx", "-.8em")
-  .attr("dy", ".15em")
-  .attr("transform", "rotate(-65)");
-  
-  
-    
-  // X axis label
-  xAxis.append("text")        
-  .attr("class", "axisLabel")
-  .attr("x", width / 2) 
-  .attr("y", 80)
-  .style("text-anchor", "middle")
-  .style("font-size", "16px") 
-  .style("fill", "red") 
-  .text(xLabelText);
+    xAxis.selectAll("text")
+      .style("text-anchor", "end")
+      .style("font-size", "10px")
+      .attr("dx", "-.8em")
+      .attr("dy", ".15em")
+      .attr("transform", "rotate(-65)");
 
-  
-  let yAxis = svg.append("g")
-    .call(d3.axisLeft(yScale))
-    .append("g")
-    .attr("class", "axisLabel")
-    .attr("transform", "translate(" + "-30" + ", 40)");
+
+
+    // X axis label
+    xAxis.append("text")
+      .attr("class", "axisLabel")
+      .attr("x", width / 2)
+      .attr("y", 80)
+      .style("text-anchor", "middle")
+      .style("font-size", "16px")
+      .style("fill", "red")
+      .text(xLabelText);
+
+
+    let yAxis = svg.append("g")
+      .call(d3.axisLeft(yScale))
+      .append("g")
+      .attr("class", "axisLabel")
+      .attr("transform", "translate(" + "-30" + ", 40)");
 
     //y-axis label
     yAxis.append("text")
-    .attr("class", "axisLabel")
-    .attr("transform", "rotate(-90)")
-    .attr("y", -30) // Adjust the vertical position
-    .attr("x", -height/2) // Center the y-axis label
-    .style("text-anchor", "middle") // Center the y-axis label
-    .style("font-size", "16px") 
-    .style("fill", "red") 
-    .text(yLabelText);
-    
+      .attr("class", "axisLabel")
+      .attr("transform", "rotate(-90)")
+      .attr("y", -30) // Adjust the vertical position
+      .attr("x", -height / 2) // Center the y-axis label
+      .style("text-anchor", "middle") // Center the y-axis label
+      .style("font-size", "16px")
+      .style("fill", "red")
+      .text(yLabelText);
+
     // Add the points
     let points = svg.append("g")
       .selectAll(".scatterPoint")
-        .data(data);
-    
+      .data(data);
+
     points.exit().remove();
-    
+
     points = points.enter()
       .append("circle")
-        .attr("class", "point scatterPoint")
+      .attr("class", "point scatterPoint")
       .merge(points)
-        .attr("cx", X)
-        .attr("cy", Y)
-        //.attr("r", 3);
-        .attr("r", 3);
-    
+      .attr("cx", X)
+      .attr("cy", Y)
+      //.attr("r", 3);
+      .attr("r", 3);
+
     selectableElements = points;
-    
+
     svg.call(brush);
-    
+
     // Highlight points when brushed
     function brush(g) {
       const brush = d3.brush() // Create a 2D interactive brush
@@ -131,11 +131,11 @@ function scatterplot() {
           [-margin.left, -margin.bottom],
           [width + margin.right, height + margin.top]
         ]);
-      
+
       ourBrush = brush;
-      
+
       g.call(brush); // Adds the brush to this element
-      
+
       // Highlight the selected circles
       function highlight() {
         if (d3.event.selection === null) return;
@@ -143,110 +143,110 @@ function scatterplot() {
           [x0, y0],
           [x1, y1]
         ] = d3.event.selection;
-        
+
         // If within the bounds of the brush, select it
         points.classed("selected", d =>
           x0 <= X(d) && X(d) <= x1 && y0 <= Y(d) && Y(d) <= y1
         );
-        
+
         // Get the name of our dispatcher's event
         let dispatchString = Object.getOwnPropertyNames(dispatcher._)[0];
-        
+
         // Let other charts know about our selection
         dispatcher.call(dispatchString, this, svg.selectAll(".selected").data());
 
       }
-      
-      function brushEnd(){
+
+      function brushEnd() {
         // We don't want infinite recursion
-        if(d3.event.sourceEvent.type!="end"){
+        if (d3.event.sourceEvent.type != "end") {
           d3.select(this).call(brush.move, null);
-        }         
+        }
       }
     }
-    
+
     return chart;
   }
-  
+
   // The x-accessor from the datum
   function X(d) {
-    return xScale(xValue(d))+18;
+    return xScale(xValue(d)) + 18;
   }
-  
+
   // The y-accessor from the datum
   function Y(d) {
     return yScale(yValue(d));
   }
-  
+
   chart.margin = function (_) {
     if (!arguments.length) return margin;
     margin = _;
     return chart;
   };
-  
+
   chart.width = function (_) {
     if (!arguments.length) return width;
     width = _;
     return chart;
   };
-  
+
   chart.height = function (_) {
     if (!arguments.length) return height;
     height = _;
     return chart;
   };
-  
+
   chart.x = function (_) {
     if (!arguments.length) return xValue;
     xValue = _;
     return chart;
   };
-  
+
   chart.y = function (_) {
     if (!arguments.length) return yValue;
     yValue = _;
     return chart;
   };
-  
+
   chart.xLabel = function (_) {
     if (!arguments.length) return xLabelText;
     xLabelText = _;
     return chart;
   };
-  
+
   chart.yLabel = function (_) {
     if (!arguments.length) return yLabelText;
     yLabelText = _;
     return chart;
   };
-  
+
   chart.yLabelOffset = function (_) {
     if (!arguments.length) return yLabelOffsetPx;
     yLabelOffsetPx = _;
     return chart;
   };
-  
+
   // Gets or sets the dispatcher we use for selection events
   chart.selectionDispatcher = function (_) {
     if (!arguments.length) return dispatcher;
     dispatcher = _;
     return chart;
   };
-  
+
   // Given selected data from another visualization 
   // select the relevant elements here (linking)
   chart.updateSelection = function (selectedData) {
     if (!arguments.length) return;
-    
 
-    
+
+
     // Select an element if its datum was selected
     selectableElements.classed("selected", d => {
       console.log(selectedData.includes(d))
       return selectedData.includes(d)
     });
-    
+
   };
-  
+
   return chart;
 }
