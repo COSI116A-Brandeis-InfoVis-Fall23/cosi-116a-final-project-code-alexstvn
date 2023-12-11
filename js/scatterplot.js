@@ -7,11 +7,17 @@ function scatterplot() {
   
   // Based on Mike Bostock's margin convention
   // https://bl.ocks.org/mbostock/3019563
-  let margin = {
+  /*let margin = {
     top: 60,
     left: 50,
     right: 50,
     bottom: 40
+  },*/
+  let margin = {
+    top: 60,
+    left: 100,
+    right: 50,
+    bottom: 100
   },
   width = 1000 - margin.left - margin.right,
   height = 600 - margin.top - margin.bottom,
