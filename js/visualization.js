@@ -22,7 +22,7 @@
       .x(d => d.stop_name)
       .xLabel("Stop Name")
       .y(d => d.distance_to_center)
-      .yLabel("Distance to Center of Boston")
+      .yLabel("Distance to Center of Boston (miles)")
       .yLabelOffset(150)
       .selectionDispatcher(d3.dispatch(dispatchString))
       ("#scatterplot", filteredData);
