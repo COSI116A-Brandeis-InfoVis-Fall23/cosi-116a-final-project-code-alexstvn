@@ -48,9 +48,9 @@ function scatterplot() {
     yScale
       .domain([
         //d3.min(data, d => yValue(d)),
-        0,
+        0,16
         //d3.max(data, d => yValue(d))
-        90
+        
       ])
       .rangeRound([height, 0]);
     
@@ -109,6 +109,7 @@ function scatterplot() {
       .merge(points)
         .attr("cx", X)
         .attr("cy", Y)
+        //.attr("r", 3);
         .attr("r", 3);
     
     selectableElements = points;
