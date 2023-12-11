@@ -170,7 +170,7 @@ function scatterplot() {
   
   // The x-accessor from the datum
   function X(d) {
-    return xScale(xValue(d));
+    return xScale(xValue(d))+18;
   }
   
   // The y-accessor from the datum
