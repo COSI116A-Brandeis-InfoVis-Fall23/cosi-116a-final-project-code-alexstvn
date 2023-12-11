@@ -104,12 +104,12 @@
 
     <h1>Data Analysis</h1>
     <p><em>Summary of data, data types, and data preprocessing.</em></p>
-    <p>Our data came from a CSV file downloaded from the MBTA’s online data hub. The fields we used in our visualization are as follows:</p>
+    <p>Our data came from a CSV file downloaded from the <a href="https://mbta-massdot.opendata.arcgis.com/datasets/9fea7862501f4c59ab2c001ad6ae19b0/explore">MBTA’s online data hub</a>. The fields we used in our visualization are as follows:</p>
     <ul>
-      <li><b>Stop Name: </b>a String representing a station in the Red Line. These stations represent x-axis positions for our marks in the visualizations, such as points and bars.</li>
-      <li><b>Average Ons: </b>the mean number of people per day who get on a train at this Red Line stop for the given time period (example: Harvard Station had 2,238 passengers get on a train on an average weekday in Fall 2019)</li>
-      <li><b>Average Offs: </b>the mean number of people per day who get off a train at this Red Line stop for the given time period.</li>
-      <li><b>Distance to Center of Boston: </b>The distance to city center for each station was obtained by collecting the latitude and longitude coordinates for Boston city center (42.3601 N, 71.0589 W) and all stops on the Red Line. These coordinates were obtained from the Google Maps links on the MBTA station webpages. The distance between the coordinates of the center point and all the stations’ coordinates was calculated using <a href="https://edwilliams.org/gccalc.htm">Ed Williams' "Great Circle Calculator"</a>.</li>
+      <li><b>Stop Name<span class="code">(stop_name)</span>: </b>a String representing a station in the Red Line. These stations represent x-axis positions for our marks in the visualizations, such as points and bars.</li>
+      <li><b>Average Ons<span class="code"> average_ons</span>: </b>the mean number of people per day who get on a train at this Red Line stop for the given time period (example: Harvard Station had 2,238 passengers get on a train on an average weekday in Fall 2019)</li>
+      <li><b>Average Offs<span class="code"> average_offs</span>: </b>the mean number of people per day who get off a train at this Red Line stop for the given time period.</li>
+      <li><b>Distance to Center of Boston<span class="code"> distance_to_center</span>: </b>The distance to city center for each station was obtained by collecting the latitude and longitude coordinates for Boston city center (42.3601 N, 71.0589 W) and all stops on the Red Line. These coordinates were obtained from the Google Maps links on the MBTA station webpages. The distance between the coordinates of the center point and all the stations’ coordinates was calculated using <a href="https://edwilliams.org/gccalc.htm">Ed Williams' "Great Circle Calculator"</a>.</li>
     </ul>
     <!-- TASK ANALYSIS -->
     <h1>Task Analysis</h1>
