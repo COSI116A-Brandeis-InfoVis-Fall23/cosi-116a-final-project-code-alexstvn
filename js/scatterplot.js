@@ -148,6 +148,7 @@ function scatterplot() {
         
         // Let other charts know about our selection
         dispatcher.call(dispatchString, this, svg.selectAll(".selected").data());
+
       }
       
       function brushEnd(){
@@ -231,8 +232,11 @@ function scatterplot() {
   chart.updateSelection = function (selectedData) {
     if (!arguments.length) return;
     
+
+    
     // Select an element if its datum was selected
     selectableElements.classed("selected", d => {
+      console.log(selectedData.includes(d))
       return selectedData.includes(d)
     });
     

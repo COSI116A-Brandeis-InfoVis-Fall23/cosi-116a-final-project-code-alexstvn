@@ -62,11 +62,13 @@
 
     // tell the on and off graphs to update it's selection (linking)
     scatterplot_distance.selectionDispatcher().on(dispatchString, function (selectedData) {
+      console.log(scatterplot_distance.selectionDispatcher);
       mbta_ons.updateSelection(selectedData);
       mbta_offs.updateSelection(selectedData);
     });
 
     mbta_ons.selectionDispatcher().on(dispatchString, function (selectedData) {
+      console.log(mbta_ons.selectionDispatcher);
       scatterplot_distance.updateSelection(selectedData);
       mbta_offs.updateSelection(selectedData);
     });

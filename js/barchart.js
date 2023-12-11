@@ -91,7 +91,7 @@ function barchart() {
     .text(yLabelText);
   
 
-    svg.selectAll(".bar")
+    let bars = svg.selectAll(".bar")
     .data(data)
     .enter().append("rect")
     .attr("class", "bar")
@@ -103,6 +103,8 @@ function barchart() {
     .on("click", function (d) {
       dispatcher.call("selectionUpdated", this, [d]);
     });
+
+    selectableElements = bars;
   
 
     svg.call(brush);
@@ -224,7 +226,10 @@ function barchart() {
     selectableElements.classed("selected", d => {
       return selectedData.includes(d)
     });
+    
   };
+  
+  
 
   chart.colorScale = function (scale) {
     colorScale = scale;
