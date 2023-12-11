@@ -15,6 +15,10 @@ h1, h2, h3 {
 	margin: 40px auto;
 }
 
+li .code {
+	font-family: 'Courier New', Courier, monospace;
+}
+
 /* But your visualization should be full-width and full-height */
 .vis-holder {
   width: 100%;
