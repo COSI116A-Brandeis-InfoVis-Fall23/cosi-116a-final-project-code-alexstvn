@@ -86,16 +86,18 @@
     
     <p><em>Embedded MP4 demo video using the HTML5 &lt;video&gt; tag. For example, this screen recording Prof. Cody Dunne made of Mike Bostock's flexible transitions in D3 slide:</em></p>
     
-    <video controls width="100%">
+    <!-- <video controls width="100%">
       <source src="http://www.ccs.neu.edu/home/cody/courses/shared/d3-flexible-transitions.mp4" type="video/mp4">
       <p>Your browser doesn't support HTML5 video. Here is a <a href="http://www.ccs.neu.edu/home/cody/courses/shared/d3-flexible-transitions.mp4">link to the video</a> instead.</p>
-    </video>
+    </video> -->
 
     <!-- VISUALIZATION EXPLANATION -->
     <h1>Visualization explanation</h1>
     <div id="vis-explanation-content">
-      <img src="images/VisWalkthrough.gif">
-      <div class="vis-text">
+      <div class="vis-section">
+        <img src="images/VisWalkthrough.gif">
+      </div>
+      <div class="vis-section vis-text">
         <p>We employed bar graph and scatterplot visualizations in our project. For displaying the Average Ons and Average Offs data, we used a bar graph, with the stops arranged in order on the x-axis, and each bar mark’s length corresponding to how many people get on or off a train at that station on average per day.</p>
         <p>We positioned the Average Ons and Average Offs bar graphs side by side, since they display similar trends, and the user can easily observe how the number of people getting on a train at the station is directly correlated with how many people get off. Brushing and linking techniques enhance these observations; when one selects some bars or points in any chart, the corresponding marks are highlighted in the other two charts.</p>
         <p>In the scatterplot below the bar charts, we sort the stops on the x axis in the same order as the bar charts. When one brushes over the bar charts and selects some of the stations, the corresponding points in the distance graph are also highlighted. Through this technique, we display the inverse relationship between the average level of activity in a station and its distance from the city center; the busiest stations tend to be closest to the center.</p>
