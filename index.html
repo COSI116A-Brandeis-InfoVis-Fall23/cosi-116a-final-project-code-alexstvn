@@ -205,9 +205,58 @@
 
     <p><em>Sketches and design choices to justify final visualization.</em></p>
 
-    <p><em>Expectation: Evidence of iterative improvement. Logical discussion of design choices grounded in theory from
-        course. Discusses feedback from usability testing.</em></p>
-
+    <ul>
+      <li>Sprint 1</li>
+      <ul>
+        <li>Switching from Sunburst Chart to Scatter Plot – while 
+          attempting to make a sunburst chart, we realized that trying to execute it in D3 and 
+          defining the levels were harder than we expected. For the sake of time, we switched to using a scatter plot 
+          based on our past experiences with D3.</li>
+          <li>
+            Changing Data Fields to be Used – When trying to execute our graphs, 
+            we also realized that the MBTA data did not provide particular days or times data that we were hoping for, 
+            so we also had to change how we wanted to use different fields that related to time (or if we even wanted to use them). For example, 
+            instead of seeing if we wanted to look at a 
+            particular date/time, 
+            we were limited to seeing the season and year.
+          </li>
+          <li>
+            Making sure the stop names show up and developing some type of average on and average 
+            off chart with temporary values of data.
+          </li>
+          <li>
+            Work on some level of basic brushing and linking from the class project.
+          </li>
+      </ul>
+      <li>Sprint 2</li>
+      <ul>
+        <li>
+          Focusing on a particular line (Red Line) – We changed our focus to hone in on a 
+          particular route (the Red Line) because of the 
+          amount of stops for the overall MBTA system making the graphs unreadable.
+        </li>
+      </ul>
+      <li>Steps Towards Final Product</li>
+      <ul>
+        <li>
+          Changing Scatter Plot Y-Axis – We originally were going to try to analyze each stop on the scatterplot based on 
+          the number of service days, but we found that the service days are less of a continuous value 
+          (in this context) and used more categorically. We then changed it to distance to have a more continuous y-value that would make 
+          the scatterplot more appropriate to use.
+        </li>
+        <li>
+          Switching axes on bar charts - originally we had
+           the stops on the y axis and the bars going horizontal, but then we 
+           switched the axes of the bar chart to have the stops on the x-axis because of 
+          the Gestalt Principles we learned in class.
+        </li>
+        <li>
+          Fixing brushing and linking: 
+          debugging linking issues with the bar charts
+        </li>
+      </ul>
+    </ul>
+    
     <!-- CONCLUSION -->
     <h1>Conclusion</h1>
 
