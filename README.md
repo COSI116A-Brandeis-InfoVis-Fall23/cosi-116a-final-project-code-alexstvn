@@ -4,7 +4,7 @@ This template will help you get started with your project. Please look through a
 
 ## The GitHub Pages Website
 
-Make sure you publish your project to github pages, and put the URL here: 
+Make sure you publish your project to github pages, and put the URL here: https://github.com/COSI116A-Brandeis-InfoVis-Fall23/undergraduate-team-9-mbta
 
 ### Github Pages
 
