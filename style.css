@@ -33,26 +33,26 @@ h1, h2, h3 {
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-  }
-  
-  .sketches img {
+}
+
+.sketches img {
 	max-width: 100%;
 	height: auto;
-	margin-bottom: 10px; /* Add space between images and captions */
-  }
-  
-  .sketches p {
-	margin: 0; /* Remove default margins */
-  }
+	margin-bottom: 10px; 
+}
 
-  #final-sketch {
+.sketches p {
+	margin: 0; 
+}
+
+#final-sketch {
 	padding-top: 2em;
-  }
+}
 
-/* But your visualization should be full-width and full-height */
+
 .vis-holder {
-  width: 100%;
-  height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 .barchart-holder {
@@ -63,11 +63,9 @@ h1, h2, h3 {
 
 .onchart-holder,
 .offchart-holder {
-  flex: 1;
-  margin-right: 10px;
+	flex: 1;
+	margin-right: 10px;
 }
-
-
 
 .barchart-holder div {
 	width: 75%;
@@ -77,36 +75,36 @@ h1, h2, h3 {
 	fill: rgb(255, 255, 255);
 	stroke: #69b3a2;
 	stroke-width: 2;
-  }
-  
-  .linePath {
+}
+
+.linePath {
 	fill: none;
 	stroke: black;
 	stroke-width: 1.5;
-  }
-  
-  .axisLabel {
+}
+
+.axisLabel {
 	fill: #475d7c;
-  }
-  
-  /* Style for selected marks (circles) */
-  circle.selected {
-	fill: pink;
-	stroke: red;
-	opacity: 5;
-  }
+}
 
-  rect.selected {
+/* Style for selected marks (circles) */
+circle.selected {
 	fill: pink;
 	stroke: red;
 	opacity: 5;
-  }
+}
 
-  bar.selected {
+rect.selected {
 	fill: pink;
 	stroke: red;
 	opacity: 5;
-  }
+}
+
+bar.selected {
+	fill: pink;
+	stroke: red;
+	opacity: 5;
+}
 
 /* Fork on GitHub ribbon via https://codepo8.github.io/css-fork-on-github-ribbon/# */  
 #forkongithub a{
