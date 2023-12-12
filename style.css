@@ -16,7 +16,38 @@ h1, h2, h3 {
 }
 
 /* specific styling */
+#vis-explanation-content {
+	display: flex;
+	justify-content: space-between;
+}
 
+.vis-section {
+	max-width: calc(50% - 20px);
+	width: 50%;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+
+.sketches {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+  }
+  
+  .sketches img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 10px; /* Add space between images and captions */
+  }
+  
+  .sketches p {
+	margin: 0; /* Remove default margins */
+  }
+
+  #final-sketch {
+	padding-top: 2em;
+  }
 
 /* But your visualization should be full-width and full-height */
 .vis-holder {

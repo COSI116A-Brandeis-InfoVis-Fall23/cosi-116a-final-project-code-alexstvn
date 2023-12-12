@@ -113,17 +113,17 @@
         <p>We employed bar graph and scatterplot visualizations in our project. For displaying the Average Ons and
           Average Offs data, we used a bar graph, with the stops arranged in order on the x-axis, and each bar mark’s
           length corresponding to how many people get on or off a train at that station on average per day.</p>
-        <p>We positioned the Average Ons and Average Offs bar graphs side by side, since they display similar trends,
-          and the user can easily observe how the number of people getting on a train at the station is directly
-          correlated with how many people get off. Brushing and linking techniques enhance these observations; when one
-          selects some bars or points in any chart, the corresponding marks are highlighted in the other two charts.</p>
-        <p>In the scatterplot below the bar charts, we sort the stops on the x axis in the same order as the bar charts.
-          When one brushes over the bar charts and selects some of the stations, the corresponding points in the
-          distance graph are also highlighted. Through this technique, we display the inverse relationship between the
-          average level of activity in a station and its distance from the city center; the busiest stations tend to be
-          closest to the center.</p>
       </div>
-    </div>
+    </div>     
+    <p>We positioned the Average Ons and Average Offs bar graphs side by side, since they display similar trends,
+      and the user can easily observe how the number of people getting on a train at the station is directly
+      correlated with how many people get off. Brushing and linking techniques enhance these observations; when one
+      selects some bars or points in any chart, the corresponding marks are highlighted in the other two charts.</p>
+    <p>In the scatterplot below the bar charts, we sort the stops on the x axis in the same order as the bar charts.
+      When one brushes over the bar charts and selects some of the stations, the corresponding points in the
+      distance graph are also highlighted. Through this technique, we display the inverse relationship between the
+      average level of activity in a station and its distance from the city center; the busiest stations tend to be
+      closest to the center.</p>
 
     <h1>Data Analysis</h1>
     <p><em>Summary of data, data types, and data preprocessing.</em></p>
@@ -200,9 +200,15 @@
 
     <!-- DESIGN PROCESS -->
     <h1>Design Process</h1>
-
-    <p><em>Sketches and design choices to justify final visualization.</em></p>
-
+    <p><em>Sketches prior to sprints.</em></p>
+    <div class="sketches">
+      <img src="images/Sketch1.png">
+      <p><i>An example of one of our first sketches.</i></p>
+      <br>
+      <img src="images/FinalSketch.png" id="final-sketch">
+      <p><i>One of our final sketches before the sprints.</i></p>
+    </div>
+    <p><em>Design choices to justify final visualization.</em></p>
     <ul>
       <li>Sprint 1</li>
       <ul>
@@ -263,7 +269,8 @@
     <p>For this project, we created three plots to visualize aspects of ridership data obtained from the MBTA Open Data Portal. 
       We have completed brushing and linking techniques between the charts to allow the user to highlight different portions of the data and observe 
       correlations and trends. Leading up to this final presentation, we created drafts of sample visualizations to guide us towards our final product. The visualization sketches gave 
-      us an overview to think about using stop names, average on, and average off data. One improvement could be refining the selector and completing it so that it 
+      us an overview to think about using stop names, average on, and average off data. </p>
+    <p>One improvement could be refining the selector and completing it so that it 
       allows the viewer to toggle views of the bar charts for desired light rail route. Currently we only display the data for the Red Line stops, but it would add a lot to functionality 
       of our visualization if the user could also view data for the Orange, Blue, Green, and Silver Line routes. </p>
 
